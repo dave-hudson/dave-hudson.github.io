@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Musings of an Itinerant Software Designer</title>
+    <link>http://example.org/posts/</link>
+    <description>Recent content in Posts on Musings of an Itinerant Software Designer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2020 David J. Hudson</copyright>
+    <lastBuildDate>Wed, 22 Jan 2020 22:30:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Episode 4: A New Blog</title>
+      <link>http://example.org/posts/2020-01-22-2230/</link>
+      <pubDate>Wed, 22 Jan 2020 22:30:00 +0000</pubDate>
+      
+      <guid>http://example.org/posts/2020-01-22-2230/</guid>
+      <description>A number of times in the past I&#39;ve found myself wanting to blog about some of the things I&#39;ve been reading about, thinking about, or working on. Somehow, though, I&#39;ve never managed to make the habit stick.
+I think part of the problem is that I will always be a software developer at heart and prepackaged, WYSIWYG, tools that have limited flexibility never quite appealled to me (that and disliking the bloaty databases and slow rendering behind most of them).</description>
+    </item>
+    
+  </channel>
+</rss>

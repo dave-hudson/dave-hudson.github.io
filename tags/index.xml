@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Musings of an Itinerant Software Designer</title>
+    <link>http://example.org/tags/</link>
+    <description>Recent content in Tags on Musings of an Itinerant Software Designer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© 2020 David J. Hudson</copyright>
+    <lastBuildDate>Wed, 22 Jan 2020 22:30:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>blog</title>
+      <link>http://example.org/tags/blog/</link>
+      <pubDate>Wed, 22 Jan 2020 22:30:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hugo</title>
+      <link>http://example.org/tags/hugo/</link>
+      <pubDate>Wed, 22 Jan 2020 22:30:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MacVim</title>
+      <link>http://example.org/tags/macvim/</link>
+      <pubDate>Wed, 22 Jan 2020 22:30:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/macvim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vim</title>
+      <link>http://example.org/tags/vim/</link>
+      <pubDate>Wed, 22 Jan 2020 22:30:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/vim/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
