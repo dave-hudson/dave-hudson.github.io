@@ -3,7 +3,47 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://dave-hudson.github.io/tags/blog/</loc>
+    <loc>https://dave-hudson.github.io/tags/Git/</loc>
+    <lastmod>2020-01-23T11:18:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dave-hudson.github.io/tags/Git-submodules/</loc>
+    <lastmod>2020-01-23T11:18:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dave-hudson.github.io/tags/GitHub/</loc>
+    <lastmod>2020-01-23T11:18:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dave-hudson.github.io/tags/Hugo/</loc>
+    <lastmod>2020-01-23T11:18:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dave-hudson.github.io/posts/2020-01-23-1800/</loc>
+    <lastmod>2020-01-23T11:18:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dave-hudson.github.io/</loc>
+    <lastmod>2020-01-23T11:18:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dave-hudson.github.io/posts/</loc>
+    <lastmod>2020-01-23T11:18:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dave-hudson.github.io/tags/</loc>
+    <lastmod>2020-01-23T11:18:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dave-hudson.github.io/tags/Blog/</loc>
     <lastmod>2020-01-22T22:30:00+00:00</lastmod>
   </url>
   
@@ -13,32 +53,12 @@
   </url>
   
   <url>
-    <loc>https://dave-hudson.github.io/tags/hugo/</loc>
+    <loc>https://dave-hudson.github.io/tags/MacVim/</loc>
     <lastmod>2020-01-22T22:30:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://dave-hudson.github.io/tags/macvim/</loc>
-    <lastmod>2020-01-22T22:30:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dave-hudson.github.io/</loc>
-    <lastmod>2020-01-22T22:30:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dave-hudson.github.io/posts/</loc>
-    <lastmod>2020-01-22T22:30:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dave-hudson.github.io/tags/</loc>
-    <lastmod>2020-01-22T22:30:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dave-hudson.github.io/tags/vim/</loc>
+    <loc>https://dave-hudson.github.io/tags/Vim/</loc>
     <lastmod>2020-01-22T22:30:00+00:00</lastmod>
   </url>
   

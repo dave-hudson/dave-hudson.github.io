@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>MacVim on Musings of an Itinerant Software Designer</title>
-    <link>https://dave-hudson.github.io/tags/macvim/</link>
+    <link>https://dave-hudson.github.io/tags/MacVim/</link>
     <description>Recent content in MacVim on Musings of an Itinerant Software Designer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2020 David J. Hudson</copyright>
     <lastBuildDate>Wed, 22 Jan 2020 22:30:00 +0000</lastBuildDate>
     
-	<atom:link href="https://dave-hudson.github.io/tags/macvim/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://dave-hudson.github.io/tags/MacVim/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Episode IV: A New Blog</title>
+      <title>Episode IV: A new blog</title>
       <link>https://dave-hudson.github.io/posts/2020-01-22-2230/</link>
       <pubDate>Wed, 22 Jan 2020 22:30:00 +0000</pubDate>
       

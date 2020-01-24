@@ -7,13 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2020 David J. Hudson</copyright>
-    <lastBuildDate>Wed, 22 Jan 2020 22:30:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 23 Jan 2020 11:18:00 +0000</lastBuildDate>
     
 	<atom:link href="https://dave-hudson.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Episode IV: A New Blog</title>
+      <title>Making this site work</title>
+      <link>https://dave-hudson.github.io/posts/2020-01-23-1800/</link>
+      <pubDate>Thu, 23 Jan 2020 11:18:00 +0000</pubDate>
+      
+      <guid>https://dave-hudson.github.io/posts/2020-01-23-1800/</guid>
+      <description>One of the more fun things about setting up this site (or at least fun for me!) is getting to have vim open again, and being able to see how my words will properly be marked up and translated. I guess it makes me remember what it is to be someone who does this day in and out (organising teams of engineers is fun, but I do miss building code sometimes).</description>
+    </item>
+    
+    <item>
+      <title>Episode IV: A new blog</title>
       <link>https://dave-hudson.github.io/posts/2020-01-22-2230/</link>
       <pubDate>Wed, 22 Jan 2020 22:30:00 +0000</pubDate>
       

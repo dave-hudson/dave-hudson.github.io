@@ -7,44 +7,71 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2020 David J. Hudson</copyright>
-    <lastBuildDate>Wed, 22 Jan 2020 22:30:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 23 Jan 2020 11:18:00 +0000</lastBuildDate>
     
 	<atom:link href="https://dave-hudson.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>blog</title>
-      <link>https://dave-hudson.github.io/tags/blog/</link>
-      <pubDate>Wed, 22 Jan 2020 22:30:00 +0000</pubDate>
+      <title>Git</title>
+      <link>https://dave-hudson.github.io/tags/Git/</link>
+      <pubDate>Thu, 23 Jan 2020 11:18:00 +0000</pubDate>
       
-      <guid>https://dave-hudson.github.io/tags/blog/</guid>
+      <guid>https://dave-hudson.github.io/tags/Git/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>hugo</title>
-      <link>https://dave-hudson.github.io/tags/hugo/</link>
+      <title>Git submodules</title>
+      <link>https://dave-hudson.github.io/tags/Git-submodules/</link>
+      <pubDate>Thu, 23 Jan 2020 11:18:00 +0000</pubDate>
+      
+      <guid>https://dave-hudson.github.io/tags/Git-submodules/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GitHub</title>
+      <link>https://dave-hudson.github.io/tags/GitHub/</link>
+      <pubDate>Thu, 23 Jan 2020 11:18:00 +0000</pubDate>
+      
+      <guid>https://dave-hudson.github.io/tags/GitHub/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hugo</title>
+      <link>https://dave-hudson.github.io/tags/Hugo/</link>
+      <pubDate>Thu, 23 Jan 2020 11:18:00 +0000</pubDate>
+      
+      <guid>https://dave-hudson.github.io/tags/Hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Blog</title>
+      <link>https://dave-hudson.github.io/tags/Blog/</link>
       <pubDate>Wed, 22 Jan 2020 22:30:00 +0000</pubDate>
       
-      <guid>https://dave-hudson.github.io/tags/hugo/</guid>
+      <guid>https://dave-hudson.github.io/tags/Blog/</guid>
       <description></description>
     </item>
     
     <item>
       <title>MacVim</title>
-      <link>https://dave-hudson.github.io/tags/macvim/</link>
+      <link>https://dave-hudson.github.io/tags/MacVim/</link>
       <pubDate>Wed, 22 Jan 2020 22:30:00 +0000</pubDate>
       
-      <guid>https://dave-hudson.github.io/tags/macvim/</guid>
+      <guid>https://dave-hudson.github.io/tags/MacVim/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>vim</title>
-      <link>https://dave-hudson.github.io/tags/vim/</link>
+      <title>Vim</title>
+      <link>https://dave-hudson.github.io/tags/Vim/</link>
       <pubDate>Wed, 22 Jan 2020 22:30:00 +0000</pubDate>
       
-      <guid>https://dave-hudson.github.io/tags/vim/</guid>
+      <guid>https://dave-hudson.github.io/tags/Vim/</guid>
       <description></description>
     </item>
     
