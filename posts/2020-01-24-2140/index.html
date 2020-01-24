@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta name="generator" content="Hugo 0.62.2" />
 	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Musings of an Itinerant Software Designer - Dave Hudson&#39;s Blog/Wiki </title><meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="alternate" type="application/rss+xml" href="https://dave-hudson.github.io/index.xml" title="Musings of an Itinerant Software Designer" />
-	<meta property="og:title" content="Musings of an Itinerant Software Designer" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://dave-hudson.github.io/" />
-<meta property="og:updated_time" content="2020-01-24T11:21:40+00:00" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Making this site work for real (AKA I hate Git submodules) - Musings of an Itinerant Software Designer</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:title" content="Making this site work for real (AKA I hate Git submodules)" />
+<meta property="og:description" content="I said I disliked Git submodules and this is why" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://dave-hudson.github.io/posts/2020-01-24-2140/" />
+<meta property="article:published_time" content="2020-01-24T11:21:40+00:00" />
+<meta property="article:modified_time" content="2020-01-24T11:21:40+00:00" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Musings of an Itinerant Software Designer"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:title" content="Making this site work for real (AKA I hate Git submodules)"/>
+<meta name="twitter:description" content="I said I disliked Git submodules and this is why"/>
 <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:200,300" rel="stylesheet">
 
 	<link rel="stylesheet" type="text/css" media="screen" href="https://dave-hudson.github.io/css/normalize.css" />
@@ -24,7 +23,7 @@
 </head>
 
 <body>
-	<div class="container wrapper">
+	<div class="container wrapper post">
 		<div class="header">
 	<h1 class="site-title"><a href="https://dave-hudson.github.io/">Musings of an Itinerant Software Designer</a></h1>
 	<div class="site-description"><h2>Dave Hudson's Blog/Wiki</h2><nav class="nav social">
@@ -60,48 +59,41 @@
 </div>
 
 
-		<div class="recent-posts section">
-			<h1>Recent Posts</h1>
-			<div class="posts">
-				
-				
-				
-				<div class="post">
-					<div class="meta">2020-01-24 11:21 - 1 min read</div>
-					<a class="title" href="/posts/2020-01-24-2140/">Making this site work for real (AKA I hate Git submodules)</a> &mdash;
-					<span class="description">
-						
-						I said I disliked Git submodules and this is why
-						
-					</span>
-				</div>
-				
-				<div class="post">
-					<div class="meta">2020-01-23 11:18 - 2 min read</div>
-					<a class="title" href="/posts/2020-01-23-1800/">Making this site work</a> &mdash;
-					<span class="description">
-						
-						All unfamiliar technologies can be tricky, but this one needed a little more work than I&#39;d hoped
-						
-					</span>
-				</div>
-				
-				<div class="post">
-					<div class="meta">2020-01-22 22:30 - 2 min read</div>
-					<a class="title" href="/posts/2020-01-22-2230/">Episode IV: A new blog</a> &mdash;
-					<span class="description">
-						
-						Some thoughts on what I&#39;m trying to achieve with this site/blog/wiki
-						
-					</span>
-				</div>
-				
-				
+		<div class="post-header">
+			<h1 class="title">Making this site work for real (AKA I hate Git submodules)</h1>
+			<div class="meta">
+                Posted at 2020-01-24 11:21 - 1 min read
+            </div>
+        </div>
 
+		<div class="markdown">
+			<p>So I think I typed too soon yesterday.  Git submodules may be tolerable to some people but after another hour wasted
+on them today it's time to admit defeat and find another path.  It turns out that putting the publication directory
+at the same level as the source directory for this site then it's easy make things work.  All it takes is putting <code>../</code>
+in <code>publishDir</code> and we're ok :-)</p>
+<p>So, yes, my disdain of Git submodules is renewed - although that may just be confirmation bias!  I do, however, have
+a working site again and my sanity is restored.</p>
 
-			</div>
 		</div>
-	</div>
+
+		<div class="post-tags">
+			
+				
+					<nav class="nav tags">
+						<ul class="flat">
+							
+							<li><a href="/tags/Hugo">Hugo</a></li>
+							
+							<li><a href="/tags/Git">Git</a></li>
+							
+							<li><a href="/tags/Git-submodules">Git submodules</a></li>
+							
+						</ul>
+					</nav>
+				
+			
+		</div>
+		</div>
 	<div class="footer wrapper">
 	<nav class="nav">
 		<div> © 2020 David J. Hudson </div>
