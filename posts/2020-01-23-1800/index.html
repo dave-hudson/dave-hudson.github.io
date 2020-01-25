@@ -72,11 +72,11 @@ again, and being able to see how my words will properly be marked up and transla
 what it is to be someone who does this day in and out (organising teams of engineers is fun, but I do miss building code
 sometimes).</p>
 <p>As with all new technical challenges, I wasn't expecting that setting up a site with Hugo and GitHub pages would be
-completely straightforward, but I have been remdinded that the quality of technical documentation on the web can be quite
+completely straightforward, but I have been reminded that the quality of technical documentation on the web can be quite
 variable.  It's amazing how quickly software engineers get used to things that must drive everyone else slightly
 mad.</p>
 <p>As GitHub doesn't have a native integration with Hugo, there's a two-repo process involved in making changes to the site.
-First we have the repo with the source content, and then we have a separate one that has the rendered output from that
+First, we have the repo with the source content, and then we have a separate one that has the rendered output from that
 content.</p>
 <p>Maybe I was a little tired, but the guidance on the
 <a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/">Host on GitHub</a> page wasn't very clear to me:</p>
@@ -88,7 +88,7 @@ misfortune to work with a codebase that included submodules and it was sufficien
 never to do it again.  Anyway, this time the instructions were:</p>
 <p><img src="./hugo-inst-2.png" alt=""></p>
 <p>This little bit of magic makes the default <code>public</code> output directory map to the repo we just discussed, which wasn't
-competely obvious either.  It's worth noting that other advice online suggested a different approach in which the <code>public</code>
+completely obvious either.  It's worth noting that other advice online suggested a different approach in which the <code>public</code>
 directory is replaced with one that has the same name as the output repo.  It's this that I ended up doing.</p>
 <p>So far, so good, but I quickly found my submodule having a detached head, and needing this solution:
 <a href="https://stackoverflow.com/questions/18770545/why-is-my-git-submodule-head-detached-from-master">https://stackoverflow.com/questions/18770545/why-is-my-git-submodule-head-detached-from-master</a>.  A little more Git config
