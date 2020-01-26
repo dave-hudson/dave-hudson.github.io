@@ -4,14 +4,14 @@
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Making this site work for real (AKA no more Git submodules) - Musings of an Itinerant Software Designer</title><meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta property="og:title" content="Making this site work for real (AKA no more Git submodules)" />
-<meta property="og:description" content="I said I disliked Git submodules and this is why" />
+<meta property="og:description" content="I said I disliked Git submodules and they&#39;ve not disappointed this time either.  Sometimes simpler really is better." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://dave-hudson.github.io/posts/2020-01-24-2140/" />
 <meta property="article:published_time" content="2020-01-24T21:40:00+00:00" />
 <meta property="article:modified_time" content="2020-01-24T21:40:00+00:00" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Making this site work for real (AKA no more Git submodules)"/>
-<meta name="twitter:description" content="I said I disliked Git submodules and this is why"/>
+<meta name="twitter:description" content="I said I disliked Git submodules and they&#39;ve not disappointed this time either.  Sometimes simpler really is better."/>
 <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:200,300" rel="stylesheet">
 
 	<link rel="stylesheet" type="text/css" media="screen" href="https://dave-hudson.github.io/css/normalize.css" />
@@ -62,7 +62,7 @@
 		<div class="post-header">
 			<h1 class="title">Making this site work for real (AKA no more Git submodules)</h1>
 			<div class="meta">
-                Posted at 2020-01-24 21:40 - 1 min read
+                Posted at 2020-01-24 21:40 - 2 min read
             </div>
         </div>
 
@@ -71,8 +71,15 @@
 on them today, it's time to admit defeat and find another path.  It turns out that putting the publication directory
 at the same level as the source directory for this site is a far simpler way to make things work.  All it takes is
 putting <code>../</code> in <code>publishDir</code> and we're ok :-)</p>
-<p>So, yes, my disdain of Git submodules is renewed - although that may just be confirmation bias!  I do, however, have
-a working site again and my sanity is restored.</p>
+<p>And, with this, my disdain of Git submodules is renewed!  No matter how much I want them to be a good solution to any
+problem they never really seem to be it.  This does leave me wondering just what type of problems they're the best solution
+for?  Every time I think I might have found one, usually because someone else has suggested using them, there's a simpler
+solution that just uses git normally and perhaps with a wrapper script.</p>
+<p>I've seen and remarked on this sort of problem in the past.  Software developers love to add new modes and
+complexities to simple designs, but don't pause to ask if they really should.  This leads to weird complexity inversions
+in which complicated, fiddly, things end up being used to do simple tasks.  The complexity often means they do them
+quite badly.</p>
+<p>Anyway, that's a subject for another day.  I do, now, have a working site again and my sanity is restored.</p>
 
 		</div>
 
@@ -87,6 +94,8 @@ a working site again and my sanity is restored.</p>
 							<li><a href="/tags/Git">Git</a></li>
 							
 							<li><a href="/tags/Git-submodules">Git submodules</a></li>
+							
+							<li><a href="/tags/Complexity-inversion">Complexity inversion</a></li>
 							
 						</ul>
 					</nav>
