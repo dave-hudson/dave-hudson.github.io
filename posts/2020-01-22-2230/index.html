@@ -23,11 +23,14 @@
 </head>
 
     <body>
-        <div class="container wrapper post">
-            <div class="header">
+        <div class="container">
+            <div class="post">
+                <div class="header">
     <h1 class="site-title"><a href="https://dave-hudson.github.io/">Musings of an Itinerant Software Designer</a></h1>
-    <div class="site-description"><h2>Dave Hudson's Blog/Wiki</h2><nav class="nav social">
-            <ul class="flat"><a href="https://github.com/dave-hudson" title="Github"><i data-feather="github"></i></a><a href="https://twitter.com/hashingitcom" title="Twitter"><i data-feather="twitter"></i></a><a href="https://linkedin.com/in/davejh" title="LinkedIn"><i data-feather="linkedin"></i></a><a href="/index.xml" title="RSS"><i data-feather="rss"></i></a></ul>
+    <div class="site-description"><h2>Dave Hudson's Blog/Wiki</h2><nav class="nav">
+            <div class="social">
+                <ul class="flat"><a href="https://github.com/dave-hudson" title="Github"><i data-feather="github"></i></a><a href="https://twitter.com/hashingitcom" title="Twitter"><i data-feather="twitter"></i></a><a href="https://linkedin.com/in/davejh" title="LinkedIn"><i data-feather="linkedin"></i></a><a href="/index.xml" title="RSS"><i data-feather="rss"></i></a></ul>
+            </div>
         </nav>
     </div>
 
@@ -59,15 +62,37 @@
 </div>
 
 
-            <div class="post-header">
-                <h1 class="title">Episode IV: A new blog</h1>
-                <div class="meta">
-                    Posted at 2020-01-22 22:30 - 2 min read
+                <div class="post-header">
+                    <h1 class="title">Episode IV: A new blog</h1>
+                    <div class="meta">
+                        Posted at 2020-01-22 22:30 - 2 min read
+                    </div>
                 </div>
-            </div>
 
-            <div class="markdown">
-                <p>A number of times in the past I've found myself wanting to blog about some of the things I've been reading about, thinking
+                <div class="post-tags">
+                    
+                        
+                            <nav class="nav">
+                                <div class="tags">
+                                    <ul class="flat">
+                                        
+                                        <li><a href="/tags/Hugo">Hugo</a></li>
+                                        
+                                        <li><a href="/tags/Blog">Blog</a></li>
+                                        
+                                        <li><a href="/tags/Vim">Vim</a></li>
+                                        
+                                        <li><a href="/tags/MacVim">MacVim</a></li>
+                                        
+                                    </div>
+                                </ul>
+                            </nav>
+                        
+                    
+                </div>
+
+                <div class="markdown">
+                    <p>A number of times in the past I've found myself wanting to blog about some of the things I've been reading about, thinking
 about, or working on.  Somehow, though, I've never managed to make the habit stick.</p>
 <p>I think part of the problem is that I will always be a software developer at heart and prepackaged, WYSIWYG, tools that
 have limited flexibility never quite appealed to me (that and disliking the bloaty databases and slow rendering behind
@@ -89,30 +114,9 @@ for it to be more a Tesla than a Sinclair C5, but we're a bit too early for any 
 but it's only taken a few hours to find the tooling, read the docs, and get something up and running.</p>
 <p>And thus, the journey begins!</p>
 
-            </div>
-
-            <div class="post-tags">
-                
-                    
-                        <nav class="nav tags">
-                            <ul class="flat">
-                                
-                                <li><a href="/tags/Hugo">Hugo</a></li>
-                                
-                                <li><a href="/tags/Blog">Blog</a></li>
-                                
-                                <li><a href="/tags/Vim">Vim</a></li>
-                                
-                                <li><a href="/tags/MacVim">MacVim</a></li>
-                                
-                            </ul>
-                        </nav>
-                    
-                
-            </div>
-            </div>
-        <div class="footer wrapper">
-    <div class="nav"> © 2020 David J. Hudson </div>
+                </div>
+                <div class="footer">
+    <div class="copyright"> © 2020 David J. Hudson </div>
 </div>
 
 
@@ -129,5 +133,7 @@ if (!doNotTrack) {
 <script async src='https://www.google-analytics.com/analytics.js'></script>
 
 <script>feather.replace()</script>
+            </div>
+        </div>
     </body>
 </html>

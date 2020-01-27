@@ -23,11 +23,14 @@
 </head>
 
     <body>
-        <div class="container wrapper post">
-            <div class="header">
+        <div class="container">
+            <div class="post">
+                <div class="header">
     <h1 class="site-title"><a href="https://dave-hudson.github.io/">Musings of an Itinerant Software Designer</a></h1>
-    <div class="site-description"><h2>Dave Hudson's Blog/Wiki</h2><nav class="nav social">
-            <ul class="flat"><a href="https://github.com/dave-hudson" title="Github"><i data-feather="github"></i></a><a href="https://twitter.com/hashingitcom" title="Twitter"><i data-feather="twitter"></i></a><a href="https://linkedin.com/in/davejh" title="LinkedIn"><i data-feather="linkedin"></i></a><a href="/index.xml" title="RSS"><i data-feather="rss"></i></a></ul>
+    <div class="site-description"><h2>Dave Hudson's Blog/Wiki</h2><nav class="nav">
+            <div class="social">
+                <ul class="flat"><a href="https://github.com/dave-hudson" title="Github"><i data-feather="github"></i></a><a href="https://twitter.com/hashingitcom" title="Twitter"><i data-feather="twitter"></i></a><a href="https://linkedin.com/in/davejh" title="LinkedIn"><i data-feather="linkedin"></i></a><a href="/index.xml" title="RSS"><i data-feather="rss"></i></a></ul>
+            </div>
         </nav>
     </div>
 
@@ -59,15 +62,37 @@
 </div>
 
 
-            <div class="post-header">
-                <h1 class="title">Making this site work</h1>
-                <div class="meta">
-                    Posted at 2020-01-23 18:30 - 2 min read
+                <div class="post-header">
+                    <h1 class="title">Making this site work</h1>
+                    <div class="meta">
+                        Posted at 2020-01-23 18:30 - 2 min read
+                    </div>
                 </div>
-            </div>
 
-            <div class="markdown">
-                <p>One of the more fun things about setting up this site (or at least fun for me!) is getting to have vim open
+                <div class="post-tags">
+                    
+                        
+                            <nav class="nav">
+                                <div class="tags">
+                                    <ul class="flat">
+                                        
+                                        <li><a href="/tags/Hugo">Hugo</a></li>
+                                        
+                                        <li><a href="/tags/Git">Git</a></li>
+                                        
+                                        <li><a href="/tags/GitHub">GitHub</a></li>
+                                        
+                                        <li><a href="/tags/Git-submodules">Git submodules</a></li>
+                                        
+                                    </div>
+                                </ul>
+                            </nav>
+                        
+                    
+                </div>
+
+                <div class="markdown">
+                    <p>One of the more fun things about setting up this site (or at least fun for me!) is getting to have vim open
 again, and being able to see how my words will properly be marked up and translated.  I guess it makes me remember
 what it is to be someone who does this day in and out (organising teams of engineers is fun, but I do miss building code
 sometimes).</p>
@@ -95,30 +120,9 @@ directory is replaced with one that has the same name as the output repo.  It's 
 editing, though, and the site was up and running.</p>
 <p>Time to declare victory - champagne celebrations all round!</p>
 
-            </div>
-
-            <div class="post-tags">
-                
-                    
-                        <nav class="nav tags">
-                            <ul class="flat">
-                                
-                                <li><a href="/tags/Hugo">Hugo</a></li>
-                                
-                                <li><a href="/tags/Git">Git</a></li>
-                                
-                                <li><a href="/tags/GitHub">GitHub</a></li>
-                                
-                                <li><a href="/tags/Git-submodules">Git submodules</a></li>
-                                
-                            </ul>
-                        </nav>
-                    
-                
-            </div>
-            </div>
-        <div class="footer wrapper">
-    <div class="nav"> © 2020 David J. Hudson </div>
+                </div>
+                <div class="footer">
+    <div class="copyright"> © 2020 David J. Hudson </div>
 </div>
 
 
@@ -135,5 +139,7 @@ if (!doNotTrack) {
 <script async src='https://www.google-analytics.com/analytics.js'></script>
 
 <script>feather.replace()</script>
+            </div>
+        </div>
     </body>
 </html>
