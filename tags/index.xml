@@ -7,10 +7,46 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <copyright>© 2020 David J. Hudson</copyright>
-    <lastBuildDate>Fri, 24 Jan 2020 21:40:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 27 Jan 2020 23:36:00 +0000</lastBuildDate>
     
 	<atom:link href="https://dave-hudson.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>CSS</title>
+      <link>https://dave-hudson.github.io/tags/CSS/</link>
+      <pubDate>Mon, 27 Jan 2020 23:36:00 +0000</pubDate>
+      
+      <guid>https://dave-hudson.github.io/tags/CSS/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>HTML</title>
+      <link>https://dave-hudson.github.io/tags/HTML/</link>
+      <pubDate>Mon, 27 Jan 2020 23:36:00 +0000</pubDate>
+      
+      <guid>https://dave-hudson.github.io/tags/HTML/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hugo</title>
+      <link>https://dave-hudson.github.io/tags/Hugo/</link>
+      <pubDate>Mon, 27 Jan 2020 23:36:00 +0000</pubDate>
+      
+      <guid>https://dave-hudson.github.io/tags/Hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Software development</title>
+      <link>https://dave-hudson.github.io/tags/Software-development/</link>
+      <pubDate>Mon, 27 Jan 2020 23:36:00 +0000</pubDate>
+      
+      <guid>https://dave-hudson.github.io/tags/Software-development/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Complexity inversion</title>
@@ -36,15 +72,6 @@
       <pubDate>Fri, 24 Jan 2020 21:40:00 +0000</pubDate>
       
       <guid>https://dave-hudson.github.io/tags/Git-submodules/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hugo</title>
-      <link>https://dave-hudson.github.io/tags/Hugo/</link>
-      <pubDate>Fri, 24 Jan 2020 21:40:00 +0000</pubDate>
-      
-      <guid>https://dave-hudson.github.io/tags/Hugo/</guid>
       <description></description>
     </item>
     

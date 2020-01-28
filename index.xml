@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <copyright>© 2020 David J. Hudson</copyright>
-    <lastBuildDate>Fri, 24 Jan 2020 21:40:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 27 Jan 2020 23:36:00 +0000</lastBuildDate>
     
 	<atom:link href="https://dave-hudson.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>The joys of HTML and CSS</title>
+      <link>https://dave-hudson.github.io/posts/2020-01-27-2336/</link>
+      <pubDate>Mon, 27 Jan 2020 23:36:00 +0000</pubDate>
+      
+      <guid>https://dave-hudson.github.io/posts/2020-01-27-2336/</guid>
+      <description>When I decided to create this site, one of the main things I wanted to do was keep the blog as something of a journal. I&#39;ve tried this in the past when I was writing a C++ library, C8 and it was an interesting experience.
+While my earlier efforts related to something a little more complex, one of the reasons I found the exercise interesting was that it would allow me, and others, to come back and review what I did and why.</description>
+    </item>
     
     <item>
       <title>Making this site work for real (AKA no more Git submodules)</title>

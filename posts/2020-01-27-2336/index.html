@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><title>The joys of HTML and CSS - Musings of an Itinerant Software Designer</title><meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="The joys of HTML and CSS" />
+<meta property="og:description" content="The original HTML and CSS I picked for this site weren&#39;t quite as clean as I&#39;d hoped, so they needed cleaning up" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://dave-hudson.github.io/posts/2020-01-27-2336/" />
+<meta property="article:published_time" content="2020-01-27T23:36:00+00:00" />
+<meta property="article:modified_time" content="2020-01-27T23:36:00+00:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="The joys of HTML and CSS"/>
+<meta name="twitter:description" content="The original HTML and CSS I picked for this site weren&#39;t quite as clean as I&#39;d hoped, so they needed cleaning up"/>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:200,300" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="https://dave-hudson.github.io/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://dave-hudson.github.io/css/main.css" /><link rel="stylesheet" type="text/css" href="https://dave-hudson.github.io/css/dark.css" media="(prefers-color-scheme: dark)" />
+
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://dave-hudson.github.io/js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+
+    <body>
+        <div class="container">
+            <div class="post">
+                <div class="header">
+    <h1 class="site-title"><a href="https://dave-hudson.github.io/">Musings of an Itinerant Software Designer</a></h1>
+    <div class="site-description"><h2>Dave Hudson's Blog/Wiki</h2><nav class="nav">
+            <div class="social">
+                <ul class="flat"><a href="https://github.com/dave-hudson" title="Github"><i data-feather="github"></i></a><a href="https://twitter.com/hashingitcom" title="Twitter"><i data-feather="twitter"></i></a><a href="https://linkedin.com/in/davejh" title="LinkedIn"><i data-feather="linkedin"></i></a><a href="/index.xml" title="RSS"><i data-feather="rss"></i></a></ul>
+            </div>
+        </nav>
+    </div>
+
+    <nav class="nav">
+        <ul class="flat">
+            
+            <li>
+                <a href="/">Recent Posts</a>
+            </li>
+            
+            <li>
+                <a href="/posts">All Posts</a>
+            </li>
+            
+            <li>
+                <a href="/wiki">Wiki</a>
+            </li>
+            
+            <li>
+                <a href="/tags">Tags</a>
+            </li>
+            
+            <li>
+                <a href="/about">About</a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+
+                <div class="post-header">
+                    <h1 class="title">The joys of HTML and CSS</h1>
+                    <div class="meta">
+                        Posted at 2020-01-27 23:36 - 4 min read
+                    </div>
+                </div>
+
+                <div class="post-tags">
+                    
+                        
+                            <nav class="nav">
+                                <div class="tags">
+                                    <ul class="flat">
+                                        
+                                        <li><a href="/tags/Hugo">Hugo</a></li>
+                                        
+                                        <li><a href="/tags/HTML">HTML</a></li>
+                                        
+                                        <li><a href="/tags/CSS">CSS</a></li>
+                                        
+                                        <li><a href="/tags/Software-development">Software development</a></li>
+                                        
+                                    </div>
+                                </ul>
+                            </nav>
+                        
+                    
+                </div>
+
+                <div class="markdown">
+                    <p>When I decided to create this site, one of the main things I wanted to do was keep the blog as something of a journal.
+I've tried this in the past when I was writing a C++ library, <a href="http://github.com/hashingitcom/c8/wiki/Dev-Notes">C8</a> and it
+was an interesting experience.</p>
+<p>While my earlier efforts related to something a little more complex, one of the reasons I found the exercise interesting
+was that it would allow me, and others, to come back and review what I did and why.  Looking back nearly 3 years on from
+that previous experiment I realised there was a lot of interesting detail that wouldn't be at all obvious from the Git
+commits.</p>
+<p>Unlike C++, my HTML and CSS skills are pretty limited, but I found myself applying lessons learned in other software
+development to keep my future self sane.</p>
+<h2 id="names-matter">Names matter</h2>
+<p>The names of things really matter.  We want them to make sense and not be surprising.  The original theme files I'd
+picked up had some rather odd names.  For example the <code>&lt;head&gt;</code> tag had a partial HTML snippet file called <code>header.html</code>
+while the HTML header was called <code>head.html</code>.  These are things that confused me over the last couple of days and would
+have done so again.  They weren't big sources of confusion, but every incremental time would have been more time wasted for
+mee.  More importantly, they'd have been an incremental source of confusion to anyone else who read the code for this site.</p>
+<h2 id="good-source-code-is-as-simple-as-possible">Good source code is as simple as possible</h2>
+<p>I've seen too many examples of source code being made very dense in the apparent interests of simplification, but all
+too often I see pointless refactoring.  Sometimes it's ok to just copy 2 or 3 lines of code to make it easy to
+read things all in one place.  Sometimes it's better to make the CSS match up with the HTML structure, even if that
+leads to a little duplication, as that can make it easier to work out how those things line up together.</p>
+<h2 id="great-source-code-is-consistent">Great source code is consistent</h2>
+<p>One of the things that's most frustrating to me is lack of consistency.  Doing the same thing in different ways just
+makes it harder for everyone who comes after you.  Future readers will wonder what makes one different to the other and
+worry about what they've not understood.  Left unchecked this creates islands of code that maintainers don't want to
+touch in case they didn't fully get it.</p>
+<h2 id="self-documenting-code-completely-misses-the-point-of-comments">Self documenting code completely misses the point of comments</h2>
+<p>This also brings me to a rant about commenting of code.  There's a school of thought that &ldquo;self documenting&rdquo; code is
+possible, but I'd argue that that's ridiculous.  How do we tell the difference between buggy code and correct code?  How
+do we tell our future selves about things that we shouldn't do because they don't work well?  How do we hint at things
+that might want to happen in the future?  There are certainly bad comments; those that don't match up with the code, or
+just describe obvious syntactic characteristics, but good comments explain why the code is the way it's written!</p>
+<h2 id="source-code-needs-to-be-written-for-people">Source code needs to be written for people</h2>
+<p>So, this brings me to the point that I wish more software developers thought about.</p>
+<p>The objective of writing good source code isn't just for a compiler or interpreter - it's for the benefit of future
+maintainers.  Those people are going to need a lot more hints and help.  They not only need to know what you
+wanted the code to do now, but also how it might need to be modified by the time they're looking at it.</p>
+<p>Thing's aren't done when the machine in front of you gets it right, they're done when the next developer who needs
+to alter something is able to get it right too.</p>
+
+                </div>
+                <div class="footer">
+    <div class="copyright"> © 2020 David J. Hudson </div>
+</div>
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-123-45', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+<script>feather.replace()</script>
+            </div>
+        </div>
+    </body>
+</html>
