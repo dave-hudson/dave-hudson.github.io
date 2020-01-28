@@ -3,21 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://dave-hudson.github.io/tags/CSS/</loc>
-    <lastmod>2020-01-27T23:36:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dave-hudson.github.io/tags/HTML/</loc>
-    <lastmod>2020-01-27T23:36:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dave-hudson.github.io/tags/Hugo/</loc>
-    <lastmod>2020-01-27T23:36:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://dave-hudson.github.io/</loc>
     <lastmod>2020-01-27T23:36:00+00:00</lastmod>
   </url>
@@ -54,6 +39,11 @@
   
   <url>
     <loc>https://dave-hudson.github.io/tags/Git-submodules/</loc>
+    <lastmod>2020-01-24T21:40:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dave-hudson.github.io/tags/Hugo/</loc>
     <lastmod>2020-01-24T21:40:00+00:00</lastmod>
   </url>
   
