@@ -7,10 +7,37 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <copyright>© 2020 David J. Hudson</copyright>
-    <lastBuildDate>Mon, 27 Jan 2020 23:36:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 03 Feb 2020 06:42:00 +0000</lastBuildDate>
     
 	<atom:link href="https://dave-hudson.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Hugo</title>
+      <link>https://dave-hudson.github.io/tags/Hugo/</link>
+      <pubDate>Mon, 03 Feb 2020 06:42:00 +0000</pubDate>
+      
+      <guid>https://dave-hudson.github.io/tags/Hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Research Resources</title>
+      <link>https://dave-hudson.github.io/tags/Research-Resources/</link>
+      <pubDate>Mon, 03 Feb 2020 06:42:00 +0000</pubDate>
+      
+      <guid>https://dave-hudson.github.io/tags/Research-Resources/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Wiki</title>
+      <link>https://dave-hudson.github.io/tags/Wiki/</link>
+      <pubDate>Mon, 03 Feb 2020 06:42:00 +0000</pubDate>
+      
+      <guid>https://dave-hudson.github.io/tags/Wiki/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Software development</title>
@@ -45,15 +72,6 @@
       <pubDate>Fri, 24 Jan 2020 21:40:00 +0000</pubDate>
       
       <guid>https://dave-hudson.github.io/tags/Git-submodules/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hugo</title>
-      <link>https://dave-hudson.github.io/tags/Hugo/</link>
-      <pubDate>Fri, 24 Jan 2020 21:40:00 +0000</pubDate>
-      
-      <guid>https://dave-hudson.github.io/tags/Hugo/</guid>
       <description></description>
     </item>
     

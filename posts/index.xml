@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <copyright>© 2020 David J. Hudson</copyright>
-    <lastBuildDate>Mon, 27 Jan 2020 23:36:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 03 Feb 2020 06:42:00 +0000</lastBuildDate>
     
 	<atom:link href="https://dave-hudson.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Creating the wiki on this site</title>
+      <link>https://dave-hudson.github.io/posts/2020-02-03-0642/</link>
+      <pubDate>Mon, 03 Feb 2020 06:42:00 +0000</pubDate>
+      
+      <guid>https://dave-hudson.github.io/posts/2020-02-03-0642/</guid>
+      <description>When I started this site I always planned that it would help me organise information, not just be a blog. These blog notes are just my stream of conciousness, with a primary purpose being to think about how and why the real content is managed.
+In that spirit, one of the major things I wanted to organise is a large collection of research papers that I&amp;rsquo;ve been accumulating ever since I first got an Internet connection (1992).</description>
+    </item>
     
     <item>
       <title>Understanding other people&#39;s code</title>
@@ -18,7 +28,7 @@
       <pubDate>Mon, 27 Jan 2020 23:36:00 +0000</pubDate>
       
       <guid>https://dave-hudson.github.io/posts/2020-01-27-2336/</guid>
-      <description>When I decided to create this site, one of the main things I wanted to do was keep the blog as something of a journal. I&#39;ve tried this in the past when I was writing a C++ library, C8 and it was an interesting experience.
+      <description>When I decided to create this site, one of the main things I wanted to do was keep the blog as something of a journal. I&amp;rsquo;ve tried this in the past when I was writing a C++ library, C8 and it was an interesting experience.
 While my earlier efforts related to something a little more complex, one of the reasons I found the exercise interesting was that it would allow me, and others, to come back and review what I did and why.</description>
     </item>
     
@@ -28,7 +38,7 @@ While my earlier efforts related to something a little more complex, one of the 
       <pubDate>Fri, 24 Jan 2020 21:40:00 +0000</pubDate>
       
       <guid>https://dave-hudson.github.io/posts/2020-01-24-2140/</guid>
-      <description>So I think I typed too soon yesterday. Git submodules may be tolerable to some people but after another hour wasted on them today, it&#39;s time to admit defeat and find another path. It turns out that putting the publication directory at the same level as the source directory for this site is a far simpler way to make things work. All it takes is putting ../ in publishDir and we&#39;re ok :-)</description>
+      <description>So I think I typed too soon yesterday. Git submodules may be tolerable to some people but after another hour wasted on them today, it&amp;rsquo;s time to admit defeat and find another path. It turns out that putting the publication directory at the same level as the source directory for this site is a far simpler way to make things work. All it takes is putting ../ in publishDir and we&amp;rsquo;re ok :-)</description>
     </item>
     
     <item>
@@ -46,7 +56,7 @@ While my earlier efforts related to something a little more complex, one of the 
       <pubDate>Wed, 22 Jan 2020 22:30:00 +0000</pubDate>
       
       <guid>https://dave-hudson.github.io/posts/2020-01-22-2230/</guid>
-      <description>A number of times in the past I&#39;ve found myself wanting to blog about some of the things I&#39;ve been reading about, thinking about, or working on. Somehow, though, I&#39;ve never managed to make the habit stick.
+      <description>A number of times in the past I&amp;rsquo;ve found myself wanting to blog about some of the things I&amp;rsquo;ve been reading about, thinking about, or working on. Somehow, though, I&amp;rsquo;ve never managed to make the habit stick.
 I think part of the problem is that I will always be a software developer at heart and prepackaged, WYSIWYG, tools that have limited flexibility never quite appealed to me (that and disliking the bloaty databases and slow rendering behind most of them).</description>
     </item>
     

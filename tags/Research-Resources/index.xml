@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Research Resources on Musings of an Itinerant Software Designer</title>
+    <link>https://dave-hudson.github.io/tags/Research-Resources/</link>
+    <description>Recent content in Research Resources on Musings of an Itinerant Software Designer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <copyright>© 2020 David J. Hudson</copyright>
+    <lastBuildDate>Mon, 03 Feb 2020 06:42:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://dave-hudson.github.io/tags/Research-Resources/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Creating the wiki on this site</title>
+      <link>https://dave-hudson.github.io/posts/2020-02-03-0642/</link>
+      <pubDate>Mon, 03 Feb 2020 06:42:00 +0000</pubDate>
+      
+      <guid>https://dave-hudson.github.io/posts/2020-02-03-0642/</guid>
+      <description>When I started this site I always planned that it would help me organise information, not just be a blog. These blog notes are just my stream of conciousness, with a primary purpose being to think about how and why the real content is managed.
+In that spirit, one of the major things I wanted to organise is a large collection of research papers that I&amp;rsquo;ve been accumulating ever since I first got an Internet connection (1992).</description>
+    </item>
+    
+  </channel>
+</rss>

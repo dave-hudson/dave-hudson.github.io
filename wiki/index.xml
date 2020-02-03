@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Wiki on Musings of an Itinerant Software Designer</title>
+    <link>https://dave-hudson.github.io/wiki/</link>
+    <description>Recent content in Wiki on Musings of an Itinerant Software Designer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <copyright>© 2020 David J. Hudson</copyright>
+    <lastBuildDate>Wed, 22 Jan 2020 22:20:58 +0000</lastBuildDate>
+    
+	<atom:link href="https://dave-hudson.github.io/wiki/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Research Resources</title>
+      <link>https://dave-hudson.github.io/wiki/research-resources/</link>
+      <pubDate>Sun, 02 Feb 2020 22:10:00 +0000</pubDate>
+      
+      <guid>https://dave-hudson.github.io/wiki/research-resources/</guid>
+      <description> 2019 2018  </description>
+    </item>
+    
+  </channel>
+</rss>

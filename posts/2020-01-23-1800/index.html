@@ -27,7 +27,7 @@
             <div class="post">
                 <div class="header">
     <h1 class="site-title"><a href="https://dave-hudson.github.io/">Musings of an Itinerant Software Designer</a></h1>
-    <div class="site-description"><h2>Dave Hudson's Blog/Wiki</h2><nav class="nav">
+    <div class="site-description"><h2>Dave Hudson&rsquo;s Blog/Wiki</h2><nav class="nav">
             <div class="social">
                 <ul class="flat"><a href="https://github.com/dave-hudson" title="Github"><i data-feather="github"></i></a><a href="https://twitter.com/hashingitcom" title="Twitter"><i data-feather="twitter"></i></a><a href="https://linkedin.com/in/davejh" title="LinkedIn"><i data-feather="linkedin"></i></a><a href="/index.xml" title="RSS"><i data-feather="rss"></i></a></ul>
             </div>
@@ -96,15 +96,15 @@
 again, and being able to see how my words will properly be marked up and translated.  I guess it makes me remember
 what it is to be someone who does this day in and out (organising teams of engineers is fun, but I do miss building code
 sometimes).</p>
-<p>As with all new technical challenges, I wasn't expecting that setting up a site with Hugo and GitHub pages would be
+<p>As with all new technical challenges, I wasn&rsquo;t expecting that setting up a site with Hugo and GitHub pages would be
 completely straightforward, but I have been reminded that the quality of technical documentation on the web can be quite
-variable.  It's amazing how quickly software engineers get used to things that must drive everyone else slightly
+variable.  It&rsquo;s amazing how quickly software engineers get used to things that must drive everyone else slightly
 mad.</p>
-<p>As GitHub doesn't have a native integration with Hugo, there's a two-repo process involved in making changes to the site.
+<p>As GitHub doesn&rsquo;t have a native integration with Hugo, there&rsquo;s a two-repo process involved in making changes to the site.
 First, we have the repo with the source content, and then we have a separate one that has the rendered output from that
 content.</p>
 <p>Maybe I was a little tired, but the guidance on the
-<a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/">Host on GitHub</a> page wasn't very clear to me:</p>
+<a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/">Host on GitHub</a> page wasn&rsquo;t very clear to me:</p>
 <p><img src="./hugo-inst-1.png" alt=""></p>
 <p>It turns out that this was talking about the name of the Git repository that would be used to serve the site content,
 so if the site is going to be <code>http://foo.github.io</code> then the repo name has to be <code>foo.github.io</code> too!</p>
@@ -112,9 +112,9 @@ so if the site is going to be <code>http://foo.github.io</code> then the repo na
 misfortune to work with a codebase that included submodules and it was sufficiently traumatic for all concerned that we vowed
 never to do it again.  Anyway, this time the instructions were:</p>
 <p><img src="./hugo-inst-2.png" alt=""></p>
-<p>This little bit of magic makes the default <code>public</code> output directory map to the repo we just discussed, which wasn't
-completely obvious either.  It's worth noting that other advice online suggested a different approach in which the <code>public</code>
-directory is replaced with one that has the same name as the output repo.  It's this that I ended up doing.</p>
+<p>This little bit of magic makes the default <code>public</code> output directory map to the repo we just discussed, which wasn&rsquo;t
+completely obvious either.  It&rsquo;s worth noting that other advice online suggested a different approach in which the <code>public</code>
+directory is replaced with one that has the same name as the output repo.  It&rsquo;s this that I ended up doing.</p>
 <p>So far, so good, but I quickly found my submodule having a detached head, and needing this solution:
 <a href="https://stackoverflow.com/questions/18770545/why-is-my-git-submodule-head-detached-from-master">https://stackoverflow.com/questions/18770545/why-is-my-git-submodule-head-detached-from-master</a>.  A little more Git config
 editing, though, and the site was up and running.</p>
