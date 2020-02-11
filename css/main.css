@@ -76,7 +76,7 @@
     margin-left: 1rem;
     font-style: italic;
     font-size: 1.4rem;
-    font-family: Georgia,bitstream charter,serif;
+    font-family: Georgia, bitstream charter, serif;
     border-left: 3px solid;
     border-color: #a00;
     padding-left: 20px;
@@ -97,9 +97,8 @@
 .container h4,
 .container h5,
 .container h6 {
-    font-family: raleway,sans-serif;
+    font-family: raleway, sans-serif;
     line-height: 1.2;
-    color: #333;
     font-weight: 200;
 }
 
@@ -165,33 +164,32 @@
     justify-content: space-between;
 }
 
-.container .header .site-description nav {
+.container .header .site-description nav.social {
     margin: 0;
     padding: 0;
     border: none;
-    min-width: 50px;
-    margin-left: 15px;
 }
 
-.container .header .site-description nav ul svg {
+.container .header .site-description nav.social .icon {
+    float: left;
+}
+
+.container .header .site-description nav.social .icon svg {
     max-height: 15px;
+    vertical-align: middle;
 }
 
-.container .header nav {
+.container .header nav.site-menu {
     margin-top: 20px;
     border-top: 1px solid #f4f4f4;
 }
 
-.container .header nav ul,
-.container .header nav li {
+.container .header nav.site-menu ul {
     margin: 0;
-}
-
-.container .header nav ul.flat {
     padding: 0;
 }
 
-.container .header nav ul.flat li {
+.container .header nav.site-menu ul li {
     display: inline-block;
     list-style: none;
     margin-left: 0;
@@ -279,29 +277,11 @@
     background-color: #f9f2f4;
 }
 
-.container .list .posts .post {
-    display: table;
-    width: 100%;
-}
-
-.container .list .posts .post .meta {
-    display: table-cell;
-    text-align: right;
-    font-size: 0.725rem;
-    color: #999;
-    margin-left: 5px;
-}
-
-.container .post-tags a {
+.container .post nav.post-tags a {
     margin-right: 5px;
 }
 
-.container .post-tags .tags li {
-    margin-bottom: 0;
-    margin-top: 20px;
-}
-
-.container .post-tags .tags a {
+.container .post nav.post-tags .tags a {
     display: inline-block;
     border: 1px solid #a00;
     border-radius: 4px;
@@ -313,20 +293,30 @@
     margin: 0 1px;
 }
 
-.container .post-tags .tags ul {
+.container .post nav.post-tags .tags ul {
     padding-left: 15px;
     list-style: disc inside;
-}
-
-.container .post-tags .tags ul.flat {
     margin: 0;
     padding: 0;
 }
 
-.container .post-tags .tags ul.flat li {
+.container .post nav.post-tags .tags ul li {
+    margin-top: 20px;
     display: inline-block;
     list-style: none;
-    margin-left: 0;
+}
+
+.container .list .posts .post {
+    display: table;
+    width: 100%;
+}
+
+.container .list .posts .post .meta {
+    display: table-cell;
+    text-align: right;
+    font-size: 0.725rem;
+    color: #999;
+    margin-left: 5px;
 }
 
 .container .tag-cloud {

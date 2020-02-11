@@ -15,10 +15,9 @@
 <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:200,300" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" media="screen" href="https://dave-hudson.github.io/css/normalize.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="https://dave-hudson.github.io/css/main.css" /><link rel="stylesheet" type="text/css" href="https://dave-hudson.github.io/css/dark.css" media="(prefers-color-scheme: dark)" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://dave-hudson.github.io/css/main.css" /><link disabled id="dark-mode-theme" rel="stylesheet" type="text/css" href="https://dave-hudson.github.io/css/dark.css" />
 
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-    <script src="https://dave-hudson.github.io/js/main.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 </head>
 
@@ -27,15 +26,13 @@
         <div class="container">
             <div class="header">
     <h1 class="site-title"><a href="https://dave-hudson.github.io/">Musings of an Itinerant Software Designer</a></h1>
-    <div class="site-description"><h2>Dave Hudson&rsquo;s Blog/Wiki</h2><nav class="nav">
-            <div class="social">
-                <ul class="flat"><a href="https://github.com/dave-hudson" title="Github"><i data-feather="github"></i></a><a href="https://twitter.com/hashingitcom" title="Twitter"><i data-feather="twitter"></i></a><a href="https://linkedin.com/in/davejh" title="LinkedIn"><i data-feather="linkedin"></i></a><a href="/index.xml" title="RSS"><i data-feather="rss"></i></a></ul>
-            </div>
+    <div class="site-description"><h2>Dave Hudson&rsquo;s Blog/Wiki</h2><nav class="social"><div class="icon"><a href="https://github.com/dave-hudson" title="Github"><i data-feather="github"></i></a></div><div class="icon"><a href="https://twitter.com/hashingitcom" title="Twitter"><i data-feather="twitter"></i></a></div><div class="icon"><a href="https://linkedin.com/in/davejh" title="LinkedIn"><i data-feather="linkedin"></i></a></div><div class="icon"><a href="/index.xml" title="RSS"><i data-feather="rss"></i></a></div><div class="icon" id="dark-mode-moon"><a><i data-feather="moon"></i></a></div>
+            <div class="icon" id="dark-mode-sun"><a><i data-feather="sun"></i></a></div>
         </nav>
     </div>
 
-    <nav class="nav">
-        <ul class="flat">
+    <nav class="site-menu">
+        <ul>
             
             <li>
                 <a href="/">Recent Posts</a>
@@ -76,6 +73,8 @@
             <div class="footer">
     <div class="copyright"> © 2020 David J. Hudson </div>
 </div>
+
+<script src="https://dave-hudson.github.io/js/footer.js"></script>
 
 
 
