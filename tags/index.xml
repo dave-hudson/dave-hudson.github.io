@@ -7,17 +7,35 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <copyright>© 2020 David J. Hudson</copyright>
-    <lastBuildDate>Mon, 03 Feb 2020 06:42:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 11 Feb 2020 23:59:00 +0000</lastBuildDate>
     
 	<atom:link href="https://dave-hudson.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Dark Mode</title>
+      <link>https://dave-hudson.github.io/tags/Dark-Mode/</link>
+      <pubDate>Tue, 11 Feb 2020 23:59:00 +0000</pubDate>
+      
+      <guid>https://dave-hudson.github.io/tags/Dark-Mode/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Hugo</title>
       <link>https://dave-hudson.github.io/tags/Hugo/</link>
-      <pubDate>Mon, 03 Feb 2020 06:42:00 +0000</pubDate>
+      <pubDate>Tue, 11 Feb 2020 23:59:00 +0000</pubDate>
       
       <guid>https://dave-hudson.github.io/tags/Hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Light Mode</title>
+      <link>https://dave-hudson.github.io/tags/Light-Mode/</link>
+      <pubDate>Tue, 11 Feb 2020 23:59:00 +0000</pubDate>
+      
+      <guid>https://dave-hudson.github.io/tags/Light-Mode/</guid>
       <description></description>
     </item>
     

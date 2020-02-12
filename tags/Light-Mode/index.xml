@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Light Mode on Musings of an Itinerant Software Designer</title>
+    <link>https://dave-hudson.github.io/tags/Light-Mode/</link>
+    <description>Recent content in Light Mode on Musings of an Itinerant Software Designer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <copyright>© 2020 David J. Hudson</copyright>
+    <lastBuildDate>Tue, 11 Feb 2020 23:59:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://dave-hudson.github.io/tags/Light-Mode/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The inevitable battle between the light side and the dark side... of this site</title>
+      <link>https://dave-hudson.github.io/posts/2020-02-11-2359/</link>
+      <pubDate>Tue, 11 Feb 2020 23:59:00 +0000</pubDate>
+      
+      <guid>https://dave-hudson.github.io/posts/2020-02-11-2359/</guid>
+      <description>Recently, lots of platforms have added support for &amp;ldquo;Dark Mode&amp;rdquo;. Some of us are old enough to remember that there never used to be any such thing as &amp;ldquo;Light Mode&amp;rdquo; but I guess green screen terminals are a thing of the past. Anyway, I&amp;rsquo;d always set up this site to have light and dark mode CSS files, but there was no easy way to switch between them. I wanted to fix that.</description>
+    </item>
+    
+  </channel>
+</rss>
