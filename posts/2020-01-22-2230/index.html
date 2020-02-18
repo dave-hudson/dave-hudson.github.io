@@ -2,17 +2,17 @@
 <html>
     <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Episode IV: A new blog - Musings of an Itinerant Software Designer</title><meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:title" content="Episode IV: A new blog" />
-<meta property="og:description" content="Some thoughts on what I&#39;m trying to achieve with this site/blog/wiki." />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Episode IV: A new blog (or rebooting it anyway) - Dave Hudson</title><meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="Episode IV: A new blog (or rebooting it anyway)" />
+<meta property="og:description" content="Some thoughts on what I&#39;m trying to achieve with this site/blog." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://dave-hudson.github.io/posts/2020-01-22-2230/" />
 <meta property="article:published_time" content="2020-01-22T22:30:00+00:00" />
 <meta property="article:modified_time" content="2020-01-22T22:30:00+00:00" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Episode IV: A new blog"/>
-<meta name="twitter:description" content="Some thoughts on what I&#39;m trying to achieve with this site/blog/wiki."/>
-<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:200,300" rel="stylesheet">
+<meta name="twitter:title" content="Episode IV: A new blog (or rebooting it anyway)"/>
+<meta name="twitter:description" content="Some thoughts on what I&#39;m trying to achieve with this site/blog."/>
+<link href="https://fonts.googleapis.com/css?family=Open Sans:300,400,300italic,400italic,700bold|Lalezar:400,700bold" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" media="screen" href="https://dave-hudson.github.io/css/normalize.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="https://dave-hudson.github.io/css/main.css" /><link disabled id="dark-mode-theme" rel="stylesheet" type="text/css" href="https://dave-hudson.github.io/css/dark.css" />
@@ -24,12 +24,17 @@
     <body>
         <div class="container">
             <div class="header">
-    <h1 class="site-title"><a href="https://dave-hudson.github.io/">Musings of an Itinerant Software Designer</a></h1>
-    <div class="site-description"><h2>Dave Hudson&rsquo;s Blog/Wiki</h2><nav class="social"><div class="icon"><a href="https://github.com/dave-hudson" title="Github"><i data-feather="github"></i></a></div><div class="icon"><a href="https://twitter.com/hashingitcom" title="Twitter"><i data-feather="twitter"></i></a></div><div class="icon"><a href="https://linkedin.com/in/davejh" title="LinkedIn"><i data-feather="linkedin"></i></a></div><div class="icon"><a href="/index.xml" title="RSS"><i data-feather="rss"></i></a></div><div class="icon" id="dark-mode-moon"><a><i data-feather="moon"></i></a></div>
-            <div class="icon" id="dark-mode-sun"><a><i data-feather="sun"></i></a></div>
-        </nav>
-    </div>
-
+    <table class="site-title">
+        <tr>
+            <td>
+                <h1><a href="https://dave-hudson.github.io/">Dave Hudson</a></h1><h2>hashingit.com</h1></td>
+            <td>
+                <nav class="social"><div class="icon"><a href="/index.xml" title="RSS"><i data-feather="rss"></i></a></div><div class="icon"><a href="https://twitter.com/hashingitcom" title="Twitter"><i data-feather="twitter"></i></a></div><div class="icon"><a href="https://linkedin.com/in/davejh" title="LinkedIn"><i data-feather="linkedin"></i></a></div><div class="icon"><a href="https://github.com/dave-hudson" title="Github"><i data-feather="github"></i></a></div><div class="icon" id="dark-mode-moon"><a><i data-feather="moon"></i></a></div>
+                    <div class="icon" id="dark-mode-sun"><a><i data-feather="sun"></i></a></div>
+                </nav>
+            </td>
+        </tr>
+    </table>
     <nav class="site-menu">
         <ul>
             
@@ -58,30 +63,28 @@
 </div>
 
 
-            <div class="post">
-                <div class="post-header">
-                    <h1 class="title">Episode IV: A new blog</h1>
-                    <div class="meta">
-                        Posted at 2020-01-22 22:30 - 2 min read
-                    </div>
+            <div class="title">
+                <h1>Episode IV: A new blog (or rebooting it anyway)</h1>
+                <div class="meta">
+                    2020-01-22 22:30 - 3 min read
                 </div>
+            </div>
 
-                <nav class="post-tags">
+            <div class="post">
+                <nav class="tags">
                     
                         
-                            <div class="tags">
-                                <ul>
-                                    
-                                        <li><a href="/tags/Hugo">Hugo</a></li>
-                                    
-                                        <li><a href="/tags/Blog">Blog</a></li>
-                                    
-                                        <li><a href="/tags/Vim">Vim</a></li>
-                                    
-                                        <li><a href="/tags/MacVim">MacVim</a></li>
-                                    
-                                </ul>
-                            </div>
+                            <ul>
+                                
+                                    <li><a href="/tags/Hugo">Hugo</a></li>
+                                
+                                    <li><a href="/tags/Blog">Blog</a></li>
+                                
+                                    <li><a href="/tags/Vim">Vim</a></li>
+                                
+                                    <li><a href="/tags/MacVim">MacVim</a></li>
+                                
+                            </ul>
                         
                     
                 </nav>
@@ -89,16 +92,18 @@
                 <div class="markdown">
                     <p>A number of times in the past I&rsquo;ve found myself wanting to blog about some of the things I&rsquo;ve been reading about, thinking
 about, or working on.  Somehow, though, I&rsquo;ve never managed to make the habit stick.</p>
-<p>I think part of the problem is that I will always be a software developer at heart and prepackaged, WYSIWYG, tools that
-have limited flexibility never quite appealed to me (that and disliking the bloaty databases and slow rendering behind
-most of them).  The next time I did this I&rsquo;d already decided I needed to be able to do pretty much everything from a command
-line and with my trusty <a href="http://www.vim.org">vim</a> editor (actually in this case <a href="http://macvim.org">MacVim</a>).</p>
+<p>Back in 2014/2015 I did manage to get into quite a good habit of blogging about Bitcoin mining but then I ended up busy
+and the blogging fell aside.  I&rsquo;d also falled out of love with Joomla as a blogging platform.  I think part of the problem
+is that I will always be a software developer at heart and prepackaged, WYSIWYG, tools that have limited flexibility never
+quite appealed to me (that and disliking the bloaty databases and slow rendering behind most of them).  The next time I
+did this I&rsquo;d already decided I needed to be able to do pretty much everything from a command line and with my trusty
+<a href="http://www.vim.org">vim</a> editor (actually in this case <a href="http://macvim.org">MacVim</a>).</p>
 <p>The other problem is that I&rsquo;ve never been entirely satisfied with the idea of just writing a blog.  As a designer, I tend to
 think about how things evolve.  The process of creating something is all about changing some part of the world from how it
 is to some new form we&rsquo;d prefer it to have (even if these are just small changes).  A good blog captures a lot of the
 change occurring in someone&rsquo;s thinking but doesn&rsquo;t necessarily leave a clear view of how that works out.  I&rsquo;m going to try
-and do something a little different here, and try to capture both.  That&rsquo;s why there&rsquo;s both the blog and the wiki.</p>
-<p>I&rsquo;ve tried to do something similar previously when I was writing a C++ arbitrary precision maths library called
+and do something a little different here, and try to capture both.</p>
+<p>I tried something similar when I was writing a C++ arbitrary precision maths library called
 <a href="http://github.com/hashingitcom/c8/wiki">c8</a>.  In that instance, I used a GitHub wiki to host my blog notes
 as I was writing the code and evolving the design, keeping pace alongside the git commits.  While it worked, it was a
 pretty painful experience - maintaining all the links and metadata was just a lot of work.</p>
@@ -113,7 +118,7 @@ but it&rsquo;s only taken a few hours to find the tooling, read the docs, and ge
                 </div>
 
             <div class="footer">
-    <div class="copyright"> © 2020 David J. Hudson </div>
+    <div class="copyright"> © 2014-2020 David J. Hudson </div>
 </div>
 
 <script src="https://dave-hudson.github.io/js/footer.js"></script>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Reach for the ear defenders! - Dave Hudson</title><meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="Reach for the ear defenders!" />
+<meta property="og:description" content="Everyone knows that mining is a noisy task.  Did you realize just how noisy Bitcoin mining is though?  These aren&#39;t the noises you were looking for..." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://dave-hudson.github.io/posts/2014-05-24-0000/" />
+<meta property="article:published_time" content="2014-05-24T00:00:00+00:00" />
+<meta property="article:modified_time" content="2014-05-24T00:00:00+00:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Reach for the ear defenders!"/>
+<meta name="twitter:description" content="Everyone knows that mining is a noisy task.  Did you realize just how noisy Bitcoin mining is though?  These aren&#39;t the noises you were looking for..."/>
+<link href="https://fonts.googleapis.com/css?family=Open Sans:300,400,300italic,400italic,700bold|Lalezar:400,700bold" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="https://dave-hudson.github.io/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://dave-hudson.github.io/css/main.css" /><link disabled id="dark-mode-theme" rel="stylesheet" type="text/css" href="https://dave-hudson.github.io/css/dark.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+                <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+
+    <body>
+        <div class="container">
+            <div class="header">
+    <table class="site-title">
+        <tr>
+            <td>
+                <h1><a href="https://dave-hudson.github.io/">Dave Hudson</a></h1><h2>hashingit.com</h1></td>
+            <td>
+                <nav class="social"><div class="icon"><a href="/index.xml" title="RSS"><i data-feather="rss"></i></a></div><div class="icon"><a href="https://twitter.com/hashingitcom" title="Twitter"><i data-feather="twitter"></i></a></div><div class="icon"><a href="https://linkedin.com/in/davejh" title="LinkedIn"><i data-feather="linkedin"></i></a></div><div class="icon"><a href="https://github.com/dave-hudson" title="Github"><i data-feather="github"></i></a></div><div class="icon" id="dark-mode-moon"><a><i data-feather="moon"></i></a></div>
+                    <div class="icon" id="dark-mode-sun"><a><i data-feather="sun"></i></a></div>
+                </nav>
+            </td>
+        </tr>
+    </table>
+    <nav class="site-menu">
+        <ul>
+            
+                <li>
+                    <a href="/">Recent Posts</a>
+                </li>
+            
+                <li>
+                    <a href="/posts">All Posts</a>
+                </li>
+            
+                <li>
+                    <a href="/tags">Tags</a>
+                </li>
+            
+                <li>
+                    <a href="/wiki">Wiki</a>
+                </li>
+            
+                <li>
+                    <a href="/about">About</a>
+                </li>
+            
+        </ul>
+    </nav>
+</div>
+
+
+            <div class="title">
+                <h1>Reach for the ear defenders!</h1>
+                <div class="meta">
+                    2014-05-24 00:00 - 4 min read
+                </div>
+            </div>
+
+            <div class="post">
+                <nav class="tags">
+                    
+                        
+                            <ul>
+                                
+                                    <li><a href="/tags/Bitcoin">Bitcoin</a></li>
+                                
+                                    <li><a href="/tags/Bitcoin-mining">Bitcoin mining</a></li>
+                                
+                            </ul>
+                        
+                    
+                </nav>
+
+                <div class="markdown">
+                    <p>Everyone knows that mining is a noisy task.  Did you realize just how
+noisy Bitcoin mining is though?  These aren&rsquo;t the noises you were
+looking for&hellip;</p>
+<h2 id="high-noise-level-warning-signhigh-noise-levelsjpg"><img src="./high-noise-levels.jpg" alt="High noise level warning sign"></h2>
+<h2 id="a-simple-question">A Simple Question</h2>
+<p>An earlier article, &ldquo;<a href="index.php?option=com_content&amp;view=article&amp;id=27:hash-rate-headaches&amp;catid=8:analysis&amp;Itemid=110">Hash Rate Headaches</a>&quot;,
+looked at the statistics associated with Bitcoin mining and how it is a
+random Poisson Process.  It was pretty clear that the global hashing
+rate, and thus the Bitcoin mining difficulty, are subject to quite a lot
+of noise, but it wasn&rsquo;t completely obvious how much.</p>
+<p>One way to think about this is to ask a simple question: If the hash
+rate stayed constant for 52 difficulty changes (approximately 2 years)
+then what would happen to the Bitcoin difficulty during that time?</p>
+<p>Intuitively it seems that the difficulty shouldn&rsquo;t really change, but
+what are the statistics?  This seemed like an interesting thing to try to
+unravel so I built another simulator (it&rsquo;s another one written in C,
+please <a href="contact">contact me</a> if you&rsquo;d like to know more about it).</p>
+<h2 id="a-simple-mining-simulation">A Simple Mining Simulation</h2>
+<p>The simulation sets up a nomalized difficulty of 1 and then models each
+individual block being found.  Every 2016 blocks it then updates the the
+difficulty and the random mining continues.  It&rsquo;s not a perfect
+simulation because it ignores network latency or the possibility of
+orphaned blocks, but these have a very small impact.  Here&rsquo;s one run:</p>
+<p><img src="./simulation.png" alt="Chart showing noise spikes in the Bitcoin difficulty based on a simulation at a constant hash rate" title="Bitcoin difficulty simulated with constant hash rate"></p>
+<p>This is just one of many random simulation runs.  The difficulty changes
+are somewhat suprising.  On 7 occasions the difficulty increases by more
+than 5% and on 3 it reduces by more than 5% (over a much larger number
+of runs the number higher and lower are typically the same; in this
+instance if we move the threshold to 4% then it&rsquo;s 8 higher and 7
+lower).</p>
+<p>Our intuition about the difficulty basically staying the same isn&rsquo;t
+actually wrong, it&rsquo;s just that that&rsquo;s an average behaviour.  Run the
+simulations for long enough and everything levels out.  Each set of 2016
+blocks takes almost exactly 14 days to find.</p>
+<p>Doubters may question the simulation because negative difficulty changes
+have been so rare, but for most of the last 5 years the hashing rate has
+been climbing.  Even when it wasn&rsquo;t climbing at current levels though it
+was still generally increasing.  With this first simulation, as long
+as the hashing rate increases by more than 5% then we will rarely see a
+negative difficulty change.  By Bitcoin standards, 5% is a very gentle
+growth rate.  If we have 14 successive difficulty changes of 5% then we
+end up at 1.98x the original hashing rate.  That same 14 difficulty
+changes would take 186.7 days; more than 6 months.</p>
+<p>It&rsquo;s a little difficult to extract the increase in hashing rate from
+the current difficulty levels, but let&rsquo;s assume it has had still a
+steady exponential growth.  The steady rate would be 16.9% for the last 4
+months.  The assumption doesn&rsquo;t strictly hold as we&rsquo;re seeing a gradual
+slowdown but even with the simplification we can still see that the
+variance from our 16.9% is very similar to what the simulation shows:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Date</th>
+<th align="right">Difficulty</th>
+<th align="right">Change</th>
+<th align="right">Variance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">2014-05-24</td>
+<td align="right">10455720138</td>
+<td align="right">18.10%</td>
+<td align="right">1.20%</td>
+</tr>
+<tr>
+<td align="left">2014-05-12</td>
+<td align="right">8853416309</td>
+<td align="right">10.66%</td>
+<td align="right">-6.24%</td>
+</tr>
+<tr>
+<td align="left">2014-04-29</td>
+<td align="right">8000872136</td>
+<td align="right">14.64%</td>
+<td align="right">-2.26%</td>
+</tr>
+<tr>
+<td align="left">2014-04-17</td>
+<td align="right">6978842650</td>
+<td align="right">14.04%</td>
+<td align="right">-2.86%</td>
+</tr>
+<tr>
+<td align="left">2014-04-05</td>
+<td align="right">6119726089</td>
+<td align="right">22.23%</td>
+<td align="right">5.33%</td>
+</tr>
+<tr>
+<td align="left">2014-03-24</td>
+<td align="right">5006860589</td>
+<td align="right">17.80%</td>
+<td align="right">0.90%</td>
+</tr>
+<tr>
+<td align="left">2014-03-13</td>
+<td align="right">4250217920</td>
+<td align="right">11.39%</td>
+<td align="right">-5.21%</td>
+</tr>
+<tr>
+<td align="left">2014-02-28</td>
+<td align="right">3815723799</td>
+<td align="right">21.92%</td>
+<td align="right">5.02%</td>
+</tr>
+<tr>
+<td align="left">2014-02-17</td>
+<td align="right">3129573175</td>
+<td align="right">19.39%</td>
+<td align="right">2.49%</td>
+</tr>
+<tr>
+<td align="left">2014-02-05</td>
+<td align="right">2621404453</td>
+<td align="right">19.49%</td>
+<td align="right">2.59%</td>
+</tr>
+<tr>
+<td align="left">2014-01-24</td>
+<td align="right">2193847870</td>
+<td align="right">22.59%</td>
+<td align="right">5.69%</td>
+</tr>
+</tbody>
+</table>
+<p>The variations here are slightly larger than we would expect for just
+our random noise but the rate at which hashing is added to the network
+can&rsquo;t be completely steady.  The behaviour is very close to what the
+statistical model predicts.</p>
+<p>One simulation isn&rsquo;t anywhere near sufficient of course.  As we compare
+more trials though the behaviour is essentially the same.  Here are 2
+different simulation runs overlaid on top of our original one:</p>
+<p><img src="./simulation_x3.png" alt="simulation x3"></p>
+<p>The good news for miners is that for every spike that goes up there&rsquo;s
+one that goes down, but the cries of despair from the latest 18.10%
+difficulty change are already echoing around the Internet.  Unlike space,
+where no-one can hear your scream, it seems that in Cyberspace a little
+noise can sometimes be very loud indeed!</p>
+<hr>
+<h2 id="related-articles">Related Articles</h2>
+<ul>
+<li><a href="/posts/2014-05-20-0000/">Hash rate headaches (2014-05-20)</a></li>
+</ul>
+
+                </div>
+                </div>
+
+            <div class="footer">
+    <div class="copyright"> © 2014-2020 David J. Hudson </div>
+</div>
+
+<script src="https://dave-hudson.github.io/js/footer.js"></script>
+
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-123-45', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+<script>feather.replace()</script>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bitcoin energy usage on Dave Hudson</title>
+    <link>https://dave-hudson.github.io/tags/Bitcoin-energy-usage/</link>
+    <description>Recent content in Bitcoin energy usage on Dave Hudson</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <copyright>© 2014-2020 David J. Hudson</copyright>
+    <lastBuildDate>Mon, 28 Apr 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://dave-hudson.github.io/tags/Bitcoin-energy-usage/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Megawatts of mining</title>
+      <link>https://dave-hudson.github.io/posts/2014-04-28-0000/</link>
+      <pubDate>Mon, 28 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://dave-hudson.github.io/posts/2014-04-28-0000/</guid>
+      <description>One of the more common questions asked when people think about the scale of Bitcoin mining is just how much electricity is being spent supporting the worldwide hashing activities. The question becomes more interesting once it&amp;rsquo;s realized that hashing performs no useful function other than to support mining.
+While the green footprint is of interest to many, the electricity costs turn out to play a much more interesting role in predicting future mining behaviour.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,34 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Musings of an Itinerant Software Designer</title>
+    <title>Dave Hudson</title>
     <link>https://dave-hudson.github.io/</link>
-    <description>Recent content on Musings of an Itinerant Software Designer</description>
+    <description>Recent content on Dave Hudson</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <copyright>© 2020 David J. Hudson</copyright>
-    <lastBuildDate>Tue, 11 Feb 2020 23:59:00 +0000</lastBuildDate>
+    <copyright>© 2014-2020 David J. Hudson</copyright>
+    <lastBuildDate>Tue, 18 Feb 2020 18:30:00 +0000</lastBuildDate>
     
 	<atom:link href="https://dave-hudson.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>The inevitable battle between the light side and the dark side... of this site</title>
-      <link>https://dave-hudson.github.io/posts/2020-02-11-2359/</link>
-      <pubDate>Tue, 11 Feb 2020 23:59:00 +0000</pubDate>
+      <title>Importing the old hashingit.com site contents</title>
+      <link>https://dave-hudson.github.io/posts/2020-02-18-1830/</link>
+      <pubDate>Tue, 18 Feb 2020 18:30:00 +0000</pubDate>
       
-      <guid>https://dave-hudson.github.io/posts/2020-02-11-2359/</guid>
-      <description>Recently, lots of platforms have added support for &amp;ldquo;Dark Mode&amp;rdquo;. Some of us are old enough to remember that there never used to be any such thing as &amp;ldquo;Light Mode&amp;rdquo; but I guess green screen terminals are a thing of the past. Anyway, I&amp;rsquo;d always set up this site to have light and dark mode CSS files, but there was no easy way to switch between them. I wanted to fix that.</description>
-    </item>
-    
-    <item>
-      <title>Creating the wiki on this site</title>
-      <link>https://dave-hudson.github.io/posts/2020-02-03-0642/</link>
-      <pubDate>Mon, 03 Feb 2020 06:42:00 +0000</pubDate>
-      
-      <guid>https://dave-hudson.github.io/posts/2020-02-03-0642/</guid>
-      <description>When I started this site I always planned that it would help me organise information, not just be a blog. These blog notes are just my stream of conciousness, with a primary purpose being to think about how and why the real content is managed.
-One of the major things I wanted to organise is a large collection of research papers that I&amp;rsquo;ve been accumulating ever since I first got an Internet connection (1992).</description>
+      <guid>https://dave-hudson.github.io/posts/2020-02-18-1830/</guid>
+      <description>When I was blogging back in 2014/2015 I used Joomla to create the hashingit.com content. I really did fall out of love with Joomla though. It was slow to render things, and the site footprint was huge. Despite all that, when I decided to start this new site I didn&amp;rsquo;t want to lose that content, so decided to import all the old content.
+While extracting the contents was fairly easy, converting it all to markdown and correcting errors was something I&amp;rsquo;m not in any great hurry to do again.</description>
     </item>
     
     <item>
@@ -51,42 +42,281 @@ While my earlier efforts related to something a little more complex, one of the 
     </item>
     
     <item>
-      <title>Making this site work for real (AKA no more Git submodules)</title>
-      <link>https://dave-hudson.github.io/posts/2020-01-24-2140/</link>
-      <pubDate>Fri, 24 Jan 2020 21:40:00 +0000</pubDate>
-      
-      <guid>https://dave-hudson.github.io/posts/2020-01-24-2140/</guid>
-      <description>So I think I typed too soon yesterday. Git submodules may be tolerable to some people but after another hour wasted on them today, it&amp;rsquo;s time to admit defeat and find another path. It turns out that putting the publication directory at the same level as the source directory for this site is a far simpler way to make things work. All it takes is putting ../ in publishDir and we&amp;rsquo;re ok :-)</description>
-    </item>
-    
-    <item>
-      <title>Making this site work</title>
-      <link>https://dave-hudson.github.io/posts/2020-01-23-1800/</link>
-      <pubDate>Thu, 23 Jan 2020 18:30:00 +0000</pubDate>
-      
-      <guid>https://dave-hudson.github.io/posts/2020-01-23-1800/</guid>
-      <description>One of the more fun things about setting up this site (or at least fun for me!) is getting to have vim open again, and being able to see how my words will properly be marked up and translated. I guess it makes me remember what it is to be someone who does this day in and out (organising teams of engineers is fun, but I do miss building code sometimes).</description>
-    </item>
-    
-    <item>
-      <title>Episode IV: A new blog</title>
+      <title>Episode IV: A new blog (or rebooting it anyway)</title>
       <link>https://dave-hudson.github.io/posts/2020-01-22-2230/</link>
       <pubDate>Wed, 22 Jan 2020 22:30:00 +0000</pubDate>
       
       <guid>https://dave-hudson.github.io/posts/2020-01-22-2230/</guid>
       <description>A number of times in the past I&amp;rsquo;ve found myself wanting to blog about some of the things I&amp;rsquo;ve been reading about, thinking about, or working on. Somehow, though, I&amp;rsquo;ve never managed to make the habit stick.
-I think part of the problem is that I will always be a software developer at heart and prepackaged, WYSIWYG, tools that have limited flexibility never quite appealed to me (that and disliking the bloaty databases and slow rendering behind most of them).</description>
+Back in 2014/2015 I did manage to get into quite a good habit of blogging about Bitcoin mining but then I ended up busy and the blogging fell aside. I&amp;rsquo;d also falled out of love with Joomla as a blogging platform.</description>
     </item>
     
     <item>
-      <title>About Dave Hudson</title>
+      <title>About Me</title>
       <link>https://dave-hudson.github.io/about/</link>
       <pubDate>Wed, 22 Jan 2020 21:09:58 +0000</pubDate>
       
       <guid>https://dave-hudson.github.io/about/</guid>
-      <description>Dave (apparently always pictured with a drink!)   Hello, good morning/afternoon/evening* and welcome! (*please delete as appropriate)
+      <description>Hello, good morning/afternoon/evening* and welcome! (*please delete as appropriate)
 I&amp;rsquo;m an unrepentant geek who loves all things engineering, scientific or otherwise techie. I would say I love maths too, but I should probably leave that to the experts :-)
-I&amp;rsquo;ve been playing with computers and writing software since I was 9 which is way more years than I care to think about.</description>
+I&amp;rsquo;ve been playing with computers and writing software since I was 9 which is way more years than I care to think about. In that time I&amp;rsquo;ve had the pleasure of working on everything from massive scale embedded systems (IoT before anyone called it that) to mainframes, and now to decentralised systems.</description>
+    </item>
+    
+    <item>
+      <title>A Market For Bitcoin Transaction Fees?</title>
+      <link>https://dave-hudson.github.io/posts/2016-02-03-0000/</link>
+      <pubDate>Wed, 03 Feb 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://dave-hudson.github.io/posts/2016-02-03-0000/</guid>
+      <description>Most participants in the ongoing Bitcoin block size debates have a point of agreement; that a shortage of block space should have an effect on transaction fees. Arguments aside, then, let&amp;rsquo;s see what has actually been happening. Are fees going through the roof? Are miners going to be celebrating a potential offset to the block reward halving that looms in July 2016? The results seem a little surprising!
+Rewards for a Bitcoin miner Bitcoin miners earn their per-block rewards in two ways.</description>
+    </item>
+    
+    <item>
+      <title>Behold mighty exahash, hammer of the blocks!</title>
+      <link>https://dave-hudson.github.io/posts/2016-01-05-0000/</link>
+      <pubDate>Tue, 05 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://dave-hudson.github.io/posts/2016-01-05-0000/</guid>
+      <description>&amp;ldquo;Exahash&amp;rdquo; sounds like it could well have been the hammer of the Norse Gods of old as it defeated all in battle. In the Bitcoin world of early 2016, however, a mining network that achieves one exahash per second will soon become part of the new folklore. It will, as others before it, quantitatively destroy all earlier incarnations of itself.
+Common wisdom that this ever-increasing hash rate makes the Bitcoin network continually stronger, but what does that strength mean?</description>
+    </item>
+    
+    <item>
+      <title>Blockchain, what art thou?</title>
+      <link>https://dave-hudson.github.io/posts/2015-12-30-0000/</link>
+      <pubDate>Wed, 30 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://dave-hudson.github.io/posts/2015-12-30-0000/</guid>
+      <description>As we approach 2016 there seem to be endless discussions about &amp;ldquo;blockchain&amp;rdquo;. It&amp;rsquo;s a term that is ever-more frequently cited in even mainstream journalism, while in the fintech space alone there are a slew of would-be suppliers and would-be users claiming that &amp;ldquo;blockchain&amp;rdquo; will revolutionize any number of applications. This now-common usage suggests it must be something precisely defined and well understood, but this seems to be more a matter of mantra than comprehension.</description>
+    </item>
+    
+    <item>
+      <title>Bitcoin traffic bulletin (redux)</title>
+      <link>https://dave-hudson.github.io/posts/2015-12-20-0000/</link>
+      <pubDate>Sun, 20 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://dave-hudson.github.io/posts/2015-12-20-0000/</guid>
+      <description>In November 2014 I wrote an article, &amp;ldquo;Bitcoin traffic bulletin&amp;rdquo; that sought to look at what happens if the Bitcoin network started to get congested. Since then there has been considerable debate about the Bitcoin block size and there are now many proposals to increase block capacity.
+The original asked questions about what it would mean to reach, say, 50% block capacity but events have moved on and we&amp;rsquo;re at nearer to 60% at the time of writing.</description>
+    </item>
+    
+    <item>
+      <title>Waiting for blocks (revised)</title>
+      <link>https://dave-hudson.github.io/posts/2015-12-19-0000/</link>
+      <pubDate>Sat, 19 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://dave-hudson.github.io/posts/2015-12-19-0000/</guid>
+      <description>Bitcoin blocks take 10 minutes to find don&amp;rsquo;t they? Well, actually no they don&amp;rsquo;t. Sometimes they can be found really quickly, but other times they can take a very long time. Just to make things confusing, the gaps between blocks can change depending on whether the hashing network is stable, expanding or contracting. What if we need 6 blocks (to get 6 confirmations)?
+So what should we expect? What happens during hashing growth phases, and what would happen if the network were to lose large amounts of hashing capacity?</description>
+    </item>
+    
+    <item>
+      <title>Waiting for blocks</title>
+      <link>https://dave-hudson.github.io/posts/2015-02-06-0000/</link>
+      <pubDate>Fri, 06 Feb 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://dave-hudson.github.io/posts/2015-02-06-0000/</guid>
+      <description>[Note 2015-12-19: This article is the original &amp;quot;Waiting for blocks&amp;quot; but had a problem with some of the probability statistics. A revised, authoritative, version can be found as &amp;ldquo;Waiting for blocks (revised)&amp;quot;. Please read that one; this one is retained purely for historical information!]
+Bitcoin blocks take 10 minutes to find don&amp;rsquo;t they? Well, actually no they don&amp;rsquo;t. Sometimes they can be found really quickly, but other times they can take a very long time.</description>
+    </item>
+    
+    <item>
+      <title>The myth of the megabyte Bitcoin block</title>
+      <link>https://dave-hudson.github.io/posts/2015-01-18-0000/</link>
+      <pubDate>Sun, 18 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://dave-hudson.github.io/posts/2015-01-18-0000/</guid>
+      <description>It&amp;rsquo;s well described how Bitcoin has a one Megabyte block limit; it&amp;rsquo;s defined in the Bitcoin Core source code. The knowledge of that 1 Mbyte limit has even served in some of my analysis such as &amp;ldquo;The future of Bitcoin transaction fees?&amp;quot;, &amp;ldquo;Bitcoin traffic bulletin&amp;rdquo; and &amp;ldquo;7 transactions per second? Really?&amp;quot;. Turns out that I was wrong; in practice this limit is actually quite a lot smaller!
+A puzzle Back in &amp;ldquo;Bitcoin traffic bulletin&amp;rdquo; we saw how first transaction confirmation times were highly dependent on how full mined blocks were.</description>
+    </item>
+    
+    <item>
+      <title>Pool wars?</title>
+      <link>https://dave-hudson.github.io/posts/2014-12-05-0000/</link>
+      <pubDate>Fri, 05 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://dave-hudson.github.io/posts/2014-12-05-0000/</guid>
+      <description>A few days ago, Ittay Eyal published an intriguiging paper, &amp;ldquo;The Miner&amp;rsquo;s Dilemma&amp;quot;. It describes an attack where an open mining pool may be attacked using block withholding. Given that most Bitcoin mining is managed by open mining pools then it seems like it ought to raise a few eyebrows (perhaps more than it has already). Just how does this attack work though, who wins, who loses and by how much?</description>
+    </item>
+    
+    <item>
+      <title>The future of Bitcoin transaction fees?</title>
+      <link>https://dave-hudson.github.io/posts/2014-11-12-0000/</link>
+      <pubDate>Wed, 12 Nov 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://dave-hudson.github.io/posts/2014-11-12-0000/</guid>
+      <description>Bitcoin is often touted as having substantially lower fees associated with using it than most other financial systems, but fees and costs are very different things. The reality of things in the Bitcoin ecosystem is rarely simple, and this one is no exception. What then are the actual numbers, where are they heading and what are the consequences?
+Transaction fees Probably the biggest challenge in looking at the costs of transactions is to work out what that actually means.</description>
+    </item>
+    
+    <item>
+      <title>Bitcoin traffic bulletin</title>
+      <link>https://dave-hudson.github.io/posts/2014-11-11-0000/</link>
+      <pubDate>Tue, 11 Nov 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://dave-hudson.github.io/posts/2014-11-11-0000/</guid>
+      <description>[Note 2015-12-20: This article is the original &amp;ldquo;Bitcoin traffic bulletin&amp;rdquo; but has a minor problem with some of the probability statistics. A revised, authoritative, version with significantly updated commentary can be found as &amp;ldquo;Bitcoin traffic bulletin (redux)&amp;quot;. Please read that one; this one is retained purely for historical information!]
+The Bitcoin network is currently running at around 30% of its maximum capacity, but what does that actually mean to its users?</description>
+    </item>
+    
+    <item>
+      <title>7 transactions per second?  Really?</title>
+      <link>https://dave-hudson.github.io/posts/2014-11-02-0000/</link>
+      <pubDate>Sun, 02 Nov 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://dave-hudson.github.io/posts/2014-11-02-0000/</guid>
+      <description>The general wisdom seems to be that the Bitcoin network can currently sustain 7 transactions per second. Bitcoin advocates often worry that this will be a limiting factor when credit card processing networks can handle several orders of magnitude more transactions in the same time, but what are the actual statistics related to Bitcoin transaction processing? Our Bitcoin mine train may not be seeing its hashing engines running away quite as much as they were earlier this year, but are we heading for other problems instead?</description>
+    </item>
+    
+    <item>
+      <title>The gambler&#39;s guide to Bitcoin mining</title>
+      <link>https://dave-hudson.github.io/posts/2014-06-30-0000/</link>
+      <pubDate>Mon, 30 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://dave-hudson.github.io/posts/2014-06-30-0000/</guid>
+      <description>What&amp;rsquo;s the best way to get a return when we mine Bitcoins? Should we mine on our own, mine with a small pool or mine with a large pool? How much difference does it really make?
+Whether we want to be a gambler or an investor is really a question of how much risk we&amp;rsquo;re prepared to take, but what are those risks and what are the odds of success?</description>
+    </item>
+    
+    <item>
+      <title>51% of the network?</title>
+      <link>https://dave-hudson.github.io/posts/2014-06-23-0000/</link>
+      <pubDate>Mon, 23 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://dave-hudson.github.io/posts/2014-06-23-0000/</guid>
+      <description>Every so often a Bitcoin mining pool is reported to manage more than half of the Bitcoin hashing capacity, exposing the spectre of a so called &amp;ldquo;51% attack&amp;rdquo;. Ignoring the perceived threat though, can we really trust the statistics? We&amp;rsquo;ve seen, previously, that Bitcoin mining statistics aren&amp;rsquo;t quite as obvious as we might hope, so what do they look like in these cases?
+A day in the life of a 50% mining pool Let&amp;rsquo;s look at what happens when a Bitcoin mining pool has 50% of the actual global hash rate and see what the estimated statistics look like for 24 hours.</description>
+    </item>
+    
+    <item>
+      <title>Finding 2016 blocks</title>
+      <link>https://dave-hudson.github.io/posts/2014-06-15-0000/</link>
+      <pubDate>Sun, 15 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://dave-hudson.github.io/posts/2014-06-15-0000/</guid>
+      <description>2016 blocks is the magic number that corresponds to each change in difficulty within the Bitcoin network. Nominally it should take 14 days to find this many blocks, but how long does it really take?
+The simple case In an earlier article, &amp;ldquo;Hash rate headaches&amp;quot;, I looked at the probabilities of finding a particular number of blocks in a given time. This time around the goal is to work out how long it takes to find 2016 blocks.</description>
+    </item>
+    
+    <item>
+      <title>Lies, damned lies and Bitcoin difficulties</title>
+      <link>https://dave-hudson.github.io/posts/2014-06-10-0000/</link>
+      <pubDate>Tue, 10 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://dave-hudson.github.io/posts/2014-06-10-0000/</guid>
+      <description>Bitcoin difficulty and hash rate statistics should be considered an illness. The symptoms include anxiety, depression, sleeplessness and paranoia. Bitcoin miners follow their every movement, rejoicing at smaller-than-expected difficulty changes and collectively dismaying when things go the other way. Authoritative-looking charts have people puzzling about why things are so erratic and chasing non-existent mining conspiracies. The truth is out there...
+Difficulty charts When we start to think about mining, difficulty charts are not far away.</description>
+    </item>
+    
+    <item>
+      <title>Strange spikes revisited!</title>
+      <link>https://dave-hudson.github.io/posts/2014-06-05-0000/</link>
+      <pubDate>Thu, 05 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://dave-hudson.github.io/posts/2014-06-05-0000/</guid>
+      <description>About 3 months ago I looked at how the BTC price seems to spike up approximately every 7 months. It seems to be happening again!
+Over the last couple of weeks the BTC price has reversed its earlier falls and has yet again started to jump back up again. The timing is pretty-much consistent with previous spikes.
+Let&amp;rsquo;s look at the graph (plotted on a logarithmic Y axis):
+The trend of high points in the graph (red line) shows another theme park ride: The Bitcoin runaway roller coaster.</description>
+    </item>
+    
+    <item>
+      <title>Reach for the ear defenders!</title>
+      <link>https://dave-hudson.github.io/posts/2014-05-24-0000/</link>
+      <pubDate>Sat, 24 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://dave-hudson.github.io/posts/2014-05-24-0000/</guid>
+      <description>Everyone knows that mining is a noisy task. Did you realize just how noisy Bitcoin mining is though? These aren&amp;rsquo;t the noises you were looking for&amp;hellip;
+ A Simple Question An earlier article, &amp;ldquo;Hash Rate Headaches&amp;quot;, looked at the statistics associated with Bitcoin mining and how it is a random Poisson Process. It was pretty clear that the global hashing rate, and thus the Bitcoin mining difficulty, are subject to quite a lot of noise, but it wasn&amp;rsquo;t completely obvious how much.</description>
+    </item>
+    
+    <item>
+      <title>Hash rate headaches</title>
+      <link>https://dave-hudson.github.io/posts/2014-05-20-0000/</link>
+      <pubDate>Tue, 20 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://dave-hudson.github.io/posts/2014-05-20-0000/</guid>
+      <description>One of the more infuriating challenges when trying to do any sort of analysis of Bitcoin mining is to understand the current world-wide hashing rate and how this affects difficulty changes. The very best &amp;ldquo;live update&amp;rdquo; websites seem to show the hash rate being all over the place. Large spikes occur frequently and it appears that huge amounts of hashing capacity have either come online or gone offline. This explanation may appeal to conspiracy theorists, and will sometimes be the real cause, but there is a much more mundane reason most of the time (but nontheless surprising).</description>
+    </item>
+    
+    <item>
+      <title>Bitcoins: Made in China</title>
+      <link>https://dave-hudson.github.io/posts/2014-05-19-0000/</link>
+      <pubDate>Mon, 19 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://dave-hudson.github.io/posts/2014-05-19-0000/</guid>
+      <description>I was just pointed at an article over on bitcoinmagazine.com. It (quite independently) reaches many of the same conclusions that I&amp;rsquo;ve been reaching for the last few months. I highly recommend it: http://bitcoinmagazine.com/12914/bitcoins-made-in-china/.
+As the web has a habit of breaking over time, there&amp;rsquo;s a PDF of this too: Bitcoins-Made-in-China.pdf.</description>
+    </item>
+    
+    <item>
+      <title>Prisoner&#39;s dilemmas?</title>
+      <link>https://dave-hudson.github.io/posts/2014-04-30-0000/</link>
+      <pubDate>Wed, 30 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://dave-hudson.github.io/posts/2014-04-30-0000/</guid>
+      <description>Over the last few months I&amp;rsquo;ve written about patterns and trends in Bitcoin mining while I&amp;rsquo;ve been trying to predict how things will evolve. More recently I&amp;rsquo;ve built simulations that attempt to model how various trends will affect the mining network. Irrespective of the &amp;ldquo;improvements&amp;rdquo;, be they improved hashing rates, lower power consumption per hash, lower price per kWh of electricity or higher BTC price, one thing is inescapable: The Bitcoin difficulty increases quickly absorb everything thrown at them in order to maintain the system&amp;rsquo;s block finding rate.</description>
+    </item>
+    
+    <item>
+      <title>Megawatts of mining</title>
+      <link>https://dave-hudson.github.io/posts/2014-04-28-0000/</link>
+      <pubDate>Mon, 28 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://dave-hudson.github.io/posts/2014-04-28-0000/</guid>
+      <description>One of the more common questions asked when people think about the scale of Bitcoin mining is just how much electricity is being spent supporting the worldwide hashing activities. The question becomes more interesting once it&amp;rsquo;s realized that hashing performs no useful function other than to support mining.
+While the green footprint is of interest to many, the electricity costs turn out to play a much more interesting role in predicting future mining behaviour.</description>
+    </item>
+    
+    <item>
+      <title>The rewards for a Bitcoin miner</title>
+      <link>https://dave-hudson.github.io/posts/2014-04-03-0000/</link>
+      <pubDate>Thu, 03 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://dave-hudson.github.io/posts/2014-04-03-0000/</guid>
+      <description>Bitcoin mining can be a very profitable activity. It&amp;rsquo;s good that it is beause Bitcoin, as a system, only works because of the mining activity; it&amp;rsquo;s the mining that ensures the transactions actually take place. Just how much money does it generate though and does this help us make any predictions for the future?
+Like mining any other finite resource, Bitcoin mining gets harder over time and requires more investment to mine profitably.</description>
+    </item>
+    
+    <item>
+      <title>Where next for Bitcoin mining ASICs?</title>
+      <link>https://dave-hudson.github.io/posts/2014-03-23-0000/</link>
+      <pubDate>Sun, 23 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://dave-hudson.github.io/posts/2014-03-23-0000/</guid>
+      <description>ASIC mining is now the norm for Bitcoin, and 28 nm ASICs are now becoming the mainstream replacing the 65 nm, or even 110 nm, designs of a year ago. Bitcoin ASICs have leapfrogged several integrated circuit (IC) technologies in a way that&amp;rsquo;s rarely been seen before and at an almost unprecedented rate of progress.
+How have things been able to move so fast, how much further can this go, and what might we expect from new designs?</description>
+    </item>
+    
+    <item>
+      <title>Chickens And Eggs?</title>
+      <link>https://dave-hudson.github.io/posts/2014-03-17-0000/</link>
+      <pubDate>Mon, 17 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://dave-hudson.github.io/posts/2014-03-17-0000/</guid>
+      <description>Which comes first: The miners or the money? Much as the old question of &amp;ldquo;Which came first: The chicken or the egg?&amp;rdquo; there appears to have been a lot of debate about whether the price of Bitcoins is a result of mining activity or whether mining activity is the result of the price of Bitcoins.
+The generally-held belief is that as the value of Bitcoins has increased there has been more interest in Bitcoins and this has in turn driven miners to mine, but is it really this simple?</description>
+    </item>
+    
+    <item>
+      <title>Strange spikes in the Bitcoin price?</title>
+      <link>https://dave-hudson.github.io/posts/2014-03-12-0000/</link>
+      <pubDate>Wed, 12 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://dave-hudson.github.io/posts/2014-03-12-0000/</guid>
+      <description>There&amp;rsquo;s something odd about the fluctuations in the price of Bitcoins. The data shows a set of spikes when the price jumps up and then falls back somewhat and levels out. This wouldn&amp;rsquo;t be so unusual if the spikes occurred intermittently but in the case of Bitcoins the spikes happen with a very surprising regularity!
+Let&amp;rsquo;s look at the graph:
+The first thing to note is that the graph is plotted with a logarithmic Y axis so each step indicates a price point ten times larger than the one below.</description>
+    </item>
+    
+    <item>
+      <title>The Bitcoin runaway mine train</title>
+      <link>https://dave-hudson.github.io/posts/2014-03-09-0000/</link>
+      <pubDate>Sun, 09 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://dave-hudson.github.io/posts/2014-03-09-0000/</guid>
+      <description>Bitcoin mining is seemingly unique. There has probably never been any technology problem that has triggered such sustained growth and it may be a very long time before we see another one. A convergence of the scalable Bitcoin protocol design, readily available technology, money and mining incentives have accelerated this particular mine train in a truly explosive way. Let&amp;rsquo;s look at the trends and what they suggest for future mining activities.</description>
     </item>
     
   </channel>

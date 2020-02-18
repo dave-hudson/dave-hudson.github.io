@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Behold mighty exahash, hammer of the blocks! - Dave Hudson</title><meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="Behold mighty exahash, hammer of the blocks!" />
+<meta property="og:description" content="&#34;Exahash&#34; sounds like it could well have been the hammer of the Norse Gods of old as it defeated all in battle.  In the Bitcoin world of early 2016, however, a mining network that achieves one exahash per second will soon become part of the new folklore.  It will, as others before it, quantitatively destroy all earlier incarnations of itself.  Common wisdom that this ever-increasing hash rate makes the Bitcoin network continually stronger, but what does that strength mean?  What is it stronger than?  What guarantees does it offer? The answer, as so often, is perhaps less clear-cut than we might first imagine!" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://dave-hudson.github.io/posts/2016-01-05-0000/" />
+<meta property="article:published_time" content="2016-01-05T00:00:00+00:00" />
+<meta property="article:modified_time" content="2016-01-05T00:00:00+00:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Behold mighty exahash, hammer of the blocks!"/>
+<meta name="twitter:description" content="&#34;Exahash&#34; sounds like it could well have been the hammer of the Norse Gods of old as it defeated all in battle.  In the Bitcoin world of early 2016, however, a mining network that achieves one exahash per second will soon become part of the new folklore.  It will, as others before it, quantitatively destroy all earlier incarnations of itself.  Common wisdom that this ever-increasing hash rate makes the Bitcoin network continually stronger, but what does that strength mean?  What is it stronger than?  What guarantees does it offer? The answer, as so often, is perhaps less clear-cut than we might first imagine!"/>
+<link href="https://fonts.googleapis.com/css?family=Open Sans:300,400,300italic,400italic,700bold|Lalezar:400,700bold" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="https://dave-hudson.github.io/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://dave-hudson.github.io/css/main.css" /><link disabled id="dark-mode-theme" rel="stylesheet" type="text/css" href="https://dave-hudson.github.io/css/dark.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+                <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+
+    <body>
+        <div class="container">
+            <div class="header">
+    <table class="site-title">
+        <tr>
+            <td>
+                <h1><a href="https://dave-hudson.github.io/">Dave Hudson</a></h1><h2>hashingit.com</h1></td>
+            <td>
+                <nav class="social"><div class="icon"><a href="/index.xml" title="RSS"><i data-feather="rss"></i></a></div><div class="icon"><a href="https://twitter.com/hashingitcom" title="Twitter"><i data-feather="twitter"></i></a></div><div class="icon"><a href="https://linkedin.com/in/davejh" title="LinkedIn"><i data-feather="linkedin"></i></a></div><div class="icon"><a href="https://github.com/dave-hudson" title="Github"><i data-feather="github"></i></a></div><div class="icon" id="dark-mode-moon"><a><i data-feather="moon"></i></a></div>
+                    <div class="icon" id="dark-mode-sun"><a><i data-feather="sun"></i></a></div>
+                </nav>
+            </td>
+        </tr>
+    </table>
+    <nav class="site-menu">
+        <ul>
+            
+                <li>
+                    <a href="/">Recent Posts</a>
+                </li>
+            
+                <li>
+                    <a href="/posts">All Posts</a>
+                </li>
+            
+                <li>
+                    <a href="/tags">Tags</a>
+                </li>
+            
+                <li>
+                    <a href="/wiki">Wiki</a>
+                </li>
+            
+                <li>
+                    <a href="/about">About</a>
+                </li>
+            
+        </ul>
+    </nav>
+</div>
+
+
+            <div class="title">
+                <h1>Behold mighty exahash, hammer of the blocks!</h1>
+                <div class="meta">
+                    2016-01-05 00:00 - 7 min read
+                </div>
+            </div>
+
+            <div class="post">
+                <nav class="tags">
+                    
+                        
+                            <ul>
+                                
+                                    <li><a href="/tags/Bitcoin">Bitcoin</a></li>
+                                
+                                    <li><a href="/tags/Bitcoin-mining">Bitcoin mining</a></li>
+                                
+                            </ul>
+                        
+                    
+                </nav>
+
+                <div class="markdown">
+                    <p>&ldquo;Exahash&rdquo; sounds like it could well have been the hammer of the Norse
+Gods of old as it defeated all in battle.  In the Bitcoin world of early
+2016, however, a mining network that achieves one exahash per second
+will soon become part of the new folklore.  It will, as others before it,
+quantitatively destroy all earlier incarnations of itself.</p>
+<p>Common wisdom that this ever-increasing hash rate makes the Bitcoin
+network continually stronger, but what does that strength mean?  What is
+it stronger than?  What guarantees does it offer?  The answer, as so
+often, is perhaps less clear-cut than we might first imagine!</p>
+<h2 id="the-nature-of-bitcoin-hashing-an-aside">The nature of Bitcoin hashing (an aside)</h2>
+<p>The Bitcoin network is secured and processes transactions by mining.
+Mining comprises two activities, block making and hashing.  Block making
+is generally the preserve of very large miners or mining pool operators
+(see <a href="/posts/2014-06-30-0000/">&ldquo;The gambler&rsquo;s guide to Bitcoin mining&rdquo;</a>),
+while hashing is the activity that can be decentralized to many
+different operators.  For our purposes, though, we&rsquo;re not interested in
+block making, but instead hashing.</p>
+<p>Hashing is the process by which computational guesses are made in order
+to solve the cryptographic puzzle required to mine a Bitcoin block.  The
+hashing process is the &ldquo;work&rdquo; in the &ldquo;proof-of-work&rdquo; that is often
+synonymous with Bitcoin mining.</p>
+<p>When we talk about &ldquo;work&rdquo; we really mean this in a thermodynamic
+sense.  The work involves performing a deliberately uninteresting
+computational task that takes useful energy (electricity) and turns it
+into less useful energy (heat).  The purpose is for the hashing engines
+to demonstrate their expenditure of real-world-valuable electrictiy in
+the chance of obtaining Bitcoins via mining rewards.</p>
+<p>In theory the system can be gamed by trying to find uses for the less
+useful heat energy, but in practice this is only used in a very small
+part of the network and generally doesn&rsquo;t fit well with most heat usage
+patterns.  Most users don&rsquo;t want continual heat, while Bitcoin mining
+hardware depreciates in value too fast for users to afford to run it at
+less than 100% utilization.  Entropy is, in general, the major winner.</p>
+<p>While not terribly environmentally friendly the design pattern does work
+rather well, but there are unanswered questions about long-term
+implications of proof-of-work networks.  While watching the most recent
+episode of Star Wars and seeing the First Order&rsquo;s Starkiller Base
+draining all of the power from a sun I was left wondering if this was
+the ultimate fate of proof-of-work!</p>
+<h2 id="hash-rates">Hash rates</h2>
+<p>Hash rates have been incrementally on the rise for very good economic
+reasons.  Throughout 2015 their growth rates reflected the lower BTC:USD
+valuation, but with the increase in the value of Bitcoins and the
+introduction of new 16nm ASICs there has been room for yet another
+period of rapid hash rate expansions.</p>
+<p>2009 wasn&rsquo;t very interesting for Bitcoin mining so we take up our story
+from 2010:</p>
+<p><img src="./hash-rate.png" alt="Hash rates in the Bitcoin network from 2010 to 2016"></p>
+<p>The chart is plotted on a logarithmic scale to make it meaningful.  Each
+vertical graduation is 10x larger than the one immediately below.  The
+late 2015 plot is apparently showing a big uptick but it remains to be
+seen just how large this will actually be, but that 1 exahash per second
+figure (1.0 x 10^18^ hashes per second) is quite staggering.  Generally
+these sorts of numbers just don&rsquo;t appear in normal engineering
+activities.  To put this in perspective, if we had every person on the
+planet each make the same sorts of guesses that the hashing network does
+then every one of us would need to make more than 135 million guesses
+per second to match this same rate.</p>
+<h2 id="what-does-proof-of-work-actually-do">What does proof-of-work actually do?</h2>
+<p>Proof-of-work is intended to secure the Bitcoin network.  It does this by
+making it computationally very difficult for a bad actor to change
+historical transactions.  They would have to generate a newer, stronger,
+proof-of-work than has been done by the good actors within the system.
+When we actually talk about this sort of proof, however, what&rsquo;s really
+meant is that we believe the probability of constructing an alternative
+timeline for the Bitcoin blockchain becomes sufficiently low that it&rsquo;s
+not a practical concern.  The mathematics for this are given in the
+original Satoshi whitepaper.</p>
+<p>It&rsquo;s generally presumed that newer work makes it incrementally less
+likely that really old work could be overturned.  This would certainly be
+true if the network didn&rsquo;t get faster, but what are the actual numbers?</p>
+<p>We can start by considering the measured hash rates since the start of
+the Bitcoin network, but rather than looking at the hash rate per
+second, let&rsquo;s look at two other numbers.  Let&rsquo;s evaluate the total
+number of hashes computed ever since the first genesis block, and the
+number of hashes computed on any given day.  Hash rate numbers aren&rsquo;t
+precise, but statistically, over time, they work out pretty accurately:</p>
+<p><img src="./number-of-hashes.png" alt="Numbers of Bitcoin hashes over all time and per day"></p>
+<p>Notice that both traces are plotted on the same axis!</p>
+<p>The chart tells us something really interesting about how much faster
+the network is getting over time.  On, or around, 2011-08-31 the total
+computed hashes hit 100 exahashes (1.0 x 10^20^ hashes).  A little over 2
+years later, on, or around, 2013-09-23 the number of hashes computed on
+a daily basis hit the same number.  Had the network of 2013-09-23 been
+available before the end of August 2011 it would have been possible to
+recompute an entirely new Bitcoin history (32 months of work) in a
+single day!</p>
+<p>If we look at the two traces it becomes obvious that as the network
+hashing capacity undergoes significant growth that the gaps become much
+smaller.  If we consider the 10 zettahash (1.0 x 10^22^) level, the
+cumulative date was around 2013-10-22, and the daily date was
+2014-06-16.  Instead of 24 months required for the 100 exahash level,
+slighly less than 8 months was required for 10 zettahashes.</p>
+<h2 id="a-new-metric">A new metric</h2>
+<p>What we&rsquo;ve just seen is something of an intellectual curiosity, but
+let&rsquo;s consider a new metric.  How long it would take the network to
+recompute all of the previous history?  We can do this by plotting the
+ratio of the total hashes computed over all time to the hashes computed
+on each day up to that point:</p>
+<p><img src="./ratio-of-hashes.png" alt="Ratio of total cumulative hashes to daily hashes"></p>
+<p>We see something new!  During periods of extreme, rapid, expansion the
+hashing capacity can accelate to a point where all earlier proofs of
+work become dramatically less valuable.  Steady network growth in most of
+2015 culminated in the network requiring almost 12 months of computation
+to recompute every block since the genesis block, but only two months
+later the progression towards 1 exahash/s has seen this fall to under 9
+months; the entire blockchain history is apparently less strong than 2
+months ago!  In the middle of the extreme expansion from the first wave
+of ASICs during November 2013 the network could recompute the entire
+blockchain history of 58 months in under 40 days.</p>
+<p>Far from being a constantly strengthening network, we instead see that
+the network sometimes undergoes periods in which the cumulative weight
+of earlier proofs of work can become significantly less valuable, albeit
+perhaps only for a few months until new work is added.  The lost work is,
+however, never recovered.</p>
+<p>General threat models for the Bitcoin network consider the risks of a
+51% attacker causing problems for new transactions.  If, however, the
+Bitcoin network is used to anchor other blockchains, the history itself
+becomes valuable for other reasons, potentially in excess of the value
+for Bitcoin itself.  In the short term there is no obvious technology to
+surplant the current ASIC roadmap, but we might have some pause for
+thought about whether, environmental concerns aside, proof-of-work alone
+will be sufficient to secure the long-term history of the Bitcoin
+blockchain.</p>
+<hr>
+<h2 id="related-articles">Related articles</h2>
+<ul>
+<li><a href="/posts/2014-06-30-0000/">The gambler&rsquo;s guide to Bitcoin mining (2014-06-30)</a></li>
+<li><a href="/posts/2014-05-20-0000/">Hash rate headaches (2014-05-20)</a></li>
+</ul>
+
+                </div>
+                </div>
+
+            <div class="footer">
+    <div class="copyright"> © 2014-2020 David J. Hudson </div>
+</div>
+
+<script src="https://dave-hudson.github.io/js/footer.js"></script>
+
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-123-45', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+<script>feather.replace()</script>
+        </div>
+    </body>
+</html>

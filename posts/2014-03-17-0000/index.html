@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Chickens And Eggs? - Dave Hudson</title><meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="Chickens And Eggs?" />
+<meta property="og:description" content="Which comes first The miners or the money?  Much as the old question of &#34;Which came first:&#34; The chicken or the egg?&#34; there appears to have been a lot of debate about whether the price of Bitcoins is a result of mining activity or whether mining activity is the result of the price of Bitcoins.  The generally-held belief is that as the value of Bitcoins has increased there has been more interest in Bitcoins and this has in turn driven miners to mine, but is it really this simple?" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://dave-hudson.github.io/posts/2014-03-17-0000/" />
+<meta property="article:published_time" content="2014-03-17T00:00:00+00:00" />
+<meta property="article:modified_time" content="2014-03-17T00:00:00+00:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Chickens And Eggs?"/>
+<meta name="twitter:description" content="Which comes first The miners or the money?  Much as the old question of &#34;Which came first:&#34; The chicken or the egg?&#34; there appears to have been a lot of debate about whether the price of Bitcoins is a result of mining activity or whether mining activity is the result of the price of Bitcoins.  The generally-held belief is that as the value of Bitcoins has increased there has been more interest in Bitcoins and this has in turn driven miners to mine, but is it really this simple?"/>
+<link href="https://fonts.googleapis.com/css?family=Open Sans:300,400,300italic,400italic,700bold|Lalezar:400,700bold" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="https://dave-hudson.github.io/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://dave-hudson.github.io/css/main.css" /><link disabled id="dark-mode-theme" rel="stylesheet" type="text/css" href="https://dave-hudson.github.io/css/dark.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+                <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+
+    <body>
+        <div class="container">
+            <div class="header">
+    <table class="site-title">
+        <tr>
+            <td>
+                <h1><a href="https://dave-hudson.github.io/">Dave Hudson</a></h1><h2>hashingit.com</h1></td>
+            <td>
+                <nav class="social"><div class="icon"><a href="/index.xml" title="RSS"><i data-feather="rss"></i></a></div><div class="icon"><a href="https://twitter.com/hashingitcom" title="Twitter"><i data-feather="twitter"></i></a></div><div class="icon"><a href="https://linkedin.com/in/davejh" title="LinkedIn"><i data-feather="linkedin"></i></a></div><div class="icon"><a href="https://github.com/dave-hudson" title="Github"><i data-feather="github"></i></a></div><div class="icon" id="dark-mode-moon"><a><i data-feather="moon"></i></a></div>
+                    <div class="icon" id="dark-mode-sun"><a><i data-feather="sun"></i></a></div>
+                </nav>
+            </td>
+        </tr>
+    </table>
+    <nav class="site-menu">
+        <ul>
+            
+                <li>
+                    <a href="/">Recent Posts</a>
+                </li>
+            
+                <li>
+                    <a href="/posts">All Posts</a>
+                </li>
+            
+                <li>
+                    <a href="/tags">Tags</a>
+                </li>
+            
+                <li>
+                    <a href="/wiki">Wiki</a>
+                </li>
+            
+                <li>
+                    <a href="/about">About</a>
+                </li>
+            
+        </ul>
+    </nav>
+</div>
+
+
+            <div class="title">
+                <h1>Chickens And Eggs?</h1>
+                <div class="meta">
+                    2014-03-17 00:00 - 3 min read
+                </div>
+            </div>
+
+            <div class="post">
+                <nav class="tags">
+                    
+                        
+                            <ul>
+                                
+                                    <li><a href="/tags/Bitcoin">Bitcoin</a></li>
+                                
+                                    <li><a href="/tags/Bitcoin-mining">Bitcoin mining</a></li>
+                                
+                            </ul>
+                        
+                    
+                </nav>
+
+                <div class="markdown">
+                    <p>Which comes first: The miners or the money?  Much as the old question of
+&ldquo;Which came first: The chicken or the egg?&rdquo; there appears to have been
+a lot of debate about whether the price of Bitcoins is a result of
+mining activity or whether mining activity is the result of the price of
+Bitcoins.</p>
+<p>The generally-held belief is that as the value of Bitcoins has increased
+there has been more interest in Bitcoins and this has in turn driven
+miners to mine, but is it really this simple?</p>
+<p>Let&rsquo;s look at a chart comparing the value of Bitcoin in US Dollars vs
+the global hashrate in GHash/s and see if we can make any sense of
+this?</p>
+<p><img src="./20140317_Bitcoin-vs-hash.png" alt="20140317 Bitcoin-vs-hash"></p>
+<p>This chart is plotted on two logarithmic axis but they&rsquo;re not on the
+same scale.  The price trace increases by approximately a factor of a
+thousand but the hashing traces increases by approximately a factor of
+ten million.  Essentially this means that the hashing rate has increased
+56 times faster than the price.  There&rsquo;s nothing particularly
+significant about the ratios other than that they let us watch the two
+traces relative to each other.</p>
+<p>We can see something a little curious here though.  The hashing rate
+does indeed speed up as the price of a Bitcoin increases and the rate
+slows once the price starts to fall but it&rsquo;s almost as if the hashing
+rate has been acting as an anchor for the price.  If we think about the
+hardware that has been used for hashing, however, there&rsquo;s an interesting
+pattern.</p>
+<p>In 2010 and the first half of 2011 miners could rapidly bring new
+hardware on-stream in the form of CPUs and then GPUs.  In many cases
+these were already available and so mining profitability didn&rsquo;t really
+have to account for the hardware costs and people would want CPUs and
+fast GPUs anyway.</p>
+<p>From mid 2011 to early 2013 the initial euphoria waned, yet that seems
+a little strange for something that had seen such rapid growth only a
+short while earlier.  There were the <a href="/posts/2014-03-12-0000/">strange periodic spikes in the
+Bitcoin price every 7-ish months</a>
+but neither the price nor the hashing rate really changed that much.
+Roll forward to early 2013 though and things suddenly changed - a
+lot.</p>
+<p>In early 2013 Bitcoin mining ASICs started to take over the hasing
+activity.  Unlike previous generations that used CPUs and GPUs that were
+intrinsically useful for other purposes the ASICs weren&rsquo;t; they
+weren&rsquo;t cheap either!  Suddenly a lot of Bitcoin miners were having to
+pay a lot of money to mine Bitcoins but curiously the price started to
+go up just as the ASICs started to become available.  Even more
+curiously, the ASICs had long lead times so miners had made a financial
+commitment to mining months in advance of their mining hardware being
+available.  Was it just &ldquo;good luck&rdquo; that the Bitcoin price suddenly
+surged, and then surged again, or was the price increase simply
+reflecting that a lot of money had been spent to go
+mining?</p>
+<p>It seems quite possible that at least part of the reason for the surges
+in the Bitcoin price is a result of the miners investing in mining.  The
+price increases have encouraged more miners too and that means more
+money spent on mining by those new miners.  This really does feel like a
+&ldquo;chicken and egg&rdquo; problem.  A bigger question, however, is what happens
+when the number of miners is large and the technology roadmap eventually
+limits the ability to increase the hash rate?  At that point there will
+need to be some other driver for any other price
+increases.</p>
+<p>[Data reference: <a href="http://blockchain.info">blockchain.info</a>]</p>
+
+                </div>
+                </div>
+
+            <div class="footer">
+    <div class="copyright"> © 2014-2020 David J. Hudson </div>
+</div>
+
+<script src="https://dave-hudson.github.io/js/footer.js"></script>
+
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-123-45', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+<script>feather.replace()</script>
+        </div>
+    </body>
+</html>

@@ -11,23 +11,23 @@ body {
 }
 
 .container {
-    color: #ddd;
+    color: #ccc;
+}
+
+.container a {
+    color: #6bf;
+}
+
+.container a:hover {
+    color: #6bf;
+}
+
+.container blockquote {
+    border-color: #ccc;
 }
 
 .container hr {
     border-color: #333;
-}
-
-.container blockquote {
-    border-color: #ddd;
-}
-
-.container a {
-    color: #ff7979;
-}
-
-.container a:hover {
-    color: #ff7979;
 }
 
 .container table th {
@@ -39,10 +39,6 @@ body {
     border: 1px solid #666;
 }
 
-.container .header .site-title a {
-    color: #ddd;
-}
-
 .container .header nav.site-menu {
     border-color: #333;
 }
@@ -51,8 +47,12 @@ body {
     border-color: #333;
 }
 
-.container .post nav.post-tags .tags a {
-    border: 1px solid #ff7979;
-    color: #ff7979;
+.container .post .draft-label {
+    color: #6bf;
+}
+
+.container .post nav.tags a {
+    border: 1px solid #6bf;
+    color: #6bf;
 }
 

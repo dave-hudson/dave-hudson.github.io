@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><title>The rewards for a Bitcoin miner - Dave Hudson</title><meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="The rewards for a Bitcoin miner" />
+<meta property="og:description" content="Bitcoin mining can be a very profitable activity.  It&#39;s good that it is because Bitcoin, as a system, only works because of the mining activity; it&#39;s the mining that ensures the transactions actually take place. Just how much money does it generate though and does this help us make any predictions for the future?" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://dave-hudson.github.io/posts/2014-04-03-0000/" />
+<meta property="article:published_time" content="2014-04-03T00:00:00+00:00" />
+<meta property="article:modified_time" content="2014-04-03T00:00:00+00:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="The rewards for a Bitcoin miner"/>
+<meta name="twitter:description" content="Bitcoin mining can be a very profitable activity.  It&#39;s good that it is because Bitcoin, as a system, only works because of the mining activity; it&#39;s the mining that ensures the transactions actually take place. Just how much money does it generate though and does this help us make any predictions for the future?"/>
+<link href="https://fonts.googleapis.com/css?family=Open Sans:300,400,300italic,400italic,700bold|Lalezar:400,700bold" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="https://dave-hudson.github.io/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://dave-hudson.github.io/css/main.css" /><link disabled id="dark-mode-theme" rel="stylesheet" type="text/css" href="https://dave-hudson.github.io/css/dark.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+                <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+
+    <body>
+        <div class="container">
+            <div class="header">
+    <table class="site-title">
+        <tr>
+            <td>
+                <h1><a href="https://dave-hudson.github.io/">Dave Hudson</a></h1><h2>hashingit.com</h1></td>
+            <td>
+                <nav class="social"><div class="icon"><a href="/index.xml" title="RSS"><i data-feather="rss"></i></a></div><div class="icon"><a href="https://twitter.com/hashingitcom" title="Twitter"><i data-feather="twitter"></i></a></div><div class="icon"><a href="https://linkedin.com/in/davejh" title="LinkedIn"><i data-feather="linkedin"></i></a></div><div class="icon"><a href="https://github.com/dave-hudson" title="Github"><i data-feather="github"></i></a></div><div class="icon" id="dark-mode-moon"><a><i data-feather="moon"></i></a></div>
+                    <div class="icon" id="dark-mode-sun"><a><i data-feather="sun"></i></a></div>
+                </nav>
+            </td>
+        </tr>
+    </table>
+    <nav class="site-menu">
+        <ul>
+            
+                <li>
+                    <a href="/">Recent Posts</a>
+                </li>
+            
+                <li>
+                    <a href="/posts">All Posts</a>
+                </li>
+            
+                <li>
+                    <a href="/tags">Tags</a>
+                </li>
+            
+                <li>
+                    <a href="/wiki">Wiki</a>
+                </li>
+            
+                <li>
+                    <a href="/about">About</a>
+                </li>
+            
+        </ul>
+    </nav>
+</div>
+
+
+            <div class="title">
+                <h1>The rewards for a Bitcoin miner</h1>
+                <div class="meta">
+                    2014-04-03 00:00 - 6 min read
+                </div>
+            </div>
+
+            <div class="post">
+                <nav class="tags">
+                    
+                        
+                            <ul>
+                                
+                                    <li><a href="/tags/Bitcoin">Bitcoin</a></li>
+                                
+                                    <li><a href="/tags/Bitcoin-mining">Bitcoin mining</a></li>
+                                
+                            </ul>
+                        
+                    
+                </nav>
+
+                <div class="markdown">
+                    <p>Bitcoin mining can be a very profitable activity.  It&rsquo;s good that it is
+beause Bitcoin, as a system, only works because of the mining activity;
+it&rsquo;s the mining that ensures the transactions actually take place.  Just
+how much money does it generate though and does this help us make any
+predictions for the future?</p>
+<p>Like mining any other finite resource, Bitcoin mining gets harder over
+time and requires more investment to mine profitably.  Mining requires a
+capital outlay to buy mining equipment, incurs operating costs to keep
+it running and is ultimately only successful if, over the useful life of
+the mining equipment, the value of what&rsquo;s mined is higher than the
+total costs to mine it.</p>
+<p>For Bitcoin the mining rewards seem pretty simple to estimate: The
+current (2014-04-03) fixed block reward is 25 BTC and there are a
+nominal 144 blocks per day.  This yields a nominal 3600 BTC per day.  1
+BTC is currently worth about $450 (USD) so that&rsquo;s $1.62M being mined
+per day. In practice though, this underestimates the mining reward for a
+couple of reasons:</p>
+<ul>
+<li>The difficulty level is going through a rapid (exponential) growth
+that means we&rsquo;re seeing far more than 144 blocks mined per day.</li>
+<li>The mining activity also earns the successful miner any transaction
+fees.</li>
+</ul>
+<h2 id="blocks-mined-per-day">Blocks Mined Per Day</h2>
+<p>Bitcoin was set up to try to track the amount of hashing capacity in the
+total network and to adjust the difficulty of the next batch of blocks
+every 2016 block (nominally every 2 weeks).  The aim is to try to have
+the next 2016 blocks take 2 weeks to complete.  Between the adoption of
+GPUs and the introduction of ASICs for mining this actually worked out
+quite well but the huge increases in hashing capacity enabled by ASICs
+have meant that the difficulty level has lagged behind.  <a href="/posts/2014-03-23-0000/">ASIC
+technology</a>
+limits will eventually slow this but not for some months at least.</p>
+<p>The impact of steadily increasing hashing rates can be seen when we look
+at the date at which the fixed block reward halves.  The genesis block
+was created on 2009-01-03, with the first mined block being on
+2009-01-09.  The fixed reward halves every 210000 blocks so at 144 blocks
+per day this should have been 1458 days later, or 2013-01-06.  In
+practice block 210000 occurred on 2012-11-28, some 39 days earlier.</p>
+<p>If we consider more recent trends the effect is even more marked.
+Between blocks 210000 and 294000 there should have been 583.3 days, but
+we actually reached block 294000 in just 490 days.  Over 19 months of
+hashing work was completed in a little over 16 months.  Our average
+number of blocks per day has been slightly more than 171.  In fact most
+of the gain has come in the last 14 months so the average block rate has
+been higher still.</p>
+<p>For the next few months at least it seems likely that we&rsquo;ll see this
+much larger average block rate so based on our original $450 per BTC
+then we get a fixed reward per day of $1.92M; this is $300k per day
+more than we might have guessed.  The downside, of course, is that while
+there&rsquo;s more money being made now, so the date of the next halving of
+the reward is moving closer.  Instead of being in November 2016 it&rsquo;s
+already moved to August 2016 and, unless something unexpected happens,
+will almost certainly happen a month or two before that.</p>
+<h2 id="transaction-fees">Transaction Fees</h2>
+<p>Bitcoin mining was designed to steadily move from a phase where mining
+was about collecting the fixed per-block reward of new coins to one in
+which transaction fees represented the majority of what a successful
+miner gained.  So far the numbers of transactions haven&rsquo;t been high
+enough to provide significant rewards from the fees and they&rsquo;re
+typically only generating about 10-15 BTC per day.  It&rsquo;s not
+unreasonable to state that Bitcoin needs transaction fees to become a
+larger part of the system otherwise the reduction in the fixed mining
+reward will be a serious problem.</p>
+<p>Typically miners will invest in the best hardware available in order to
+maximize their returns but that investment is funded by what they mine.
+If there&rsquo;s not a major increase in the value of transaction fees when
+the fixed mining reward halves again then there&rsquo;s an equally strong
+risk that mining investments will drop substantially.  Given that mining
+uses highly specialized hardware and that the hardware comes from highly
+specialized companies then any such drop poses a serious risk to the
+profitability of companies supplying the virtual picks and shovels!</p>
+<h2 id="chickens-and-eggs-part-2">Chickens And Eggs Part 2</h2>
+<p>In an earlier article, &ldquo;<a href="/posts/2014-03-17-0000/">Chickens And Eggs?</a>&quot;, I
+speculated about the relationship between hashing rates and BTC price.
+In retrospect it seems a more interesting comparison is between hashing
+rates and the total daily miners&rsquo; reward.  Here&rsquo;s that new chart:</p>
+<p><img src="./hash-vs-reward.png" alt="Bitcoin hashing rate compared with total mining rewards April2014"></p>
+<p>As with earlier charts both of these traces are plotted on logarithmic
+axes but the two lines are spaced apart a little to make comparisons
+easier.</p>
+<p>If we consider that a state-of-the-art Bitcoin mining platform can
+generate a little over 300 MHash/s/$ then the current worldwide
+capacity of 48 PHash/s would require an investment of $160M.  In
+practice most of the hashing capacity is nowhere near as cost effective
+as 300 MHash/s/$ so it seems likely that the actual investment
+worldwide in the hardware that is currently running has been more like
+$300M to $500M.  Given that the hashing rates have been increasing so
+dramatically for more than 12 months it&rsquo;s also highly unlikely that
+more than a very small fraction of the currently-deployed hardware has
+been in use for more than 8 months.</p>
+<p>If we look at the estimated miner&rsquo;s reward for the last 8 months it&rsquo;s
+$514M.  This suggests that a huge fraction of the money being made from
+mining is now also being spent on mining hardware.  Another jump in the
+BTC price will help make things more profitable for miners but will
+probably also just trigger yet more spending on mining hardware.  It also
+suggests that the correlation between mining hash rates and the BTC
+price is certainly more circular than might otherwise seem likely as
+purchases of mining hardware has been one of the biggest uses of Bitcoin
+itself.</p>
+<h3 id="limits-on-hashing">Limits On Hashing?</h3>
+<p>The $514M represents a realistic limit on the hashing rate since no-one
+can afford to operate at a loss for long.  Some of that $514 has to have
+been used to cover operating costs such as electricity, HVAC, premises,
+and some amount of miner&rsquo;s profit.  Unless ASIC and mining equipment
+vendors reduce their prices significantly then that put&rsquo;s an upper
+bound of $514M * 300 MHash/s/$; a little over 150 PHash/s.
+Realistically it&rsquo;s probably less than 120 PHash/s and that&rsquo;s assuming
+that everyone was suddenly able to buy currently-shipping
+state-of-the-art equipment.</p>
+<p>As ASICs start to hit the limits of the process technology the huge
+expansions in the hashing rate will have to slow down and that will
+start to change the mining economics again... seems like something to
+write about next time :-)</p>
+<p>[Data reference: <a href="http://blockchain.info">blockchain.info</a>]</p>
+<hr>
+<h2 id="related-articles">Related Articles}</h2>
+<ul>
+<li><a href="/posts/2014-03-23-0000/">Where next for Bitcoin mining ASICs? (2014-03-23)</a></li>
+<li><a href="/posts/2014-03-09-0000/">The Bitcoin runaway mine train (2014-03-09)</a></li>
+</ul>
+
+                </div>
+                </div>
+
+            <div class="footer">
+    <div class="copyright"> © 2014-2020 David J. Hudson </div>
+</div>
+
+<script src="https://dave-hudson.github.io/js/footer.js"></script>
+
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-123-45', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+<script>feather.replace()</script>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Hash rate headaches - Dave Hudson</title><meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="Hash rate headaches" />
+<meta property="og:description" content="One of the more infuriating challenges when trying to do any sort of analysis of Bitcoin mining is to understand the current world-wide hashing rate and how this affects difficulty changes. The very best &#34;live update&#34; websites seem to show the hash rate being all over the place. Large spikes occur frequently and it appears that huge amounts of hashing capacity have either come online or gone offline. This explanation may appeal to conspiracy theorists, and will sometimes be the real cause, but there is a much more mundane reason most of the time (but nontheless surprising)." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://dave-hudson.github.io/posts/2014-05-20-0000/" />
+<meta property="article:published_time" content="2014-05-20T00:00:00+00:00" />
+<meta property="article:modified_time" content="2014-05-20T00:00:00+00:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Hash rate headaches"/>
+<meta name="twitter:description" content="One of the more infuriating challenges when trying to do any sort of analysis of Bitcoin mining is to understand the current world-wide hashing rate and how this affects difficulty changes. The very best &#34;live update&#34; websites seem to show the hash rate being all over the place. Large spikes occur frequently and it appears that huge amounts of hashing capacity have either come online or gone offline. This explanation may appeal to conspiracy theorists, and will sometimes be the real cause, but there is a much more mundane reason most of the time (but nontheless surprising)."/>
+<link href="https://fonts.googleapis.com/css?family=Open Sans:300,400,300italic,400italic,700bold|Lalezar:400,700bold" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="https://dave-hudson.github.io/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://dave-hudson.github.io/css/main.css" /><link disabled id="dark-mode-theme" rel="stylesheet" type="text/css" href="https://dave-hudson.github.io/css/dark.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+                <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+
+    <body>
+        <div class="container">
+            <div class="header">
+    <table class="site-title">
+        <tr>
+            <td>
+                <h1><a href="https://dave-hudson.github.io/">Dave Hudson</a></h1><h2>hashingit.com</h1></td>
+            <td>
+                <nav class="social"><div class="icon"><a href="/index.xml" title="RSS"><i data-feather="rss"></i></a></div><div class="icon"><a href="https://twitter.com/hashingitcom" title="Twitter"><i data-feather="twitter"></i></a></div><div class="icon"><a href="https://linkedin.com/in/davejh" title="LinkedIn"><i data-feather="linkedin"></i></a></div><div class="icon"><a href="https://github.com/dave-hudson" title="Github"><i data-feather="github"></i></a></div><div class="icon" id="dark-mode-moon"><a><i data-feather="moon"></i></a></div>
+                    <div class="icon" id="dark-mode-sun"><a><i data-feather="sun"></i></a></div>
+                </nav>
+            </td>
+        </tr>
+    </table>
+    <nav class="site-menu">
+        <ul>
+            
+                <li>
+                    <a href="/">Recent Posts</a>
+                </li>
+            
+                <li>
+                    <a href="/posts">All Posts</a>
+                </li>
+            
+                <li>
+                    <a href="/tags">Tags</a>
+                </li>
+            
+                <li>
+                    <a href="/wiki">Wiki</a>
+                </li>
+            
+                <li>
+                    <a href="/about">About</a>
+                </li>
+            
+        </ul>
+    </nav>
+</div>
+
+
+            <div class="title">
+                <h1>Hash rate headaches</h1>
+                <div class="meta">
+                    2014-05-20 00:00 - 5 min read
+                </div>
+            </div>
+
+            <div class="post">
+                <nav class="tags">
+                    
+                        
+                            <ul>
+                                
+                                    <li><a href="/tags/Bitcoin">Bitcoin</a></li>
+                                
+                                    <li><a href="/tags/Bitcoin-mining">Bitcoin mining</a></li>
+                                
+                            </ul>
+                        
+                    
+                </nav>
+
+                <div class="markdown">
+                    <p>One of the more infuriating challenges when trying to do any sort of
+analysis of Bitcoin mining is to understand the current world-wide
+hashing rate and how this affects difficulty changes.  The very best
+&ldquo;live update&rdquo; websites seem to show the hash rate being all over the
+place.  Large spikes occur frequently and it appears that huge amounts of
+hashing capacity have either come online or gone offline.  This
+explanation may appeal to conspiracy theorists, and will sometimes be
+the real cause, but there is a much more mundane reason most of the time
+(but nontheless surprising).</p>
+<h2 id="isnt-mining-set-up-to-generate-a-block-once-every-10-minutes">Isn&rsquo;t mining set up to generate a block once every 10 minutes?</h2>
+<p>The first thing to look at is the way mining operates.  The use of the
+SHA256 hash is intended to make it effectively impossible to predict
+what will or won&rsquo;t give a particular hash result without actually
+computing the hash and seeing if it solved a block.  Essentially each
+minor change in the an attempt to solve a block gives a totally random
+effect, so trying one hash means that the next attempt is neither no
+more likely, or no less likely, to succeed!  This highly random nature
+means that mining is a <a href="http://en.wikipedia.org/wiki/Poisson_process">Poisson Process</a>.  As each attempt
+to solve a block is unpredictable then in theory everyone might mine all
+day and never solve a block.  Similarly it&rsquo;s also possible that a single
+miner might find 6 blocks in a succession.  Both outcomes are possible,
+but both are staggeringly unlikely!</p>
+<h2 id="a-poisson-process">A Poisson process</h2>
+<p>Poisson Processes have some very well understood characteristics.  We can
+prediction how many events (finding blocks in our case) will occur in a
+particular period of time when we know what the average number of events
+will be.</p>
+<p>For Bitcoin mining where the difficulty isn&rsquo;t changing (the hash rates
+are constant) then we should see an average of 6 blocks per hour, 144
+per day, or 2016 per 2 weeks.</p>
+<p>Here&rsquo;s what the probabilities look like for a single hour:</p>
+<p><img src="./blocks-per-hour.png" alt="blocks-per-hour"></p>
+<p>The chart shows the probability (between 0 and 1) for each block count
+in yellow and the cumulative probability in red.  Even though we might
+expect 6 blocks every hour we will actually see 2 or fewer blocks around
+once every 16 hours; we&rsquo;ll also see 10 or more blocks once every 24
+hours too.  It may seem surprising but once every 2.8 days we&rsquo;ll find an
+hour between consecutive blocks [2015-02-05: This originally stated
+16.8 days and not 2.8 days, but I had mistakenly multiplied by 6].</p>
+<h2 id="what-happens-when-difficulty-levels-are-increasing">What happens when difficulty levels are increasing?</h2>
+<p>When difficulty levels are increasing we see a change in the
+probabilities.  Let&rsquo;s look at our original cumulative probability chart
+and add in a chart for where the average block finding rate is 10%
+higher (we&rsquo;re seeing 6.6 blocks per hour):</p>
+<p><img src="./cumulative-blocks-per-hour.png" alt="cumulative-blocks-per-hour"></p>
+<p>Our original statistics are in red and the new ones are in blue.  It&rsquo;s
+now more likely that we&rsquo;ll see a slightly higher block finding rate,
+but we still see much lower and much higher numbers occurring quite
+frequently!</p>
+<h2 id="hash-rate-calculators">Hash rate calculators</h2>
+<p>Hash rate calculators have a huge problem as a result of the randomness
+shown by the statistics.  All they can do is measure the event rate and
+make an estimate of the rate, based on the block finding rates.  They
+have no way of telling if the statistics for any given period of time
+were normal, low, high, very low, very high, etc.</p>
+<h2 id="difficulty-changes">Difficulty changes</h2>
+<p>Difficulty changes occur every 2016 blocks.  They play a very interesting
+role in hash rate statistics because they&rsquo;re computed by taking the
+time it took to find the previous set of blocks and to set the
+difficulty to a level where they would have taken 14 days to find.</p>
+<p>Let&rsquo;s look at the probabilities for a 14 day period:</p>
+<p><img src="./blocks-per-14-days.png" alt="blocks-per-14-days"></p>
+<p>The scale here is different to our original graphs, and we&rsquo;re only
+looking at the numbers closer to the nominal 2016 blocks that should be
+found in 14 days.  There are some interesting markers shown.</p>
+<p>As we might expect, the most likely outcome is that we will see 2016
+blocks found, but 10% of the time we&rsquo;ll see fewer than 1958.  Similarly
+10% of the time we&rsquo;ll see more than 2073.  Of course the difficulty will
+be reset after 2016 anyway but in that case it would be set about 2.8%
+higher than it should be.  If we think about those two 10% numbers this
+means that every 5 blocks we will see a difficulty level that is either
+2.8% higher or lower than it should be.  In the next difficulty change
+period we will probably see that counteracted, but there&rsquo;s no actual
+guarantee since we may see two consecutive high estimates.</p>
+<p>We can also look at the 1% and 99% markers.  They represent things that
+between them will happen about once every 2 years.  Approximately once
+every 2 years the hash rate estimates at the difficulty change will be
+out by more than 5% and so the difficulty will be set incorrectly by as
+much as 5%!</p>
+<p>What&rsquo;s really important here is that even if the worldwide hash rate
+was constant we&rsquo;d still appear to see significant difficulty changes
+occuring every 2016 blocks!</p>
+<p>As for hash rate estimation, doesn&rsquo;t it now look much more complex than
+it seemed it would?</p>
+<hr>
+<h2 id="source-code">Source code</h2>
+<p>This article was written with the help of data from a C language
+application that generates the probability distributions.  The data was
+rendered into charts using Excel.  The source code can be found on
+github: <a href="https://github.com/hashingitcom/hash_rate_headaches">https://github.com/hashingitcom/hash_rate_headaches</a></p>
+
+                </div>
+                </div>
+
+            <div class="footer">
+    <div class="copyright"> © 2014-2020 David J. Hudson </div>
+</div>
+
+<script src="https://dave-hudson.github.io/js/footer.js"></script>
+
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-123-45', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+<script>feather.replace()</script>
+        </div>
+    </body>
+</html>

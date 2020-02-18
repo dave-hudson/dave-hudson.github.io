@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><title>The future of Bitcoin transaction fees? - Dave Hudson</title><meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="The future of Bitcoin transaction fees?" />
+<meta property="og:description" content="Bitcoin is often touted as having substantially lower fees associated with using it than most other financial systems, but fees and costs are very different things.  The reality of things in the Bitcoin ecosystem is rarely simple, and this one is no exception.  What then are the actual numbers, where are they heading and what are the consequences?" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://dave-hudson.github.io/posts/2014-11-12-0000/" />
+<meta property="article:published_time" content="2014-11-12T00:00:00+00:00" />
+<meta property="article:modified_time" content="2014-11-12T00:00:00+00:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="The future of Bitcoin transaction fees?"/>
+<meta name="twitter:description" content="Bitcoin is often touted as having substantially lower fees associated with using it than most other financial systems, but fees and costs are very different things.  The reality of things in the Bitcoin ecosystem is rarely simple, and this one is no exception.  What then are the actual numbers, where are they heading and what are the consequences?"/>
+<link href="https://fonts.googleapis.com/css?family=Open Sans:300,400,300italic,400italic,700bold|Lalezar:400,700bold" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="https://dave-hudson.github.io/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://dave-hudson.github.io/css/main.css" /><link disabled id="dark-mode-theme" rel="stylesheet" type="text/css" href="https://dave-hudson.github.io/css/dark.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+                <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+
+    <body>
+        <div class="container">
+            <div class="header">
+    <table class="site-title">
+        <tr>
+            <td>
+                <h1><a href="https://dave-hudson.github.io/">Dave Hudson</a></h1><h2>hashingit.com</h1></td>
+            <td>
+                <nav class="social"><div class="icon"><a href="/index.xml" title="RSS"><i data-feather="rss"></i></a></div><div class="icon"><a href="https://twitter.com/hashingitcom" title="Twitter"><i data-feather="twitter"></i></a></div><div class="icon"><a href="https://linkedin.com/in/davejh" title="LinkedIn"><i data-feather="linkedin"></i></a></div><div class="icon"><a href="https://github.com/dave-hudson" title="Github"><i data-feather="github"></i></a></div><div class="icon" id="dark-mode-moon"><a><i data-feather="moon"></i></a></div>
+                    <div class="icon" id="dark-mode-sun"><a><i data-feather="sun"></i></a></div>
+                </nav>
+            </td>
+        </tr>
+    </table>
+    <nav class="site-menu">
+        <ul>
+            
+                <li>
+                    <a href="/">Recent Posts</a>
+                </li>
+            
+                <li>
+                    <a href="/posts">All Posts</a>
+                </li>
+            
+                <li>
+                    <a href="/tags">Tags</a>
+                </li>
+            
+                <li>
+                    <a href="/wiki">Wiki</a>
+                </li>
+            
+                <li>
+                    <a href="/about">About</a>
+                </li>
+            
+        </ul>
+    </nav>
+</div>
+
+
+            <div class="title">
+                <h1>The future of Bitcoin transaction fees?</h1>
+                <div class="meta">
+                    2014-11-12 00:00 - 8 min read
+                </div>
+            </div>
+
+            <div class="post">
+                <nav class="tags">
+                    
+                        
+                            <ul>
+                                
+                                    <li><a href="/tags/Bitcoin">Bitcoin</a></li>
+                                
+                                    <li><a href="/tags/Bitcoin-transaction-fees">Bitcoin transaction fees</a></li>
+                                
+                            </ul>
+                        
+                    
+                </nav>
+
+                <div class="markdown">
+                    <p>Bitcoin is often touted as having substantially lower fees associated
+with using it than most other financial systems, but fees and costs are
+very different things.  The reality of things in the Bitcoin ecosystem is
+rarely simple, and this one is no exception.  What then are the actual
+numbers, where are they heading and what are the consequences?</p>
+<h2 id="transaction-fees">Transaction fees</h2>
+<p>Probably the biggest challenge in looking at the costs of transactions
+is to work out what that actually means.  For anyone sending BTC the
+obvious &ldquo;cost&rdquo; is the transaction fee, so let&rsquo;s look at that:</p>
+<h2 id="mean-cost-per-bitcoin-transaction-for-the-last-4-years-linear-scalefee-per-trans-linearpng"><img src="./fee-per-trans-linear.png" alt="Mean cost per Bitcoin transaction for the last 4 years (linear scale)"></h2>
+<p>This data, as with all of the data in this article, comes from
+<a href="http://blockchain.info">blockchain.info</a>.  The chart shows the fee per
+transaction for the last 4 years, and shows that that cost is in BTC and
+what that converted to in USD. The USD trace is really hard to follow early
+on though so let&rsquo;s look at this on a logarithmic scale:</p>
+<p><img src="./fee-per-trans-log.png" alt="fee-per-trans-log"></p>
+<p>Certainly these numbers would appear to back up the claim that Bitcoin
+transactions are really inexpensive!  BTC-denominated fees have actually
+steadily fallen for most of the last 4 years and are now at about
+0.00015 BTC per transaction.  As long as we&rsquo;re talking about
+transactions involving, say, 0.1 BTC then the fees have pretty-much
+always been less than 1%, and are now more like 0.15%!</p>
+<p>This is where things start to become a little interesting though.  The
+fee is primarily concerned with ensuring a minimum charge to avoid the
+network relaying &ldquo;dust&rdquo; transactions of tiny amounts, and also
+charging an amount per kbyte of data required to store the transaction
+in the blockchain.  What the fee doesn&rsquo;t take into account at all is the
+BTC value being transferred.</p>
+<p>The fee structure means that BTC transfers are incredibly inexpensive
+for large transactions, but that small transfers can become much more
+expensive.  As we&rsquo;ve seen before in &ldquo;<a href="/posts/2014-11-02-0000/">7 transactions per second?  Really?</a>&quot;,
+there&rsquo;s actually a hard limit on transaction space and the current mean
+transaction size limits the network to less than 3.5 transactions per
+second so the fee structure is designed to prevent people from consuming
+too much block space with low-value transactions (if anyone wants to do
+micropayments then they really need to aggregate them together).</p>
+<p>The transaction rate limit also has an impact on the speed with which
+the network confirms transactions.  With more transactions the network
+becomes congested and confirmation times increase.  The only way to avoid
+increased confirmation times will be to incentivize miners to mine
+specific transactions, and the only way to do that is to add a larger
+fee to a transaction.  If the network starts to become congested then one
+natural consequence is that fees will start to increase too.</p>
+<h2 id="rewards-for-bitcoin-miners">Rewards for Bitcoin miners</h2>
+<p>The observation that fees are likely to increase may upset some users of
+the Bitcoin network, but is good news for the people actually doing the
+transaction processing: Bitcoin miners.</p>
+<p>Let&rsquo;s look at things from the perspective of a miner:</p>
+<p><img src="./miners-reward.png" alt="miners-reward"></p>
+<p>The red line showing the amount of money received by miners in USD looks
+impressive.  Even with the decline in BTC price to late October the daily
+revenue for Bitcoin miners was at over $1.5M per day, but that revenue
+is paying for the installation and running of mining hardware.  If we
+guess that the average mining server is about 1.5 TH/s and the current
+network capacity is around 270 PH/s then that would suggest at least
+180,000 mining units worldwide!  In reality there are probably in excess
+of 200,000.</p>
+<p>The 25 BTC reward for each block over the last 2 years has enabled
+industrial scale mining that was initially very profitable for miners
+and their suppliers, but has rapidly followed the same trends as other
+sorts of industrialized mining and has reached a point where the costs
+associated with mining almost consume the reward from selling what was
+mined. Bitcoin mining has been heavily squeezed as a segment, especially
+with the decline in the USD price of Bitcoin during 2014.  The USD price
+(or other fiat currency conversion rates) is critically important
+because development, equipment manufacturing, hosting, and power are
+almost entirely paid for in fiat currency.</p>
+<p>The blue line shows the problem though.  This one is the BTC-denominated
+reward for miners and it&rsquo;s pretty obvious that most of the reward
+isn&rsquo;t changing.  Until late 2012 that was 50 BTC per block mined and
+then subsequently 25 BTC.  In 2016 this will drop to 12.5 BTC and that
+should be a concern to Bitcoin users too.  If we&rsquo;re very observant we
+notice that this blue trend is actually moving slightly down right now;
+as the network expansion slows then fewer blocks are mined each day (we
+get closer to 144 per day).  The other thing that is clear from the blue
+trend is that transaction fees are currently almost inconsequential to
+the viability of mining operations.  The total fees paid in a day are far
+less than even a single block reward.</p>
+<h2 id="block-reward-halving">Block reward halving</h2>
+<p>We might look back at the reward halving in 2012 and observe that there
+wasn&rsquo;t much of a problem back then so why might there be in 2016, but
+in 2012 things worked out surprisingly well for the network.  The
+USD-denominated Bitcoin price doubled within a couple of months, while
+mining was not operating on the sorts of low margins that are common in
+2014.  In 2016, unless there&rsquo;s a fortuitous price spike again, or
+without some additional source of revenue, industrialized mining will be
+placed under extreme pressures.</p>
+<p>Advocates of decentralization may like to think that this as a good
+thing, but there are two notable problems:</p>
+<ul>
+<li>If 50% of the network were to be unplugged then the amount of
+security for the network would drop by 50% and that would in turn
+risk an attack from that now &ldquo;dark&rdquo; hardware.  51% wouldn&rsquo;t be a
+just a theoretical problem anymore, there would be hardware sitting
+idle and able to launch just such an attack.</li>
+<li>Smaller miners would feel the economic pinch much sooner than the
+larger miners.  The largest operations almost invariably have better
+economies of scale and can probably weather the loss of income
+better.  Our 50% sized network would now almost certainly end up in
+the hands of even fewer industrial miners.</li>
+</ul>
+<p>One potential way to offset the reward change and keep miners
+incentivised would be to increase the transaction fees.  If the network
+were to move to being funded largely by fees rather than block rewards
+then the risks associated with block reward halving could be
+dramatically reduced.</p>
+<h2 id="what-do-transactions-really-cost">What do transactions really cost?</h2>
+<p>To understand how fees might become a significant incentive for miners
+we need to understand what the costs of transactions look like in terms
+of the current mining rewards.  There are a couple of ways we can think
+about this.</p>
+<p>Let&rsquo;s start with the obvious one: What is the cost to the whole network
+for an average transaction?</p>
+<p><img src="./cost-per-trans-log.png" alt="Cost per Bitcoin transaction"></p>
+<p>With this measure each transaction costs around 0.045 BTC, or
+approximately $17 at the end of October 2014.  The network is able to
+process more transactions per second than it is right now.  It&rsquo;s
+currently running at about 30% of its capacity and has doubled in the
+last 12 months.  If we presume that at the next reward halving we&rsquo;re at
+60% of the capacity then we&rsquo;ll have twice as many transactions and thus
+the cost per transaction would be half of our current estimate: i.e.
+0.0225 BTC.  In addition our block reward isn&rsquo;t going away completely,
+it&rsquo;s just halving, so we&rsquo;d need fees to make up a shortfall of 0.01125
+BTC per transaction.</p>
+<h2 id="another-approach">Another approach?</h2>
+<p>It seems pretty unrealistic to expect fees of that magnitude based on
+the current scheme for setting fee levels so perhaps we need to consider
+some other data.  Let&rsquo;s look at the transaction cost per Bitcoin.  This
+is a little tricky because transactions don&rsquo;t always make it easy to
+determine if a transaction output is going to someone else or is simply
+change being returned to the sender.  Blockchain.info&rsquo;s data does
+attempt to estimate the actual transaction volume though so we can try
+to use that here:</p>
+<p><img src="./cost-per-btc-trans.png" alt="Estimated cost per BTC transferred"></p>
+<p>The current cost to the network is approximately 0.03 BTC per BTC
+transferred.  If we were to see a doubling in transaction volumes as
+predicted earlier, and the transaction value therefore doubled, then the
+cost would drop to 0.015 BTC per BTC transferred.  As a result if miners
+were to be given a fee of 0.0075 BTC per BTC transferred then that would
+offset the losses at the next block reward halving.  The real question is
+whether a 0.75% transaction fee is something that the network is
+prepared to accept in order to preserve its security?</p>
+<p>Of course this isn&rsquo;t the only way in which this particular problem
+might be averted, but one thing is clear: there will inevitably have to
+be changes to way in which mining is funded in order to keep things
+running smoothly. </p>
+<p>[Data reference: <a href="http://blockchain.info">blockchain.info</a>]</p>
+<hr>
+<h2 id="related-articles">Related articles</h2>
+<ul>
+<li><a href="/posts/2014-11-11-0000/">Bitcoin traffic bulletin (2014-11-11)</a></li>
+<li><a href="/posts/2014-11-02-0000/">7 transactions per second?  Really? (2014-11-02)</a></li>
+<li><a href="/posts/2014-04-03-0000/">The rewards for a Bitcoin miner (2014-04-03)</a></li>
+</ul>
+
+                </div>
+                </div>
+
+            <div class="footer">
+    <div class="copyright"> © 2014-2020 David J. Hudson </div>
+</div>
+
+<script src="https://dave-hudson.github.io/js/footer.js"></script>
+
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-123-45', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+<script>feather.replace()</script>
+        </div>
+    </body>
+</html>
