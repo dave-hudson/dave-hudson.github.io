@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Bitcoin TPS on Dave Hudson</title>
-    <link>https://dave-hudson.github.io/tags/Bitcoin-TPS/</link>
+    <link>https://hashingit.com/tags/Bitcoin-TPS/</link>
     <description>Recent content in Bitcoin TPS on Dave Hudson</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <copyright>© 2014-2020 David J. Hudson</copyright>
     <lastBuildDate>Sun, 02 Nov 2014 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://dave-hudson.github.io/tags/Bitcoin-TPS/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hashingit.com/tags/Bitcoin-TPS/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>7 transactions per second?  Really?</title>
-      <link>https://dave-hudson.github.io/posts/2014-11-02-0000/</link>
+      <link>https://hashingit.com/posts/2014-11-02-0000/</link>
       <pubDate>Sun, 02 Nov 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://dave-hudson.github.io/posts/2014-11-02-0000/</guid>
+      <guid>https://hashingit.com/posts/2014-11-02-0000/</guid>
       <description>The general wisdom seems to be that the Bitcoin network can currently sustain 7 transactions per second. Bitcoin advocates often worry that this will be a limiting factor when credit card processing networks can handle several orders of magnitude more transactions in the same time, but what are the actual statistics related to Bitcoin transaction processing? Our Bitcoin mine train may not be seeing its hashing engines running away quite as much as they were earlier this year, but are we heading for other problems instead?</description>
     </item>
     

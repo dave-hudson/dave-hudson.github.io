@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Bitcoin transaction fees on Dave Hudson</title>
-    <link>https://dave-hudson.github.io/tags/Bitcoin-transaction-fees/</link>
+    <link>https://hashingit.com/tags/Bitcoin-transaction-fees/</link>
     <description>Recent content in Bitcoin transaction fees on Dave Hudson</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <copyright>© 2014-2020 David J. Hudson</copyright>
     <lastBuildDate>Wed, 12 Nov 2014 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://dave-hudson.github.io/tags/Bitcoin-transaction-fees/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hashingit.com/tags/Bitcoin-transaction-fees/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>The future of Bitcoin transaction fees?</title>
-      <link>https://dave-hudson.github.io/posts/2014-11-12-0000/</link>
+      <link>https://hashingit.com/posts/2014-11-12-0000/</link>
       <pubDate>Wed, 12 Nov 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://dave-hudson.github.io/posts/2014-11-12-0000/</guid>
+      <guid>https://hashingit.com/posts/2014-11-12-0000/</guid>
       <description>Bitcoin is often touted as having substantially lower fees associated with using it than most other financial systems, but fees and costs are very different things. The reality of things in the Bitcoin ecosystem is rarely simple, and this one is no exception. What then are the actual numbers, where are they heading and what are the consequences?
 Transaction fees Probably the biggest challenge in looking at the costs of transactions is to work out what that actually means.</description>
     </item>

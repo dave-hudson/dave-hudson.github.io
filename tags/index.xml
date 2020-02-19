@@ -2,148 +2,148 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Dave Hudson</title>
-    <link>https://dave-hudson.github.io/tags/</link>
+    <link>https://hashingit.com/tags/</link>
     <description>Recent content in Tags on Dave Hudson</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <copyright>© 2014-2020 David J. Hudson</copyright>
     <lastBuildDate>Tue, 18 Feb 2020 18:30:00 +0000</lastBuildDate>
     
-	<atom:link href="https://dave-hudson.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hashingit.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Blog</title>
-      <link>https://dave-hudson.github.io/tags/Blog/</link>
+      <link>https://hashingit.com/tags/Blog/</link>
       <pubDate>Tue, 18 Feb 2020 18:30:00 +0000</pubDate>
       
-      <guid>https://dave-hudson.github.io/tags/Blog/</guid>
+      <guid>https://hashingit.com/tags/Blog/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hugo</title>
-      <link>https://dave-hudson.github.io/tags/Hugo/</link>
+      <link>https://hashingit.com/tags/Hugo/</link>
       <pubDate>Tue, 18 Feb 2020 18:30:00 +0000</pubDate>
       
-      <guid>https://dave-hudson.github.io/tags/Hugo/</guid>
+      <guid>https://hashingit.com/tags/Hugo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Software development</title>
-      <link>https://dave-hudson.github.io/tags/Software-development/</link>
+      <link>https://hashingit.com/tags/Software-development/</link>
       <pubDate>Mon, 27 Jan 2020 23:36:00 +0000</pubDate>
       
-      <guid>https://dave-hudson.github.io/tags/Software-development/</guid>
+      <guid>https://hashingit.com/tags/Software-development/</guid>
       <description></description>
     </item>
     
     <item>
       <title>MacVim</title>
-      <link>https://dave-hudson.github.io/tags/MacVim/</link>
+      <link>https://hashingit.com/tags/MacVim/</link>
       <pubDate>Wed, 22 Jan 2020 22:30:00 +0000</pubDate>
       
-      <guid>https://dave-hudson.github.io/tags/MacVim/</guid>
+      <guid>https://hashingit.com/tags/MacVim/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Vim</title>
-      <link>https://dave-hudson.github.io/tags/Vim/</link>
+      <link>https://hashingit.com/tags/Vim/</link>
       <pubDate>Wed, 22 Jan 2020 22:30:00 +0000</pubDate>
       
-      <guid>https://dave-hudson.github.io/tags/Vim/</guid>
+      <guid>https://hashingit.com/tags/Vim/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Bitcoin</title>
-      <link>https://dave-hudson.github.io/tags/Bitcoin/</link>
+      <link>https://hashingit.com/tags/Bitcoin/</link>
       <pubDate>Wed, 03 Feb 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://dave-hudson.github.io/tags/Bitcoin/</guid>
+      <guid>https://hashingit.com/tags/Bitcoin/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Bitcoin mining</title>
-      <link>https://dave-hudson.github.io/tags/Bitcoin-mining/</link>
+      <link>https://hashingit.com/tags/Bitcoin-mining/</link>
       <pubDate>Wed, 03 Feb 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://dave-hudson.github.io/tags/Bitcoin-mining/</guid>
+      <guid>https://hashingit.com/tags/Bitcoin-mining/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Bitcoin transatction fees</title>
-      <link>https://dave-hudson.github.io/tags/Bitcoin-transatction-fees/</link>
+      <link>https://hashingit.com/tags/Bitcoin-transatction-fees/</link>
       <pubDate>Wed, 03 Feb 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://dave-hudson.github.io/tags/Bitcoin-transatction-fees/</guid>
+      <guid>https://hashingit.com/tags/Bitcoin-transatction-fees/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Blockchain</title>
-      <link>https://dave-hudson.github.io/tags/Blockchain/</link>
+      <link>https://hashingit.com/tags/Blockchain/</link>
       <pubDate>Wed, 30 Dec 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://dave-hudson.github.io/tags/Blockchain/</guid>
+      <guid>https://hashingit.com/tags/Blockchain/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Bitcoin transaction fees</title>
-      <link>https://dave-hudson.github.io/tags/Bitcoin-transaction-fees/</link>
+      <link>https://hashingit.com/tags/Bitcoin-transaction-fees/</link>
       <pubDate>Wed, 12 Nov 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://dave-hudson.github.io/tags/Bitcoin-transaction-fees/</guid>
+      <guid>https://hashingit.com/tags/Bitcoin-transaction-fees/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Bitcoin TPS</title>
-      <link>https://dave-hudson.github.io/tags/Bitcoin-TPS/</link>
+      <link>https://hashingit.com/tags/Bitcoin-TPS/</link>
       <pubDate>Sun, 02 Nov 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://dave-hudson.github.io/tags/Bitcoin-TPS/</guid>
+      <guid>https://hashingit.com/tags/Bitcoin-TPS/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Bitcoin difficulty</title>
-      <link>https://dave-hudson.github.io/tags/Bitcoin-difficulty/</link>
+      <link>https://hashingit.com/tags/Bitcoin-difficulty/</link>
       <pubDate>Tue, 10 Jun 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://dave-hudson.github.io/tags/Bitcoin-difficulty/</guid>
+      <guid>https://hashingit.com/tags/Bitcoin-difficulty/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Bitcoin price</title>
-      <link>https://dave-hudson.github.io/tags/Bitcoin-price/</link>
+      <link>https://hashingit.com/tags/Bitcoin-price/</link>
       <pubDate>Thu, 05 Jun 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://dave-hudson.github.io/tags/Bitcoin-price/</guid>
+      <guid>https://hashingit.com/tags/Bitcoin-price/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Bitcoin energy usage</title>
-      <link>https://dave-hudson.github.io/tags/Bitcoin-energy-usage/</link>
+      <link>https://hashingit.com/tags/Bitcoin-energy-usage/</link>
       <pubDate>Mon, 28 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://dave-hudson.github.io/tags/Bitcoin-energy-usage/</guid>
+      <guid>https://hashingit.com/tags/Bitcoin-energy-usage/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ASICs</title>
-      <link>https://dave-hudson.github.io/tags/ASICs/</link>
+      <link>https://hashingit.com/tags/ASICs/</link>
       <pubDate>Sun, 23 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://dave-hudson.github.io/tags/ASICs/</guid>
+      <guid>https://hashingit.com/tags/ASICs/</guid>
       <description></description>
     </item>
     

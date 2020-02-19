@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blockchain on Dave Hudson</title>
-    <link>https://dave-hudson.github.io/tags/Blockchain/</link>
+    <link>https://hashingit.com/tags/Blockchain/</link>
     <description>Recent content in Blockchain on Dave Hudson</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <copyright>© 2014-2020 David J. Hudson</copyright>
     <lastBuildDate>Wed, 30 Dec 2015 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://dave-hudson.github.io/tags/Blockchain/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hashingit.com/tags/Blockchain/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Blockchain, what art thou?</title>
-      <link>https://dave-hudson.github.io/posts/2015-12-30-0000/</link>
+      <link>https://hashingit.com/posts/2015-12-30-0000/</link>
       <pubDate>Wed, 30 Dec 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://dave-hudson.github.io/posts/2015-12-30-0000/</guid>
+      <guid>https://hashingit.com/posts/2015-12-30-0000/</guid>
       <description>As we approach 2016 there seem to be endless discussions about &amp;ldquo;blockchain&amp;rdquo;. It&amp;rsquo;s a term that is ever-more frequently cited in even mainstream journalism, while in the fintech space alone there are a slew of would-be suppliers and would-be users claiming that &amp;ldquo;blockchain&amp;rdquo; will revolutionize any number of applications. This now-common usage suggests it must be something precisely defined and well understood, but this seems to be more a matter of mantra than comprehension.</description>
     </item>
     
