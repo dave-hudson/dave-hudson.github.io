@@ -103,17 +103,17 @@ systems?  In short, what is the essence of blockchain?</p>
         </figcaption>
 </figure>
 
-<h2 id="the-satoshi-whitepaper">The Satoshi whitepaper</h2>
+<h2 id="the-satoshi-white-paper">The Satoshi white paper</h2>
 <p>Almost every discussion of blockchains starts with the Satoshi
-whitepaper, but it is this very foundation that starts us on a path to
+white paper, but it is this very foundation that starts us on a path to
 confusion.  Neither the terms &ldquo;blockchain&rdquo; or &ldquo;block chain&rdquo; appear
 there; there are 67 uses of &ldquo;block&rdquo; and &ldquo;27&rdquo; of chain, but 0 of
 &ldquo;block chain&rdquo; or &ldquo;blockchain&rdquo;.  This aside though, let&rsquo;s see where
 this origin leads us.</p>
-<p>The whitepaper is short; it&rsquo;s just 9 page long.  The first mention of
+<p>The white paper is short; it&rsquo;s just 9 page long.  The first mention of
 &ldquo;block&rdquo; and &ldquo;chain&rdquo; starts at the bottom of page 2, section 3, where
 there is a discussion of a basic timestamp server.  Prior to this the
-whitepaper describes a series of design goals associated with the
+white paper describes a series of design goals associated with the
 Bitcoin design such as the ability to allow two parties to transact
 without needing to trust a third party.</p>
 <p>The statement of the design goals are fundamentally important.  They set
@@ -123,7 +123,7 @@ look at what each new layer does.  In our quest for the nature of a
 blockchain we need to be careful to look for things that are its
 attributes, rather than characteristics of this first implementation.</p>
 <h3 id="transactions">Transactions</h3>
-<p>Section 1 of the whitepaper is an introduction and it is with section 2
+<p>Section 1 of the white paper is an introduction and it is with section 2
 that we see anything really substantive.  Section 2 sets a scene for a
 digital coin, but it is described as being a chain of transactions in
 which the &ldquo;coin&rdquo; is assigned to new owners.  The coin is really a
@@ -140,7 +140,7 @@ predecessor block to ensure the construction of a chain.  The block
 hashes are published as a form of widely witnessed evidence that
 demonstrate shows the existence of both the block data and the
 predecessor hash. Changing either the predecessor or the other data
-within the block would result in a different hash signatuare for the
+within the block would result in a different hash signature for the
 block that would not match the widely witnessed view.</p>
 <p>These characteristics are all fundamental, and without them we cannot
 construct anything interesting.  What is equally interesting though is
@@ -163,7 +163,7 @@ blocks is produced be deterministic and well specified.  Without
 these our external observer cannot recompute the hashes.</li>
 </ul>
 <h3 id="enabling-peer-to-peer-operations">Enabling peer-to-peer operations</h3>
-<p>The next section, 4, of the whitepaper talks about proof-of-work.  The
+<p>The next section, 4, of the white paper talks about proof-of-work.  The
 first line is interesting: &ldquo;To implement a distributed timestamp server
 on a peer-to-peer (P2P) basis, we will need to use a proof-of-work
 system similar to Adam Back&rsquo;s Hashcash&rdquo;.  Proof-of-work is not required
@@ -182,7 +182,7 @@ blockchain is, or might require.  Indeed, neither sections 6, 7, 8, 9,
 10, 11 or 12 (the final section) go on to explicitly offer any new ideas
 about what a blockchain might be.</p>
 <h2 id="answers-to-our-questions">Answers to our questions</h2>
-<p>If the Satoshi whitepaper is the origin of the blockchain design we&rsquo;re
+<p>If the Satoshi white paper is the origin of the blockchain design we&rsquo;re
 left with a rather thin definition, but perhaps that is the most
 enlightening aspect.  It is very explicit about particular design choices
 and their purpose, which tends to lead towards a realization that many
@@ -190,7 +190,7 @@ of the claims about &ldquo;blockchains&rdquo; may actually be a matter of
 implementation rather than architecture.</p>
 <p>Let&rsquo;s ask some specific questions then!</p>
 <h3 id="must-a-blockchain-have-coins">Must a blockchain have coins?</h3>
-<p>There is an interesting discussion in the whitepaper about the need to
+<p>There is an interesting discussion in the white paper about the need to
 provide incentives to those providing security to the P2P network to
 remain honest and as a means to introduce &ldquo;coins&rdquo; into the system, but
 the discussion is clearly in the context of the P2P network.  The concept
@@ -200,15 +200,15 @@ seems to be no requirement for coins if we wish to construct a chain of
 cryptographically-linked blocks.  There is an interesting question to ask
 about trust but we will return to that later.</p>
 <h3 id="must-a-blockchain-implement-smart-contracts">Must a blockchain implement smart contracts?</h3>
-<p>From the perspective of the whitepaper this seems unlikely.  The word
+<p>From the perspective of the white paper this seems unlikely.  The word
 &ldquo;contract&rdquo; does not appear anywhere.</p>
 <p>Might a blockchain enable smart contracts?  Yes, of course it might, but
 it might enable many other things too.</p>
 <h3 id="must-a-blockchain-be-programmable">Must a blockchain be programmable?</h3>
 <p>Again the answer seems to be no.  Neither the words &ldquo;program&rdquo; or
-&ldquo;script&rdquo; appear in the whitepaper.</p>
+&ldquo;script&rdquo; appear in the white paper.</p>
 <p>A blockchain does have a requirement to be interpretable by one or more
-indepdendent observers, so it is clearly built from one or more
+independent observers, so it is clearly built from one or more
 well-defined data structures.  The block data structure must contain a
 previous block hash, and the cryptographic hash of the block must be
 performed in a very specific way, but none of these require that the
@@ -222,7 +222,7 @@ more ambitious design goals, but it seems a blockchain need no more be
 &ldquo;programmable&rdquo; than any other linked list data structure.</p>
 <h3 id="is-a-blockchain-a-database">Is a blockchain a database?</h3>
 <p>Once more the answer seems to be no.  As before, the word &ldquo;database&rdquo;
-does not appear in the whitepaper.</p>
+does not appear in the white paper.</p>
 <p>At its core a blockchain is a special type of data structure.  The blocks
 within the chain contain data, but this does not make it a database; at
 best the blocks represent the transaction log of a specific database

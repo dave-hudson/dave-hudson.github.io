@@ -8,11 +8,6 @@
   </url>
   
   <url>
-    <loc>https://hashingit.com/</loc>
-    <lastmod>2020-02-18T18:30:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://hashingit.com/tags/Hugo/</loc>
     <lastmod>2020-02-18T18:30:00+00:00</lastmod>
   </url>
@@ -73,6 +68,11 @@
   </url>
   
   <url>
+    <loc>https://hashingit.com/</loc>
+    <lastmod>2020-01-22T21:09:58+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://hashingit.com/posts/2016-02-03-0000/</loc>
     <lastmod>2016-02-03T00:00:00+00:00</lastmod>
   </url>
@@ -88,7 +88,7 @@
   </url>
   
   <url>
-    <loc>https://hashingit.com/tags/Bitcoin-transatction-fees/</loc>
+    <loc>https://hashingit.com/tags/Bitcoin-transaction-fees/</loc>
     <lastmod>2016-02-03T00:00:00+00:00</lastmod>
   </url>
   
@@ -130,11 +130,6 @@
   <url>
     <loc>https://hashingit.com/posts/2014-12-05-0000/</loc>
     <lastmod>2014-12-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://hashingit.com/tags/Bitcoin-transaction-fees/</loc>
-    <lastmod>2014-11-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>

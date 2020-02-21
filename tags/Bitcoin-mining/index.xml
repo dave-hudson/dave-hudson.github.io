@@ -78,7 +78,7 @@ A puzzle Back in &amp;ldquo;Bitcoin traffic bulletin&amp;rdquo; we saw how first
       <pubDate>Fri, 05 Dec 2014 00:00:00 +0000</pubDate>
       
       <guid>https://hashingit.com/posts/2014-12-05-0000/</guid>
-      <description>A few days ago, Ittay Eyal published an intriguiging paper, &amp;ldquo;The Miner&amp;rsquo;s Dilemma&amp;quot;. It describes an attack where an open mining pool may be attacked using block withholding. Given that most Bitcoin mining is managed by open mining pools then it seems like it ought to raise a few eyebrows (perhaps more than it has already). Just how does this attack work though, who wins, who loses and by how much?</description>
+      <description>A few days ago, Ittay Eyal published an intriguing paper, &amp;ldquo;The Miner&amp;rsquo;s Dilemma&amp;quot;. It describes an attack where an open mining pool may be attacked using block withholding. Given that most Bitcoin mining is managed by open mining pools then it seems like it ought to raise a few eyebrows (perhaps more than it has already). Just how does this attack work though, who wins, who loses and by how much?</description>
     </item>
     
     <item>
@@ -156,7 +156,7 @@ Difficulty charts When we start to think about mining, difficulty charts are not
       <pubDate>Tue, 20 May 2014 00:00:00 +0000</pubDate>
       
       <guid>https://hashingit.com/posts/2014-05-20-0000/</guid>
-      <description>One of the more infuriating challenges when trying to do any sort of analysis of Bitcoin mining is to understand the current world-wide hashing rate and how this affects difficulty changes. The very best &amp;ldquo;live update&amp;rdquo; websites seem to show the hash rate being all over the place. Large spikes occur frequently and it appears that huge amounts of hashing capacity have either come online or gone offline. This explanation may appeal to conspiracy theorists, and will sometimes be the real cause, but there is a much more mundane reason most of the time (but nontheless surprising).</description>
+      <description>One of the more infuriating challenges when trying to do any sort of analysis of Bitcoin mining is to understand the current world-wide hashing rate and how this affects difficulty changes. The very best &amp;ldquo;live update&amp;rdquo; websites seem to show the hash rate being all over the place. Large spikes occur frequently and it appears that huge amounts of hashing capacity have either come online or gone offline. This explanation may appeal to conspiracy theorists, and will sometimes be the real cause, but there is a much more mundane reason most of the time (but nonetheless surprising).</description>
     </item>
     
     <item>
@@ -194,7 +194,7 @@ While the green footprint is of interest to many, the electricity costs turn out
       <pubDate>Thu, 03 Apr 2014 00:00:00 +0000</pubDate>
       
       <guid>https://hashingit.com/posts/2014-04-03-0000/</guid>
-      <description>Bitcoin mining can be a very profitable activity. It&amp;rsquo;s good that it is beause Bitcoin, as a system, only works because of the mining activity; it&amp;rsquo;s the mining that ensures the transactions actually take place. Just how much money does it generate though and does this help us make any predictions for the future?
+      <description>Bitcoin mining can be a very profitable activity. It&amp;rsquo;s good that it is because Bitcoin, as a system, only works because of the mining activity; it&amp;rsquo;s the mining that ensures the transactions actually take place. Just how much money does it generate though and does this help us make any predictions for the future?
 Like mining any other finite resource, Bitcoin mining gets harder over time and requires more investment to mine profitably.</description>
     </item>
     
