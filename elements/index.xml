@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Elements on Dave Hudson</title>
+    <link>https://hashingit.com/elements/</link>
+    <description>Recent content in Elements on Dave Hudson</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <copyright>© 2014-2020 David J. Hudson</copyright>
+    <lastBuildDate>Wed, 22 Jan 2020 22:20:58 +0000</lastBuildDate>
+    
+	<atom:link href="https://hashingit.com/elements/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Research resources</title>
+      <link>https://hashingit.com/elements/research-resources/</link>
+      <pubDate>Sun, 02 Feb 2020 22:10:00 +0000</pubDate>
+      
+      <guid>https://hashingit.com/elements/research-resources/</guid>
+      <description>   Date Author(s) Title     1970-06 E. F. Codd A Relational Model of Data for Large Shared Data Banks   1977-12 Carl Hewitt, Henry Baker Jr. Actors and Continuous Functionals   2015-01-21 Carl Hewitt Actor Model of Computation: Scalable Robust Information Systems    </description>
+    </item>
+    
+  </channel>
+</rss>
