@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://hashingit.com/elements/research-resources/</loc>
+    <lastmod>2020-02-24T10:10:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://hashingit.com/tags/Blog/</loc>
     <lastmod>2020-02-18T18:30:00+00:00</lastmod>
   </url>
@@ -25,11 +30,6 @@
   <url>
     <loc>https://hashingit.com/tags/</loc>
     <lastmod>2020-02-18T18:30:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://hashingit.com/elements/research-resources/</loc>
-    <lastmod>2020-02-02T22:10:00+00:00</lastmod>
   </url>
   
   <url>
