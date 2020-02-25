@@ -19,7 +19,7 @@
       
       <guid>https://hashingit.com/elements/research-resources/</guid>
       <description>Throughout my career I&amp;rsquo;ve been reading and collecting papers/articles that I find interesting. Here are some of them:
-   Date Published Author(s) Title     2017-05 Todd Warszawski, Peter Bailis ACIDRain: Concurrency-Related Attacks on Database-Backed Web Applications   2016-11 Philipp Holzinger, Stefan Triller, Alexandre Bartel, Eric Bodden An In-Depth Study of More Than Ten Years of Java Exploitation   2016-01-06 Daniel J. Bernstein, Tanja Lange Failures in NIST’s ECC standards   2015-05 Anil Madhavapeddy, Thomas Leonard, Magnus Skjegstad, Thomas Gazagnaire, et al.</description>
+   Date Published Author(s) Title     2017-05 Alexandre Verbitski, Anurag Gupta, Debanjan Saha, Murali Brahmadesam, et al. Amazon Aurora: Design Considerations for High Throughput Cloud-Native Relational Databases   2017-05 Todd Warszawski, Peter Bailis ACIDRain: Concurrency-Related Attacks on Database-Backed Web Applications   2016-11 Philipp Holzinger, Stefan Triller, Alexandre Bartel, Eric Bodden An In-Depth Study of More Than Ten Years of Java Exploitation   2016-01-06 Daniel J.</description>
     </item>
     
   </channel>
