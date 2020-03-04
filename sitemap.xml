@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://hashingit.com/</loc>
+    <lastmod>2020-03-04T18:29:58+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://hashingit.com/posts/2020-03-04-0730/</loc>
     <lastmod>2020-03-04T07:30:00+00:00</lastmod>
   </url>
@@ -69,11 +74,6 @@
   
   <url>
     <loc>https://hashingit.com/elements/</loc>
-    <lastmod>2020-01-22T22:20:58+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://hashingit.com/</loc>
     <lastmod>2020-01-22T22:20:58+00:00</lastmod>
   </url>
   
