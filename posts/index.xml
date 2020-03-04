@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <copyright>© 2014-2020 David J. Hudson</copyright>
-    <lastBuildDate>Tue, 18 Feb 2020 18:30:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 04 Mar 2020 07:30:00 +0000</lastBuildDate>
     
 	<atom:link href="https://hashingit.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Playing librarian with 30 years of collected research</title>
+      <link>https://hashingit.com/posts/2020-03-04-0730/</link>
+      <pubDate>Wed, 04 Mar 2020 07:30:00 +0000</pubDate>
+      
+      <guid>https://hashingit.com/posts/2020-03-04-0730/</guid>
+      <description>If there&amp;rsquo;s a theme in my life it has been an obsession with computers. I started when I was 9 and still have books on my shelves from the late 70s and early 80s when that passion was new - thank you, Dad! Every one of those books, and their successors, taught me a new way to understand and imagine things I could get computers to do.
+A random trip to a University bookshop led me to discover Niklaus Wirth and Jürg Gutknecht&amp;rsquo;s book, &amp;ldquo;Project Oberon&amp;rdquo;.</description>
+    </item>
     
     <item>
       <title>Importing the old hashingit.com site contents</title>
