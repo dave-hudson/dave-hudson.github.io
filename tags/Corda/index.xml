@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Corda on Dave Hudson</title>
+    <link>https://hashingit.com/tags/Corda/</link>
+    <description>Recent content in Corda on Dave Hudson</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <copyright>© 2014-2020 David J. Hudson</copyright>
+    <lastBuildDate>Wed, 09 Jan 2019 12:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://hashingit.com/tags/Corda/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Getting real with blockchain</title>
+      <link>https://hashingit.com/posts/2019-01-09-1200/</link>
+      <pubDate>Wed, 09 Jan 2019 12:00:00 +0000</pubDate>
+      
+      <guid>https://hashingit.com/posts/2019-01-09-1200/</guid>
+      <description>Note 2020-03-06: An earlier, longer, version of this was published on Medium and LinkedIn. This version has been slightly edited to be a bit less of a sales pitch for my then-team, Solutions Engineering. I&amp;rsquo;m very happy to note that in the 14 months since the original article, the team has gone on to bigger and better things, continuing to help customers &amp;ldquo;get real&amp;rdquo; with Corda.
+ It’s pretty-much impossible to avoid the pronouncements in both the technical and mainstream press about how blockchain is going to change the world.</description>
+    </item>
+    
+  </channel>
+</rss>

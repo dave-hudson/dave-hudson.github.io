@@ -7,10 +7,33 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <copyright>© 2014-2020 David J. Hudson</copyright>
-    <lastBuildDate>Wed, 30 Dec 2015 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 09 Jan 2019 12:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://hashingit.com/tags/Blockchain/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Getting real with blockchain</title>
+      <link>https://hashingit.com/posts/2019-01-09-1200/</link>
+      <pubDate>Wed, 09 Jan 2019 12:00:00 +0000</pubDate>
+      
+      <guid>https://hashingit.com/posts/2019-01-09-1200/</guid>
+      <description>Note 2020-03-06: An earlier, longer, version of this was published on Medium and LinkedIn. This version has been slightly edited to be a bit less of a sales pitch for my then-team, Solutions Engineering. I&amp;rsquo;m very happy to note that in the 14 months since the original article, the team has gone on to bigger and better things, continuing to help customers &amp;ldquo;get real&amp;rdquo; with Corda.
+ It’s pretty-much impossible to avoid the pronouncements in both the technical and mainstream press about how blockchain is going to change the world.</description>
+    </item>
+    
+    <item>
+      <title>What IoT history reveals about blockchain’s challenges</title>
+      <link>https://hashingit.com/posts/2017-01-06-1400/</link>
+      <pubDate>Fri, 06 Jan 2017 14:00:00 +0000</pubDate>
+      
+      <guid>https://hashingit.com/posts/2017-01-06-1400/</guid>
+      <description>Note 2020-03-06: This was originally published as an opinion piece at Coindesk.
+   Cave paintings vis https://www.shutterstock.com/pic-94533745/stock-photo-famous-prehistoric-rock-paintings-of-tassili-najjer-algeria.html
+  2009 saw Satoshi Nakamoto deploy the first Bitcoin node, and within five years its blockchain had become a large-scale industry.
+But while new applications and commercial opportunities seemed only a short step away, in 2016, we realized that industrial blockchains weren’t going to be so straightforward.
+Early enthusiasm for new technologies is nothing new.</description>
+    </item>
     
     <item>
       <title>Blockchain, what art thou?</title>

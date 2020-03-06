@@ -58,8 +58,8 @@ So what should we expect? What happens during hashing growth phases, and what wo
       <pubDate>Fri, 06 Feb 2015 00:00:00 +0000</pubDate>
       
       <guid>https://hashingit.com/posts/2015-02-06-0000/</guid>
-      <description>[Note 2015-12-19: This article is the original &amp;quot;Waiting for blocks&amp;quot; but had a problem with some of the probability statistics. A revised, authoritative, version can be found as &amp;ldquo;Waiting for blocks (revised)&amp;quot;. Please read that one; this one is retained purely for historical information!]
-Bitcoin blocks take 10 minutes to find don&amp;rsquo;t they? Well, actually no they don&amp;rsquo;t. Sometimes they can be found really quickly, but other times they can take a very long time.</description>
+      <description>Note 2015-12-19: This article is the original &amp;quot;Waiting for blocks&amp;quot; but had a problem with some of the probability statistics. A revised, authoritative, version can be found as &amp;ldquo;Waiting for blocks (revised)&amp;quot;. Please read that one; this one is retained purely for historical information!
+ Bitcoin blocks take 10 minutes to find don&amp;rsquo;t they? Well, actually no they don&amp;rsquo;t. Sometimes they can be found really quickly, but other times they can take a very long time.</description>
     </item>
     
     <item>
@@ -97,8 +97,8 @@ Transaction fees Probably the biggest challenge in looking at the costs of trans
       <pubDate>Tue, 11 Nov 2014 00:00:00 +0000</pubDate>
       
       <guid>https://hashingit.com/posts/2014-11-11-0000/</guid>
-      <description>[Note 2015-12-20: This article is the original &amp;ldquo;Bitcoin traffic bulletin&amp;rdquo; but has a minor problem with some of the probability statistics. A revised, authoritative, version with significantly updated commentary can be found as &amp;ldquo;Bitcoin traffic bulletin (redux)&amp;quot;. Please read that one; this one is retained purely for historical information!]
-The Bitcoin network is currently running at around 30% of its maximum capacity, but what does that actually mean to its users?</description>
+      <description>Note 2015-12-20: This article is the original &amp;ldquo;Bitcoin traffic bulletin&amp;rdquo; but has a minor problem with some of the probability statistics. A revised, authoritative, version with significantly updated commentary can be found as &amp;ldquo;Bitcoin traffic bulletin (redux)&amp;quot;. Please read that one; this one is retained purely for historical information!
+ The Bitcoin network is currently running at around 30% of its maximum capacity, but what does that actually mean to its users?</description>
     </item>
     
     <item>
