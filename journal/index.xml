@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Journals on Dave Hudson</title>
+    <link>https://hashingit.com/journal/</link>
+    <description>Recent content in Journals on Dave Hudson</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <copyright>© 2014-2020 David J. Hudson</copyright>
+    <lastBuildDate>Fri, 10 Apr 2020 16:10:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://hashingit.com/journal/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Adding the &#34;Journal&#34; section to hashingit.com</title>
+      <link>https://hashingit.com/journal/2020-04-10-1610/</link>
+      <pubDate>Fri, 10 Apr 2020 16:10:00 +0000</pubDate>
+      
+      <guid>https://hashingit.com/journal/2020-04-10-1610/</guid>
+      <description>When I created this site I was thinking that it would be a fairly traditional blog site, but had always intended to capture my work in progress too. I could have done that in the blog posts, but that risked diluting their value. The blog posts should really represent carefully curated work.
+To this end I&amp;rsquo;ve now created the &amp;ldquo;Journal&amp;rdquo; area. This is a space to drop notes as I go.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -14,10 +14,10 @@
     
     <item>
       <title>Strange spikes revisited!</title>
-      <link>https://hashingit.com/posts/2014-06-05-0000/</link>
+      <link>https://hashingit.com/blog/2014-06-05-0000/</link>
       <pubDate>Thu, 05 Jun 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://hashingit.com/posts/2014-06-05-0000/</guid>
+      <guid>https://hashingit.com/blog/2014-06-05-0000/</guid>
       <description>About 3 months ago I looked at how the BTC price seems to spike up approximately every 7 months. It seems to be happening again!
 Over the last couple of weeks the BTC price has reversed its earlier falls and has yet again started to jump back up again. The timing is pretty-much consistent with previous spikes.
 Let&amp;rsquo;s look at the graph (plotted on a logarithmic Y axis):
@@ -26,10 +26,10 @@ The trend of high points in the graph (red line) shows another theme park ride: 
     
     <item>
       <title>Strange spikes in the Bitcoin price?</title>
-      <link>https://hashingit.com/posts/2014-03-12-0000/</link>
+      <link>https://hashingit.com/blog/2014-03-12-0000/</link>
       <pubDate>Wed, 12 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://hashingit.com/posts/2014-03-12-0000/</guid>
+      <guid>https://hashingit.com/blog/2014-03-12-0000/</guid>
       <description>There&amp;rsquo;s something odd about the fluctuations in the price of Bitcoins. The data shows a set of spikes when the price jumps up and then falls back somewhat and levels out. This wouldn&amp;rsquo;t be so unusual if the spikes occurred intermittently but in the case of Bitcoins the spikes happen with a very surprising regularity!
 Let&amp;rsquo;s look at the graph:
 The first thing to note is that the graph is plotted with a logarithmic Y axis so each step indicates a price point ten times larger than the one below.</description>

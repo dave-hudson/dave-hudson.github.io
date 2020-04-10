@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    
+    
+    
+        <title>Blockchain, what art thou? - Dave Hudson</title>
+    
+
+    <meta name="description" content="As we approach 2016 there seem to be endless discussions about &#34;blockchain&#34;.  It&#39;s a term that is ever-more frequently cited in even mainstream journalism, while in the fintech space alone there are a slew of would-be suppliers and would-be users claiming that &#34;blockchain&#34; will revolutionize any number of applications.  This now-common usage suggests it must be something precisely defined and well understood, but this seems to be more a matter of mantra than comprehension.  The echo chambers of the Internet reverberate to many opinions, but attempts to find a precise meaning seem to find a dismaying lack of agreement.  To be anything more than marketing hyperbole we really need the answers some questions.  What is it?  What isn&#39;t it?  What might it be?  Can it be something that will allow us to build new and enduring systems?  In short, what is the essence of blockchain?">
+
+    
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+
+    <meta property="og:title" content="Blockchain, what art thou?" />
+<meta property="og:description" content="As we approach 2016 there seem to be endless discussions about &#34;blockchain&#34;.  It&#39;s a term that is ever-more frequently cited in even mainstream journalism, while in the fintech space alone there are a slew of would-be suppliers and would-be users claiming that &#34;blockchain&#34; will revolutionize any number of applications.  This now-common usage suggests it must be something precisely defined and well understood, but this seems to be more a matter of mantra than comprehension.  The echo chambers of the Internet reverberate to many opinions, but attempts to find a precise meaning seem to find a dismaying lack of agreement.  To be anything more than marketing hyperbole we really need the answers some questions.  What is it?  What isn&#39;t it?  What might it be?  Can it be something that will allow us to build new and enduring systems?  In short, what is the essence of blockchain?" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://hashingit.com/blog/2015-12-30-0000/" />
+<meta property="article:published_time" content="2015-12-30T00:00:00+00:00" />
+<meta property="article:modified_time" content="2015-12-30T00:00:00+00:00" />
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Blockchain, what art thou?"/>
+<meta name="twitter:description" content="As we approach 2016 there seem to be endless discussions about &#34;blockchain&#34;.  It&#39;s a term that is ever-more frequently cited in even mainstream journalism, while in the fintech space alone there are a slew of would-be suppliers and would-be users claiming that &#34;blockchain&#34; will revolutionize any number of applications.  This now-common usage suggests it must be something precisely defined and well understood, but this seems to be more a matter of mantra than comprehension.  The echo chambers of the Internet reverberate to many opinions, but attempts to find a precise meaning seem to find a dismaying lack of agreement.  To be anything more than marketing hyperbole we really need the answers some questions.  What is it?  What isn&#39;t it?  What might it be?  Can it be something that will allow us to build new and enduring systems?  In short, what is the essence of blockchain?"/>
+
+
+    <link href="https://fonts.googleapis.com/css?family=Open Sans:300,400,300italic,400italic,700bold|Lalezar:400,700bold" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="https://hashingit.com/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://hashingit.com/css/main.css" />
+    <link disabled id="dark-mode-theme" rel="stylesheet" type="text/css" href="https://hashingit.com/css/dark.css" />
+
+    
+        <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    
+    
+</head>
+
+    <body>
+        <div class="container">
+            <div class="header">
+    <table class="site-title">
+        <tr>
+            <td>
+                <h1><a href="https://hashingit.com/">Dave Hudson</a></h1>
+                
+                    <h2>hashingit.com</h1>
+                
+            </td>
+            <td>
+                <nav class="social">
+                    
+                        <div class="icon"><a href="/index.xml" title="RSS"><i data-feather="rss"></i></a></div>
+                    
+                        <div class="icon"><a href="https://twitter.com/hashingitcom" title="Twitter"><i data-feather="twitter"></i></a></div>
+                    
+                        <div class="icon"><a href="https://facebook.com/hashingitcom" title="Facebook"><i data-feather="facebook"></i></a></div>
+                    
+                        <div class="icon"><a href="https://linkedin.com/in/davejh" title="LinkedIn"><i data-feather="linkedin"></i></a></div>
+                    
+                        <div class="icon"><a href="https://github.com/dave-hudson" title="Github"><i data-feather="github"></i></a></div>
+                    
+                    <div class="icon" id="dark-mode-moon"><a><i data-feather="moon"></i></a></div>
+                    <div class="icon" id="dark-mode-sun"><a><i data-feather="sun"></i></a></div>
+                </nav>
+            </td>
+        </tr>
+    </table>
+    <nav class="site-menu">
+        <ul>
+            
+                <li>
+                    <a href="/">Home</a>
+                </li>
+            
+                <li>
+                    <a href="/elements">Elements</a>
+                </li>
+            
+                <li>
+                    <a href="/blog">Blog</a>
+                </li>
+            
+                <li>
+                    <a href="/journal">Journal</a>
+                </li>
+            
+                <li>
+                    <a href="/tags">Tags</a>
+                </li>
+            
+                <li>
+                    <a href="/about">About</a>
+                </li>
+            
+        </ul>
+    </nav>
+</div>
+
+
+            <div class="title">
+                <h1>Blockchain, what art thou?</h1>
+                <div class="meta">
+                    2015-12-30 00:00 - 12 min read
+                </div>
+            </div>
+
+            <div class="blog-post">
+                <nav class="tags">
+                    
+                        
+                            <ul>
+                                
+                                    <li><a href="/tags/Blockchain">Blockchain</a></li>
+                                
+                            </ul>
+                        
+                    
+                </nav>
+
+                <div class="markdown">
+                    <p>As we approach 2016 there seem to be endless discussions about
+&ldquo;blockchain&rdquo;.  It&rsquo;s a term that is ever-more frequently cited in even
+mainstream journalism, while in the fintech space alone there are a slew
+of would-be suppliers and would-be users claiming that &ldquo;blockchain&rdquo;
+will revolutionize any number of applications.  This now-common usage
+suggests it must be something precisely defined and well understood, but
+this seems to be more a matter of mantra than comprehension.</p>
+<p>The echo chambers of the Internet reverberate to many opinions, but
+attempts to find a precise meaning seem to find a dismaying lack of
+agreement.  To be anything more than marketing hyperbole we really need
+the answers some questions.  What is it?  What isn&rsquo;t it?  What might it
+be?  Can it be something that will allow us to build new and enduring
+systems?  In short, what is the essence of blockchain?</p>
+<figure>
+    <img src="MenaiBridge.jpg"
+         alt="The Menai Suspension Bridge, Bangor, North Wales, UK, completed in 1826 (almost 190 years ago), demonstrates how blocks and chains can create something quite remarkable and enduring (photograph taken by the author)"/> <figcaption>
+            <p>The Menai Suspension Bridge, Bangor, North Wales, UK, completed in 1826 (almost 190 years ago), demonstrates how blocks and chains can create something quite remarkable and enduring (photograph taken by the author)</p>
+        </figcaption>
+</figure>
+
+<h2 id="the-satoshi-white-paper">The Satoshi white paper</h2>
+<p>Almost every discussion of blockchains starts with the Satoshi
+white paper, but it is this very foundation that starts us on a path to
+confusion.  Neither the terms &ldquo;blockchain&rdquo; or &ldquo;block chain&rdquo; appear
+there; there are 67 uses of &ldquo;block&rdquo; and &ldquo;27&rdquo; of chain, but 0 of
+&ldquo;block chain&rdquo; or &ldquo;blockchain&rdquo;.  This aside though, let&rsquo;s see where
+this origin leads us.</p>
+<p>The white paper is short; it&rsquo;s just 9 page long.  The first mention of
+&ldquo;block&rdquo; and &ldquo;chain&rdquo; starts at the bottom of page 2, section 3, where
+there is a discussion of a basic timestamp server.  Prior to this the
+white paper describes a series of design goals associated with the
+Bitcoin design such as the ability to allow two parties to transact
+without needing to trust a third party.</p>
+<p>The statement of the design goals are fundamentally important.  They set
+the scene for an implementation to meet those goals in which
+characteristics are layered upon each other, but it is informative to
+look at what each new layer does.  In our quest for the nature of a
+blockchain we need to be careful to look for things that are its
+attributes, rather than characteristics of this first implementation.</p>
+<h3 id="transactions">Transactions</h3>
+<p>Section 1 of the white paper is an introduction and it is with section 2
+that we see anything really substantive.  Section 2 sets a scene for a
+digital coin, but it is described as being a chain of transactions in
+which the &ldquo;coin&rdquo; is assigned to new owners.  The coin is really a
+metaphor for a transaction history of linked transactions.</p>
+<p>Interestingly, section 2 also describes how a centralized system
+doesn&rsquo;t actually need to do this.</p>
+<h3 id="blocks-and-chains">Blocks and chains</h3>
+<p>With section 3 we see the essence of the design pattern that might best
+describe the basis of a blockchain.  It is given as something that is
+constructed from a series of incremental blocks of data, each of which
+can be identified by a cryptographic hash over its contents.  In
+addition, each block incorporates the cryptographic hash of its
+predecessor block to ensure the construction of a chain.  The block
+hashes are published as a form of widely witnessed evidence that
+demonstrate shows the existence of both the block data and the
+predecessor hash. Changing either the predecessor or the other data
+within the block would result in a different hash signature for the
+block that would not match the widely witnessed view.</p>
+<p>These characteristics are all fundamental, and without them we cannot
+construct anything interesting.  What is equally interesting though is
+what is not stated as necessary at this point.  There are no mentions of
+coins, no mentions of peer-to-peer networks, no mentions of mining, etc.
+Instead the suggestion is that publishing hashes in any widely
+disseminated form would be sufficient, with the 2 examples being given
+as publication in a newspaper or publication via Usenet.</p>
+<p>While we see some explicit characteristics these lead to a few implicit
+ones:</p>
+<ul>
+<li>Publication of the hashes is meaningless unless those same hashes
+can be independently recomputed by an external observer who is given
+just the data from the blocks in the chain.  It is this
+characteristic that enables the observers to not have to trust the
+originator of the chain of blocks; instead they are able to compare
+historical hashes for themselves.</li>
+<li>Recomputing of the hashes requires that the algorithm by which the
+blocks is produced be deterministic and well specified.  Without
+these our external observer cannot recompute the hashes.</li>
+</ul>
+<h3 id="enabling-peer-to-peer-operations">Enabling peer-to-peer operations</h3>
+<p>The next section, 4, of the white paper talks about proof-of-work.  The
+first line is interesting: &ldquo;To implement a distributed timestamp server
+on a peer-to-peer (P2P) basis, we will need to use a proof-of-work
+system similar to Adam Back&rsquo;s Hashcash&rdquo;.  Proof-of-work is not required
+to construct a blockchain, just to enable the peer-to-peer
+implementation of the timestamp server.  Subsequent cryptocurrency
+designs have shown there are potentially other approaches that can be
+taken here too (e.g.  forms of proof-of-stake, or hybrids of both), but
+if we are happy with a client-server approach then none of these are
+actually necessary.</p>
+<p>This is not to say that proof-of-work might not have some other uses
+with a blockchain design, but none seem fundamental to our quest.</p>
+<h3 id="network-and-beyond">Network and beyond</h3>
+<p>Section 5 describes the implementation characteristics of the Bitcoin
+network.  Nothing here explicitly extends the concept of what a
+blockchain is, or might require.  Indeed, neither sections 6, 7, 8, 9,
+10, 11 or 12 (the final section) go on to explicitly offer any new ideas
+about what a blockchain might be.</p>
+<h2 id="answers-to-our-questions">Answers to our questions</h2>
+<p>If the Satoshi white paper is the origin of the blockchain design we&rsquo;re
+left with a rather thin definition, but perhaps that is the most
+enlightening aspect.  It is very explicit about particular design choices
+and their purpose, which tends to lead towards a realization that many
+of the claims about &ldquo;blockchains&rdquo; may actually be a matter of
+implementation rather than architecture.</p>
+<p>Let&rsquo;s ask some specific questions then!</p>
+<h3 id="must-a-blockchain-have-coins">Must a blockchain have coins?</h3>
+<p>There is an interesting discussion in the white paper about the need to
+provide incentives to those providing security to the P2P network to
+remain honest and as a means to introduce &ldquo;coins&rdquo; into the system, but
+the discussion is clearly in the context of the P2P network.  The concept
+of coins themselves is noted as unnecessary with a trusted &ldquo;mint&rdquo;.</p>
+<p>A trusted mint is not something desirable in a cryptocurrency, but there
+seems to be no requirement for coins if we wish to construct a chain of
+cryptographically-linked blocks.  There is an interesting question to ask
+about trust but we will return to that later.</p>
+<h3 id="must-a-blockchain-implement-smart-contracts">Must a blockchain implement smart contracts?</h3>
+<p>From the perspective of the white paper this seems unlikely.  The word
+&ldquo;contract&rdquo; does not appear anywhere.</p>
+<p>Might a blockchain enable smart contracts?  Yes, of course it might, but
+it might enable many other things too.</p>
+<h3 id="must-a-blockchain-be-programmable">Must a blockchain be programmable?</h3>
+<p>Again the answer seems to be no.  Neither the words &ldquo;program&rdquo; or
+&ldquo;script&rdquo; appear in the white paper.</p>
+<p>A blockchain does have a requirement to be interpretable by one or more
+independent observers, so it is clearly built from one or more
+well-defined data structures.  The block data structure must contain a
+previous block hash, and the cryptographic hash of the block must be
+performed in a very specific way, but none of these require that the
+data structure carry any notion of executable code.</p>
+<p>Can a blockchain contain some form of program code?  This is an
+implementation question and the answer is yes.  Bitcoin includes a
+limited scripting language, and other systems, such as Ethereum, have
+subsequently attempted to support more elaborate programming models.  The
+choice to support such concepts seems more to be either expedience, or,
+more ambitious design goals, but it seems a blockchain need no more be
+&ldquo;programmable&rdquo; than any other linked list data structure.</p>
+<h3 id="is-a-blockchain-a-database">Is a blockchain a database?</h3>
+<p>Once more the answer seems to be no.  As before, the word &ldquo;database&rdquo;
+does not appear in the white paper.</p>
+<p>At its core a blockchain is a special type of data structure.  The blocks
+within the chain contain data, but this does not make it a database; at
+best the blocks represent the transaction log of a specific database
+implementation. Similarly there are no semantics for querying a
+blockchain, any more than there are for querying a linked list.  A
+specific implementation might allow for queries of either but the
+implementation does not define the thing itself.</p>
+<p>As a point of comparison, the IP packets that for the TCP packets
+carrying this article are defined as data structures in a series of IETF
+(Internet Engineering Task Force) RFC (Request For Comments) documents.
+The documents describe the form of the packets and their behaviour when
+they are transported.  Recipients of those packets are able to make their
+own determinations of their validity without regard to any part of the
+network implementation between them and the originator.  An
+implementation of a router/firewall may offer a feature to capture those
+packets so that they can be analyzed later, and may offer database
+queries of those packets, but there is nothing in the nature of an IP
+packet that makes it a database, nor is there anything in the RFCs that
+would suggest otherwise.  Implementation features and specification are
+very different things.</p>
+<p>[Is A Blockchain
+Trustless?]{style=&quot;color: inherit; font-family: inherit; font-size: 14px; font-weight: bold;&quot;}</p>
+<p>The answer here is no too, but that&rsquo;s because the question is too
+broad.  A blockchain does allow us to require less trust than many
+traditional systems but any implementation still requires some level of
+trust.</p>
+<p>A recipient of block data must trust that it has been delivered without
+being compromised by some intermediary.  The P2P distribution of blocks
+within the Bitcoin and similar networks set out to try to minimize trust
+in peers, but even this model has potential failure points.  Here are a
+few:</p>
+<ul>
+<li>We trust that the blockchain software that we are running has not
+been compromised to deliver falsified data.</li>
+<li>We trust that the operating system under which our blockchain
+software is running has not been compromised to deliver falsified
+data.</li>
+<li>We trust that the network processors providing connectivity to our
+system have not been compromised to deliver falsified data.</li>
+</ul>
+<p>&ldquo;In code we trust&rdquo; makes for an interesting mantra, but 30+ years of
+malware, spyware, etc., informs us that this is a highly debatable
+strategy.</p>
+<p>A blockchain design does make falsifications harder for an adversary,
+and makes accidental errors dramatically less likely.  We are able to
+&ldquo;trust but verify&rdquo; (within bounds), but this is still a significant
+improvement over blindly trusting.  Most importantly, none of these trust
+minimizing characteristics are aspects of the P2P network design, but
+are instead intrinsic to the block encoding.</p>
+<h3 id="must-a-blockchain-be-non-permissioned-or-can-it-be-permission-less">Must a blockchain be non-permissioned or can it be permission-less?</h3>
+<p>A blockchain is just a data structure so really the question makes no
+sense.  Who has the ability to read or write a data structure is a
+totally different question.</p>
+<p>Let&rsquo;s ignore this subtle distinction for a moment, though, and act as
+if the question might make sense.  Consider the case of Bitcoin; who
+writes the blockchain?  The answer is that miners (or more precisely,
+block makers such a mining pool operators, not those who just hash
+blocks) get to write new blocks.  Transactors on the network can provide
+candidate transactions to be included in blocks, but this does not
+guarantee blocks will ever contain those transactions.  With Bitcoin we
+talk about this being &ldquo;non-permissioned&rdquo; because no-one needs any
+explicit permission to become a block maker.</p>
+<p>If we consider other potential uses of a blockchain design, though,
+there are a often very well defined set of participants who we would
+wish to be able to write block data.  In many cases this may even be one
+single participant.  A critique levelled at such potential uses of a
+blockchain are that this makes it no better than a database, but a
+conventional database is something in which blind trust must be placed.
+Its internal state is generally unknowable.  Even in its simplest uses a
+blockchain can at least provide a means to verify the state of such a
+system, and to do so in a way that enables histories to be validated.
+This is only the start of the possibilities, however!</p>
+<h3 id="is-a-blockchain-the-internet-of-money-or-the-internet-of-anything-else">Is a blockchain the Internet of money (or the Internet of anything else)?</h3>
+<p>Realistically, no, or at least not on its own.</p>
+<p>When we looked at &ldquo;not a database&rdquo; we also touched on why this claim
+doesn&rsquo;t really make sense.  Superficially the argument seems seductive.
+The thought is that we can build lots of technology on top of a
+blockchain in the way that a network stack is layered.</p>
+<p>There are many problems with this proposition, but the obvious one is
+that a blockchain is just a data structure.  It makes a good candidate
+for being used to convey information across the Internet but doesn&rsquo;t
+enable anything in and of itself.  Separating the blockchain from any
+transport of a blockchain, however, does give some hope that blockchains
+may enable more reliable financial applications over the Internet.  A
+clear separation also allows experimentation at each layer of the system
+design and this is a key characteristic that has enabled the Internet to
+be so successful.  With the Internet, candidates for all layers of the
+network stack are able to be trialled, replaced or modified, allowing
+the best designs to win.  Similarly the standards-based approach has
+enabled disparate implementations to work together without preventing
+commercial advantages from being sought and monetized.</p>
+<p>In the case of blockchains we have already seen that there is a
+requirement to support external observers and this mandates a level of
+interoperability.</p>
+<h2 id="last-thoughts">Last thoughts</h2>
+<p>We have looked at what a blockchain might or might not be, and perhaps
+seen some hints of what it might enable.  The technology that underpins
+Bitcoin can be used to build many things, and Bitcoin&rsquo;s legacy should
+not just be Bitcoin itself, but that is has shown the viability of
+something far more fundamental. The debate over what constitutes a
+blockchain won&rsquo;t end here, but we need to move the discussion forward
+and we need to resist the urge to allow it be just another marketing
+buzzword.</p>
+<p>To make that happen we need both clear terminology, and well reasoned
+usage.  We need to avoid conflating many different ideas, and we need
+technology claims to be realistic and achievable.  If we fail then,
+eventually, the term blockchain will be meaningless and have to be
+replaced.  This seems like the wrong outcome.  If we succeed then the idea
+of a blockchain will not be the end of the story.  Instead it will take
+its place as a layer upon which better and ever-more useful systems can
+be built.</p>
+
+                </div>
+            </div>
+
+            
+                <ul class="prev-next">
+                    <li class="prev">
+                        
+                            <a href="https://hashingit.com/blog/2015-12-20-0000/" class="page-link" aria-label="Previous"><span aria-hidden="true">←&nbsp;</span></a>
+                        
+                    </li>
+                    <li class="prev">
+                        
+                            <a href="https://hashingit.com/blog/2015-12-20-0000/" class="page-link" aria-label="Previous"><span aria-hidden="true">Bitcoin traffic bulletin (redux) </span></a>
+                        
+                    </li>
+                    <li class="next">
+                        
+                            <a href="https://hashingit.com/blog/2016-01-05-0000/" class="page-link" aria-label="Next"><span aria-hidden="true">Behold mighty exahash, hammer of the blocks!</span></a>
+                        
+                    </li>
+                    <li class="next">
+                        
+                            <a href="https://hashingit.com/blog/2016-01-05-0000/" class="page-link" aria-label="Next"><span aria-hidden="true">&nbsp;→</span></a>
+                        
+                    </li>
+                </ul>
+            
+
+            
+            
+                <div class="disqus_thread" id="disqus_thread"></div>
+<script type="text/javascript">
+    (function () {
+        
+        
+        if (window.location.hostname == "localhost")
+            return;
+
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        var disqus_shortname = 'hashingit-com';
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+            
+
+            <div class="footer">
+    <div class="copyright">© 2014-2020 David J. Hudson</div>
+</div>
+
+<script src="https://hashingit.com/js/footer.js"></script>
+
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-49245383-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+    <script>feather.replace()</script>
+
+
+        </div>
+    </body>
+</html>

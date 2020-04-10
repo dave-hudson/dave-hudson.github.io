@@ -3,17 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://hashingit.com/</loc>
-    <lastmod>2020-03-04T18:29:58+00:00</lastmod>
+    <loc>https://hashingit.com/journal/2020-04-10-1610/</loc>
+    <lastmod>2020-04-10T16:10:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://hashingit.com/posts/2020-03-04-0730/</loc>
+    <loc>https://hashingit.com/journal/</loc>
+    <lastmod>2020-04-10T16:10:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hashingit.com/</loc>
+    <lastmod>2020-04-10T15:49:58+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hashingit.com/blog/</loc>
     <lastmod>2020-03-04T07:30:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://hashingit.com/posts/</loc>
+    <loc>https://hashingit.com/blog/2020-03-04-0730/</loc>
     <lastmod>2020-03-04T07:30:00+00:00</lastmod>
   </url>
   
@@ -43,7 +53,7 @@
   </url>
   
   <url>
-    <loc>https://hashingit.com/posts/2020-02-18-1830/</loc>
+    <loc>https://hashingit.com/blog/2020-02-18-1830/</loc>
     <lastmod>2020-02-18T18:30:00+00:00</lastmod>
   </url>
   
@@ -53,12 +63,12 @@
   </url>
   
   <url>
-    <loc>https://hashingit.com/posts/2020-01-27-2336/</loc>
+    <loc>https://hashingit.com/blog/2020-01-27-2336/</loc>
     <lastmod>2020-01-27T23:36:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://hashingit.com/posts/2020-01-22-2230/</loc>
+    <loc>https://hashingit.com/blog/2020-01-22-2230/</loc>
     <lastmod>2020-01-22T22:30:00+00:00</lastmod>
   </url>
   
@@ -93,7 +103,7 @@
   </url>
   
   <url>
-    <loc>https://hashingit.com/posts/2019-01-09-1200/</loc>
+    <loc>https://hashingit.com/blog/2019-01-09-1200/</loc>
     <lastmod>2019-01-09T12:00:00+00:00</lastmod>
   </url>
   
@@ -113,12 +123,12 @@
   </url>
   
   <url>
-    <loc>https://hashingit.com/posts/2017-01-06-1400/</loc>
+    <loc>https://hashingit.com/blog/2017-01-06-1400/</loc>
     <lastmod>2017-01-06T14:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://hashingit.com/posts/2016-02-03-0000/</loc>
+    <loc>https://hashingit.com/blog/2016-02-03-0000/</loc>
     <lastmod>2016-02-03T00:00:00+00:00</lastmod>
   </url>
   
@@ -138,52 +148,52 @@
   </url>
   
   <url>
-    <loc>https://hashingit.com/posts/2016-01-05-0000/</loc>
+    <loc>https://hashingit.com/blog/2016-01-05-0000/</loc>
     <lastmod>2016-01-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://hashingit.com/posts/2015-12-30-0000/</loc>
+    <loc>https://hashingit.com/blog/2015-12-30-0000/</loc>
     <lastmod>2015-12-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://hashingit.com/posts/2015-12-20-0000/</loc>
+    <loc>https://hashingit.com/blog/2015-12-20-0000/</loc>
     <lastmod>2015-12-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://hashingit.com/posts/2015-12-19-0000/</loc>
+    <loc>https://hashingit.com/blog/2015-12-19-0000/</loc>
     <lastmod>2015-12-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://hashingit.com/posts/2015-02-06-0000/</loc>
+    <loc>https://hashingit.com/blog/2015-02-06-0000/</loc>
     <lastmod>2015-02-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://hashingit.com/posts/2015-01-18-0000/</loc>
+    <loc>https://hashingit.com/blog/2015-01-18-0000/</loc>
     <lastmod>2015-01-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://hashingit.com/posts/2014-12-05-0000/</loc>
+    <loc>https://hashingit.com/blog/2014-12-05-0000/</loc>
     <lastmod>2014-12-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://hashingit.com/posts/2014-11-12-0000/</loc>
+    <loc>https://hashingit.com/blog/2014-11-12-0000/</loc>
     <lastmod>2014-11-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://hashingit.com/posts/2014-11-11-0000/</loc>
+    <loc>https://hashingit.com/blog/2014-11-11-0000/</loc>
     <lastmod>2014-11-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://hashingit.com/posts/2014-11-02-0000/</loc>
+    <loc>https://hashingit.com/blog/2014-11-02-0000/</loc>
     <lastmod>2014-11-02T00:00:00+00:00</lastmod>
   </url>
   
@@ -193,17 +203,17 @@
   </url>
   
   <url>
-    <loc>https://hashingit.com/posts/2014-06-30-0000/</loc>
+    <loc>https://hashingit.com/blog/2014-06-30-0000/</loc>
     <lastmod>2014-06-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://hashingit.com/posts/2014-06-23-0000/</loc>
+    <loc>https://hashingit.com/blog/2014-06-23-0000/</loc>
     <lastmod>2014-06-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://hashingit.com/posts/2014-06-15-0000/</loc>
+    <loc>https://hashingit.com/blog/2014-06-15-0000/</loc>
     <lastmod>2014-06-15T00:00:00+00:00</lastmod>
   </url>
   
@@ -213,7 +223,7 @@
   </url>
   
   <url>
-    <loc>https://hashingit.com/posts/2014-06-10-0000/</loc>
+    <loc>https://hashingit.com/blog/2014-06-10-0000/</loc>
     <lastmod>2014-06-10T00:00:00+00:00</lastmod>
   </url>
   
@@ -223,27 +233,27 @@
   </url>
   
   <url>
-    <loc>https://hashingit.com/posts/2014-06-05-0000/</loc>
+    <loc>https://hashingit.com/blog/2014-06-05-0000/</loc>
     <lastmod>2014-06-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://hashingit.com/posts/2014-05-24-0000/</loc>
+    <loc>https://hashingit.com/blog/2014-05-24-0000/</loc>
     <lastmod>2014-05-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://hashingit.com/posts/2014-05-20-0000/</loc>
+    <loc>https://hashingit.com/blog/2014-05-20-0000/</loc>
     <lastmod>2014-05-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://hashingit.com/posts/2014-05-19-0000/</loc>
+    <loc>https://hashingit.com/blog/2014-05-19-0000/</loc>
     <lastmod>2014-05-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://hashingit.com/posts/2014-04-30-0000/</loc>
+    <loc>https://hashingit.com/blog/2014-04-30-0000/</loc>
     <lastmod>2014-04-30T00:00:00+00:00</lastmod>
   </url>
   
@@ -253,12 +263,12 @@
   </url>
   
   <url>
-    <loc>https://hashingit.com/posts/2014-04-28-0000/</loc>
+    <loc>https://hashingit.com/blog/2014-04-28-0000/</loc>
     <lastmod>2014-04-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://hashingit.com/posts/2014-04-03-0000/</loc>
+    <loc>https://hashingit.com/blog/2014-04-03-0000/</loc>
     <lastmod>2014-04-03T00:00:00+00:00</lastmod>
   </url>
   
@@ -268,22 +278,22 @@
   </url>
   
   <url>
-    <loc>https://hashingit.com/posts/2014-03-23-0000/</loc>
+    <loc>https://hashingit.com/blog/2014-03-23-0000/</loc>
     <lastmod>2014-03-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://hashingit.com/posts/2014-03-17-0000/</loc>
+    <loc>https://hashingit.com/blog/2014-03-17-0000/</loc>
     <lastmod>2014-03-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://hashingit.com/posts/2014-03-12-0000/</loc>
+    <loc>https://hashingit.com/blog/2014-03-12-0000/</loc>
     <lastmod>2014-03-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://hashingit.com/posts/2014-03-09-0000/</loc>
+    <loc>https://hashingit.com/blog/2014-03-09-0000/</loc>
     <lastmod>2014-03-09T00:00:00+00:00</lastmod>
   </url>
   

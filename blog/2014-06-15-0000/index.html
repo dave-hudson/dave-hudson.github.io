@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    
+    
+    
+        <title>Finding 2016 blocks - Dave Hudson</title>
+    
+
+    <meta name="description" content="2016 blocks is the magic number that corresponds to each change in difficulty within the Bitcoin network.  Nominally it should take 14 days to find this many blocks, but how long does it really take?">
+
+    
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+
+    <meta property="og:title" content="Finding 2016 blocks" />
+<meta property="og:description" content="2016 blocks is the magic number that corresponds to each change in difficulty within the Bitcoin network.  Nominally it should take 14 days to find this many blocks, but how long does it really take?" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://hashingit.com/blog/2014-06-15-0000/" />
+<meta property="article:published_time" content="2014-06-15T00:00:00+00:00" />
+<meta property="article:modified_time" content="2014-06-15T00:00:00+00:00" />
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Finding 2016 blocks"/>
+<meta name="twitter:description" content="2016 blocks is the magic number that corresponds to each change in difficulty within the Bitcoin network.  Nominally it should take 14 days to find this many blocks, but how long does it really take?"/>
+
+
+    <link href="https://fonts.googleapis.com/css?family=Open Sans:300,400,300italic,400italic,700bold|Lalezar:400,700bold" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="https://hashingit.com/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://hashingit.com/css/main.css" />
+    <link disabled id="dark-mode-theme" rel="stylesheet" type="text/css" href="https://hashingit.com/css/dark.css" />
+
+    
+        <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    
+    
+</head>
+
+    <body>
+        <div class="container">
+            <div class="header">
+    <table class="site-title">
+        <tr>
+            <td>
+                <h1><a href="https://hashingit.com/">Dave Hudson</a></h1>
+                
+                    <h2>hashingit.com</h1>
+                
+            </td>
+            <td>
+                <nav class="social">
+                    
+                        <div class="icon"><a href="/index.xml" title="RSS"><i data-feather="rss"></i></a></div>
+                    
+                        <div class="icon"><a href="https://twitter.com/hashingitcom" title="Twitter"><i data-feather="twitter"></i></a></div>
+                    
+                        <div class="icon"><a href="https://facebook.com/hashingitcom" title="Facebook"><i data-feather="facebook"></i></a></div>
+                    
+                        <div class="icon"><a href="https://linkedin.com/in/davejh" title="LinkedIn"><i data-feather="linkedin"></i></a></div>
+                    
+                        <div class="icon"><a href="https://github.com/dave-hudson" title="Github"><i data-feather="github"></i></a></div>
+                    
+                    <div class="icon" id="dark-mode-moon"><a><i data-feather="moon"></i></a></div>
+                    <div class="icon" id="dark-mode-sun"><a><i data-feather="sun"></i></a></div>
+                </nav>
+            </td>
+        </tr>
+    </table>
+    <nav class="site-menu">
+        <ul>
+            
+                <li>
+                    <a href="/">Home</a>
+                </li>
+            
+                <li>
+                    <a href="/elements">Elements</a>
+                </li>
+            
+                <li>
+                    <a href="/blog">Blog</a>
+                </li>
+            
+                <li>
+                    <a href="/journal">Journal</a>
+                </li>
+            
+                <li>
+                    <a href="/tags">Tags</a>
+                </li>
+            
+                <li>
+                    <a href="/about">About</a>
+                </li>
+            
+        </ul>
+    </nav>
+</div>
+
+
+            <div class="title">
+                <h1>Finding 2016 blocks</h1>
+                <div class="meta">
+                    2014-06-15 00:00 - 4 min read
+                </div>
+            </div>
+
+            <div class="blog-post">
+                <nav class="tags">
+                    
+                        
+                            <ul>
+                                
+                                    <li><a href="/tags/Bitcoin">Bitcoin</a></li>
+                                
+                                    <li><a href="/tags/Bitcoin-mining">Bitcoin mining</a></li>
+                                
+                            </ul>
+                        
+                    
+                </nav>
+
+                <div class="markdown">
+                    <p>2016 blocks is the magic number that corresponds to each change in
+difficulty within the Bitcoin network.  Nominally it should take 14 days
+to find this many blocks, but how long does it really take?</p>
+<h2 id="the-simple-case">The simple case</h2>
+<p>In an earlier article, &ldquo;<a href="/blog/2014-05-19-0000/">Hash rate headaches</a>&quot;, I
+looked at the probabilities of finding a particular number of blocks in
+a given time.  This time around the goal is to work out how long it takes
+to find 2016 blocks.</p>
+<p>To work out the behaviour I wrote a Monte-Carlo simulation that models
+the behaviour of mining during a 2016 block period.  The simulation was
+run 10 million times in each run shown here in order to get good
+smoothing of the data.</p>
+<p>Let&rsquo;s start with the simple cases where the global hashing rate isn&rsquo;t
+changing:</p>
+<p><img src="./20140615/find2016_0.png" alt="Time to find 2016 Bitcoin blocks with 0% hash rate expansion"></p>
+<p>As we&rsquo;d expect, the average time to find 2016 blocks is indeed 14 days.
+We can see the effects of the
+<a href="/blog/2014-05-24-0000/">noise</a>
+in the hashing design though and how once every 10 difficulty changes
+we&rsquo;d be likely to see the time at +/- half a day (i.e. 13.5 days or
+less, or 14.5 days or more).</p>
+<h2 id="practical-complexities">Practical complexities</h2>
+<p><a href="/blog/2014-05-19-0000/">Previously</a>,
+I&rsquo;ve talked about how Bitcoin hashing is a Poisson process.
+@coinometrics pointed out on Twitter that things become more complex
+when the hashing rate is expanding because it then becomes a
+non-homogeneous (or inhomogeneous) Poisson process.  Towards the end of
+the difficulty change we&rsquo;re going to see blocks being found faster than
+at the start.  The observation is, of course, quite correct and the
+simulations here now account for that.  The assumption is that hashing
+capacity comes online at a steady exponentially expanding rate, so, say,
+the hashing capacity assumed at 5 days is larger than that at 4.9 days,
+irrespective of the number of blocks found.</p>
+<p>Another complication is that the current difficulty level doesn&rsquo;t
+really indicate the the actual hashing rate of the network even on the
+day it&rsquo;s first set.  In the article, &ldquo;<a href="/blog/2014-06-10-0000/">Lies, damned lies and Bitcoin difficulties</a>&quot;,
+I showed that a more accurate starting measure was to multiple the new
+difficulty by the square root of the difficulty increase.  The
+simulations account for this too.</p>
+<p>Let&rsquo;s see what happens when we have a 1% daily hashing rate expansion:</p>
+<p><img src="./find2016_1.png" alt="Time to find 2016 Bitcoin blocks with 1% hash rate expansion"></p>
+<p>With a 1% daily expansion rate we now typically find our 2016 blocks
+after 12.37 days (a little under 12 days, 9 hours).  It also equates to a
+difficulty increase of 13.1%.</p>
+<p>Now let&rsquo;s look at a 2% daily hashing rate increase:</p>
+<p><img src="./find2016_2.png" alt="Time to find 2016 Bitcoin blocks with 2% hash rate expansion"></p>
+<p>With a 2% daily expansion rate we now typically find our 2016 blocks
+after 11.19 days (a little over 11 days, 4.5 hours).  This equates to a
+difficulty increase of 24.8%.</p>
+<p>It&rsquo;s interesting to note that doubling the hashing rate expansion per
+day doesn&rsquo;t correspond to doubling the next difficulty change because
+we get to the next change quicker and thus compensate faster too.</p>
+<p>The numbers also have an interesting implication for the block reward
+halving dates though as the dates move closer all the time.</p>
+<h2 id="putting-it-all-together">Putting it all together</h2>
+<p>Here&rsquo;s a final chart.  This shows the 3 earlier charts superimposed on
+each other:</p>
+<p><img src="./find2016_combined.png" alt="Time to find 2016 Bitcoin blocks with 0%, 1% and 2% hash rate expansions"></p>
+<p>It&rsquo;s worth noticing the effect of noise again.  The overlaps between the
+2% and 1% expansion rate are pretty clear.  When we see a difficulty
+change at 11.75 days are we really seeing the effect of 13.1% extra
+hashing capacity, 24.8%, or more likely somewhere inbetween?  It could be
+even more divergent though!</p>
+<p>Over the last few days there has been much discussion about the GHash.IO
+mining pool&rsquo;s hashing rate.  It clearly has a very substantial fraction
+but the error margins even across an entire 2016 block period are
+surprisingly large.  As ever Bitcoin statistics often lead to more
+questions than answers!</p>
+<hr>
+<h2 id="related-articles">Related articles</h2>
+<ul>
+<li><a href="/blog/2014-06-10-0000/">Lies, damned lies and Bitcoin difficulties (2014-06-10)</a></li>
+<li><a href="/blog/2014-05-24-0000/">Reach for the ear defenders! (2014-05-24)</a></li>
+<li><a href="/blog/2014-05-19-0000/">Hash rate headaches (2014-05-19)</a></li>
+</ul>
+
+                </div>
+            </div>
+
+            
+                <ul class="prev-next">
+                    <li class="prev">
+                        
+                            <a href="https://hashingit.com/blog/2014-06-10-0000/" class="page-link" aria-label="Previous"><span aria-hidden="true">←&nbsp;</span></a>
+                        
+                    </li>
+                    <li class="prev">
+                        
+                            <a href="https://hashingit.com/blog/2014-06-10-0000/" class="page-link" aria-label="Previous"><span aria-hidden="true">Lies, damned lies and Bitcoin difficulties </span></a>
+                        
+                    </li>
+                    <li class="next">
+                        
+                            <a href="https://hashingit.com/blog/2014-06-23-0000/" class="page-link" aria-label="Next"><span aria-hidden="true">51% of the network?</span></a>
+                        
+                    </li>
+                    <li class="next">
+                        
+                            <a href="https://hashingit.com/blog/2014-06-23-0000/" class="page-link" aria-label="Next"><span aria-hidden="true">&nbsp;→</span></a>
+                        
+                    </li>
+                </ul>
+            
+
+            
+            
+                <div class="disqus_thread" id="disqus_thread"></div>
+<script type="text/javascript">
+    (function () {
+        
+        
+        if (window.location.hostname == "localhost")
+            return;
+
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        var disqus_shortname = 'hashingit-com';
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+            
+
+            <div class="footer">
+    <div class="copyright">© 2014-2020 David J. Hudson</div>
+</div>
+
+<script src="https://hashingit.com/js/footer.js"></script>
+
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-49245383-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+    <script>feather.replace()</script>
+
+
+        </div>
+    </body>
+</html>

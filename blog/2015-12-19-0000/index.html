@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    
+    
+    
+        <title>Waiting for blocks (revised) - Dave Hudson</title>
+    
+
+    <meta name="description" content="Bitcoin blocks take 10 minutes to find don&#39;t they?  Well, actually no they don&#39;t.  Sometimes they can be found really quickly, but other times they can take a very long time.  Just to make things confusing, the gaps between blocks can change depending on whether the hashing network is stable, expanding or contracting.  What if we need 6 blocks (to get 6 confirmations)?  So what should we expect? What happens during hashing growth phases, and what would happen if the network were to lose large amounts of hashing capacity?">
+
+    
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+
+    <meta property="og:title" content="Waiting for blocks (revised)" />
+<meta property="og:description" content="Bitcoin blocks take 10 minutes to find don&#39;t they?  Well, actually no they don&#39;t.  Sometimes they can be found really quickly, but other times they can take a very long time.  Just to make things confusing, the gaps between blocks can change depending on whether the hashing network is stable, expanding or contracting.  What if we need 6 blocks (to get 6 confirmations)?  So what should we expect? What happens during hashing growth phases, and what would happen if the network were to lose large amounts of hashing capacity?" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://hashingit.com/blog/2015-12-19-0000/" />
+<meta property="article:published_time" content="2015-12-19T00:00:00+00:00" />
+<meta property="article:modified_time" content="2015-12-19T00:00:00+00:00" />
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Waiting for blocks (revised)"/>
+<meta name="twitter:description" content="Bitcoin blocks take 10 minutes to find don&#39;t they?  Well, actually no they don&#39;t.  Sometimes they can be found really quickly, but other times they can take a very long time.  Just to make things confusing, the gaps between blocks can change depending on whether the hashing network is stable, expanding or contracting.  What if we need 6 blocks (to get 6 confirmations)?  So what should we expect? What happens during hashing growth phases, and what would happen if the network were to lose large amounts of hashing capacity?"/>
+
+
+    <link href="https://fonts.googleapis.com/css?family=Open Sans:300,400,300italic,400italic,700bold|Lalezar:400,700bold" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="https://hashingit.com/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://hashingit.com/css/main.css" />
+    <link disabled id="dark-mode-theme" rel="stylesheet" type="text/css" href="https://hashingit.com/css/dark.css" />
+
+    
+        <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    
+    
+</head>
+
+    <body>
+        <div class="container">
+            <div class="header">
+    <table class="site-title">
+        <tr>
+            <td>
+                <h1><a href="https://hashingit.com/">Dave Hudson</a></h1>
+                
+                    <h2>hashingit.com</h1>
+                
+            </td>
+            <td>
+                <nav class="social">
+                    
+                        <div class="icon"><a href="/index.xml" title="RSS"><i data-feather="rss"></i></a></div>
+                    
+                        <div class="icon"><a href="https://twitter.com/hashingitcom" title="Twitter"><i data-feather="twitter"></i></a></div>
+                    
+                        <div class="icon"><a href="https://facebook.com/hashingitcom" title="Facebook"><i data-feather="facebook"></i></a></div>
+                    
+                        <div class="icon"><a href="https://linkedin.com/in/davejh" title="LinkedIn"><i data-feather="linkedin"></i></a></div>
+                    
+                        <div class="icon"><a href="https://github.com/dave-hudson" title="Github"><i data-feather="github"></i></a></div>
+                    
+                    <div class="icon" id="dark-mode-moon"><a><i data-feather="moon"></i></a></div>
+                    <div class="icon" id="dark-mode-sun"><a><i data-feather="sun"></i></a></div>
+                </nav>
+            </td>
+        </tr>
+    </table>
+    <nav class="site-menu">
+        <ul>
+            
+                <li>
+                    <a href="/">Home</a>
+                </li>
+            
+                <li>
+                    <a href="/elements">Elements</a>
+                </li>
+            
+                <li>
+                    <a href="/blog">Blog</a>
+                </li>
+            
+                <li>
+                    <a href="/journal">Journal</a>
+                </li>
+            
+                <li>
+                    <a href="/tags">Tags</a>
+                </li>
+            
+                <li>
+                    <a href="/about">About</a>
+                </li>
+            
+        </ul>
+    </nav>
+</div>
+
+
+            <div class="title">
+                <h1>Waiting for blocks (revised)</h1>
+                <div class="meta">
+                    2015-12-19 00:00 - 7 min read
+                </div>
+            </div>
+
+            <div class="blog-post">
+                <nav class="tags">
+                    
+                        
+                            <ul>
+                                
+                                    <li><a href="/tags/Bitcoin">Bitcoin</a></li>
+                                
+                                    <li><a href="/tags/Bitcoin-mining">Bitcoin mining</a></li>
+                                
+                            </ul>
+                        
+                    
+                </nav>
+
+                <div class="markdown">
+                    <p>Bitcoin blocks take 10 minutes to find don&rsquo;t they?  Well, actually no
+they don&rsquo;t.  Sometimes they can be found really quickly, but other times
+they can take a very long time.  Just to make things confusing, the gaps
+between blocks can change depending on whether the hashing network is
+stable, expanding or contracting.  What if we need 6 blocks (to get 6
+confirmations)?</p>
+<p>So what should we expect?  What happens during hashing growth phases, and
+what would happen if the network were to lose large amounts of hashing
+capacity?</p>
+<h2 id="note">Note</h2>
+<p>This article is a revised version of an earlier one,
+&ldquo;<a href="/blog/2015-02-06-0000/">Waiting for blocks</a>&quot;.
+Unfortunately, in that article, some of the probability data wasn&rsquo;t
+presented in the right form and this affected a few minor parts of the
+commentary.  This revision contains updated charts and also updated
+commentary!</p>
+<hr>
+<h2 id="running-like-clockwork">Running like clockwork?</h2>
+<p>In a somewhat perfect world we might hope that our nominal 10 minute gap
+between blocks would be exactly 10 minutes, but anyone who has ever
+watched block arrival times will know that that&rsquo;s not what happens:</p>
+<p><img src="./1b_single.png" alt="Probabilities for finding one Bitcoin block"></p>
+<p>The blue probability line shows the incremental probability of finding a
+block at a given time.  This might seem a little strange until we look at
+the red, cumulative probability, line.  The cumulative probability
+indicates how likely it is that we already found a block by a given
+time, so the blue line makes more sense.  As time progresses it&rsquo;s more
+and more likely that we already found a block so the number that will be
+found after a long time reduces significantly.</p>
+<p>In the Bitcoin network our mean block finding time is 10 minutes, but by
+the time we reach 10 minutes there&rsquo;s a better than 63% probability that
+we&rsquo;ve found a new block, not 50%.  In fact 50% of blocks have been found
+within 415 seconds (just under 7 minutes).</p>
+<p>The 37% of the blocks, that take longer than 10 minutes, can take a very
+long time to find!  At an hour we&rsquo;ve still not found a block a little
+less than 0.25% of the time; that means that typically 1 block in 401
+will take more than an hour to find!  There are a few subtleties to this
+particular number but we&rsquo;ll come back to those in a little while.</p>
+<p>If, like me, you find the 1 in 401 number was something of a surprise
+(that&rsquo;s about once every 2.8 days on average) then it&rsquo;s perhaps worth
+looking at some gaps between blocks.  In the 12 day period up to
+2015-02-05 (when the original article was written) I quickly located 5
+blocks that took more than an hour to find!  (the number might be higher
+as I was doing this manually by checking a blockchain explorer).  For the
+record these were 340450 (77 mins), 340521 (63 mins), 340544 (67 mins),
+341727 (60 mins) and 342002 (72 mins).  Three of these occurred in a
+single 24 hour period over the 25th and 26th of January.</p>
+<h2 id="6-confirmations">6 confirmations?</h2>
+<p>If a single block can take so long to find, what about the 6 blocks that
+we need for many simple Bitcoin clients (SPV wallets)?</p>
+<p><img src="./6b_single.png" alt="Probabilities of finding 6 consecutive Bitcoin blocks"></p>
+<p>We&rsquo;d certainly expect that things will be closer to our anticipated 10
+minutes per block and that is indeed the case.  50% of the time we&rsquo;ve
+found 6 blocks by 3400 seconds (a little under 57 minutes).  At 60
+minutes we&rsquo;ve found about 55% of blocks.  A surprise, however, is that
+in 10% of cases it takes more than 5560 seconds (more than 1 hour, 32
+minutes) to find 6 blocks; in 1% of cases it takes more than 7870
+seconds (2 hours, 11 minutes)!  On the flip side of this though, in 10%
+of cases we get all 6 blocks within 1890 seconds (a little under 32
+minutes) and in 1% of cases we have all 6 within 1070 seconds (just
+under 18 minutes).</p>
+<h2 id="the-network-isnt-static">The network isn&rsquo;t static!</h2>
+<p>So far none of the results we&rsquo;ve seen should come as anything of a
+shock to anyone who understands the statistics assoicated with a Poisson
+process.  The real Bitcoin network is somewhat more subtle though because
+it is really a non-homogeneous Poisson process; underlying hashing
+capacities change throughout each difficulty period of 2016 blocks.  If
+we start out at, say, 300 PH/s but add 0.2% new capacity every day, then
+after 14 days (a little more than the 2016 blocks take) we&rsquo;d have 308.5
+PH/s.  That means that towards the end of the 2016 blocks we&rsquo;re actually
+going to see blocks found more quickly than at the start.  In addition,
+as we saw in &ldquo;<a href="/blog/2014-06-10-0000/">Lies, damned lies and Bitcoin difficulties</a>&quot;,
+the nominal hash rate calculated at the end of each difficulty period
+lags about a week behind the current hash rate.</p>
+<p>The 0.2% increase per day isn&rsquo;t a completely random number; it&rsquo;s a
+good approximation to the underlying trend for the last couple of
+months.  Comparing this and the &ldquo;ideal&rdquo; numbers where there&rsquo;s no
+change in the network&rsquo;s hash rate we can see the following:</p>
+<p><img src="./1b_double.png" alt="Comparison of probabilities for finding a Bitcoin block with 0% and 0.2% per day hash rate expansion"></p>
+<p>The difference isn&rsquo;t all that great.  Our mean block finding time is
+closer to 9 minutes 45 seconds, while our mean time to see a block take
+an hour or longer increases to once every 480 blocks.</p>
+<h2 id="what-about-more-extreme-changes-in-hash-rate">What about more extreme changes in hash rate?</h2>
+<p>A hash rate increase of 0.2% per day doesn&rsquo;t have much effect, but what
+about 2% per day?  2% seems like a huge number based on recent months,
+but was quite common in the earlier part of 2014.  At the same time as
+considering positive increases it seems worth considering negative
+changes too.</p>
+<p>A +2% per day change corresponds to a nominal 24.8% increase in hash
+rate over 2016 blocks and takes about 11.2 days.  The rapid increase
+causes us to find blocks very quickly and thus readjust the difficulty
+quickly.  A -2% per day change has a much larger impact, however, because
+our 2016 blocks end up taking nearer to 21 days.  This would correspond
+to a hash rate reduction of 34.6%.</p>
+<p>The following curves assume a steady state change, i.e.  what would
+happen if we&rsquo;d been seeing a steady +2%, 0% or -2% change in the
+previous difficulty period too.  As such these are more extreme that we
+would see in the first difficulty period for which the change was
+occurring; they do match a second or subsequent period:</p>
+<p><img src="./1b_triple.png" alt="Probabilities of finding a single Bitcoin block under -2%, 0% and +2% daily hash rate changes"></p>
+<p>During our +2% expansion we see a mean block time closer to 8 minutes,
+but with a -2% contraction the mean moves closer to 15 minutes!</p>
+<p>Now let&rsquo;s look at the same behaviour for our 6 confirmations:</p>
+<p><img src="./6b_triple.png" alt="Probabilities for 6 Bitcoin blocks being found during -2%, 0% and +2% hash rate changes per day"></p>
+<p>As we might expect, the pattern for a single block is mirrored for 6
+blocks.</p>
+<h2 id="final-thoughts">Final thoughts</h2>
+<p>The Bitcoin design is surprisingly well adjusted for a network in which
+hash rates are expanding.  Given that technologies continually improve
+then that&rsquo;s probably the right bias as a normal schedule of replacing
+older, less power efficient, hardware with newer, more power efficient
+models will tend to see global hash rates increase.</p>
+<p>On the surface it looks like it works much less well when we see steady
+contraction of the global hash rate, but such contractions are much less
+likely.  In general miners will remove their least power efficient
+hardware from the network rather than their most efficient, so if the
+BTC price reduces the impact on the hash rate is significantly dampened.</p>
+<p>There is another interesting aspect to the reduced block finding rate.
+One of the theories about the recent decline in the BTC price is that a
+lot of the downward pressure comes from miners selling newly-mined
+coins.  If miners start to unplug hardware and the block finding rate
+falls then some of this pressure will also reduce because fewer coins
+will be being mined each day.  Whether this actually happens or not may
+be an interesting indicator of what might happen when the block reward
+halves in 2016.</p>
+<hr>
+<h2 id="source-code">Source code</h2>
+<p>The source code for the simulation tool that generated the results for
+this article can be found on github at: <a href="https://github.com/hashingitcom/waiting_for_blocks">https://github.com/hashingitcom/waiting_for_blocks</a></p>
+<hr>
+<h2 id="related-articles">Related articles</h2>
+<ul>
+<li><a href="/blog/2015-02-06-0000/">Waiting for blocks (2015-02-06)</a></li>
+<li><a href="/blog/2014-06-10-0000/">Lies, damned lies and Bitcoin difficulties (2014-06-10)</a></li>
+<li><a href="/blog/2014-05-24-0000/">Reach for the ear defenders (2014-05-24)</a></li>
+<li><a href="/blog/2014-05-20-0000/">Hash rate headaches (2014-05-20)</a></li>
+</ul>
+
+                </div>
+            </div>
+
+            
+                <ul class="prev-next">
+                    <li class="prev">
+                        
+                            <a href="https://hashingit.com/blog/2015-02-06-0000/" class="page-link" aria-label="Previous"><span aria-hidden="true">←&nbsp;</span></a>
+                        
+                    </li>
+                    <li class="prev">
+                        
+                            <a href="https://hashingit.com/blog/2015-02-06-0000/" class="page-link" aria-label="Previous"><span aria-hidden="true">Waiting for blocks </span></a>
+                        
+                    </li>
+                    <li class="next">
+                        
+                            <a href="https://hashingit.com/blog/2015-12-20-0000/" class="page-link" aria-label="Next"><span aria-hidden="true">Bitcoin traffic bulletin (redux)</span></a>
+                        
+                    </li>
+                    <li class="next">
+                        
+                            <a href="https://hashingit.com/blog/2015-12-20-0000/" class="page-link" aria-label="Next"><span aria-hidden="true">&nbsp;→</span></a>
+                        
+                    </li>
+                </ul>
+            
+
+            
+            
+                <div class="disqus_thread" id="disqus_thread"></div>
+<script type="text/javascript">
+    (function () {
+        
+        
+        if (window.location.hostname == "localhost")
+            return;
+
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        var disqus_shortname = 'hashingit-com';
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+            
+
+            <div class="footer">
+    <div class="copyright">© 2014-2020 David J. Hudson</div>
+</div>
+
+<script src="https://hashingit.com/js/footer.js"></script>
+
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-49245383-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+    <script>feather.replace()</script>
+
+
+        </div>
+    </body>
+</html>

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    
+    
+    
+        <title>Bitcoin traffic bulletin - Dave Hudson</title>
+    
+
+    <meta name="description" content="The Bitcoin network is currently running at around 30% of its maximum capacity, but what does that actually mean to its users?  Should we care?  What about when we reach 50%, or 90%?  When roads start to get full of cars they start to get congested, when large numbers of visitors enter or exit a building everyone slows down and takes longer to set where they want, but what happens with Bitcoin?">
+
+    
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+
+    <meta property="og:title" content="Bitcoin traffic bulletin" />
+<meta property="og:description" content="The Bitcoin network is currently running at around 30% of its maximum capacity, but what does that actually mean to its users?  Should we care?  What about when we reach 50%, or 90%?  When roads start to get full of cars they start to get congested, when large numbers of visitors enter or exit a building everyone slows down and takes longer to set where they want, but what happens with Bitcoin?" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://hashingit.com/blog/2014-11-11-0000/" />
+<meta property="article:published_time" content="2014-11-11T00:00:00+00:00" />
+<meta property="article:modified_time" content="2014-11-11T00:00:00+00:00" />
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Bitcoin traffic bulletin"/>
+<meta name="twitter:description" content="The Bitcoin network is currently running at around 30% of its maximum capacity, but what does that actually mean to its users?  Should we care?  What about when we reach 50%, or 90%?  When roads start to get full of cars they start to get congested, when large numbers of visitors enter or exit a building everyone slows down and takes longer to set where they want, but what happens with Bitcoin?"/>
+
+
+    <link href="https://fonts.googleapis.com/css?family=Open Sans:300,400,300italic,400italic,700bold|Lalezar:400,700bold" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="https://hashingit.com/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://hashingit.com/css/main.css" />
+    <link disabled id="dark-mode-theme" rel="stylesheet" type="text/css" href="https://hashingit.com/css/dark.css" />
+
+    
+        <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    
+    
+</head>
+
+    <body>
+        <div class="container">
+            <div class="header">
+    <table class="site-title">
+        <tr>
+            <td>
+                <h1><a href="https://hashingit.com/">Dave Hudson</a></h1>
+                
+                    <h2>hashingit.com</h1>
+                
+            </td>
+            <td>
+                <nav class="social">
+                    
+                        <div class="icon"><a href="/index.xml" title="RSS"><i data-feather="rss"></i></a></div>
+                    
+                        <div class="icon"><a href="https://twitter.com/hashingitcom" title="Twitter"><i data-feather="twitter"></i></a></div>
+                    
+                        <div class="icon"><a href="https://facebook.com/hashingitcom" title="Facebook"><i data-feather="facebook"></i></a></div>
+                    
+                        <div class="icon"><a href="https://linkedin.com/in/davejh" title="LinkedIn"><i data-feather="linkedin"></i></a></div>
+                    
+                        <div class="icon"><a href="https://github.com/dave-hudson" title="Github"><i data-feather="github"></i></a></div>
+                    
+                    <div class="icon" id="dark-mode-moon"><a><i data-feather="moon"></i></a></div>
+                    <div class="icon" id="dark-mode-sun"><a><i data-feather="sun"></i></a></div>
+                </nav>
+            </td>
+        </tr>
+    </table>
+    <nav class="site-menu">
+        <ul>
+            
+                <li>
+                    <a href="/">Home</a>
+                </li>
+            
+                <li>
+                    <a href="/elements">Elements</a>
+                </li>
+            
+                <li>
+                    <a href="/blog">Blog</a>
+                </li>
+            
+                <li>
+                    <a href="/journal">Journal</a>
+                </li>
+            
+                <li>
+                    <a href="/tags">Tags</a>
+                </li>
+            
+                <li>
+                    <a href="/about">About</a>
+                </li>
+            
+        </ul>
+    </nav>
+</div>
+
+
+            <div class="title">
+                <h1>Bitcoin traffic bulletin</h1>
+                <div class="meta">
+                    2014-11-11 00:00 - 8 min read
+                </div>
+            </div>
+
+            <div class="blog-post">
+                <nav class="tags">
+                    
+                        
+                            <ul>
+                                
+                                    <li><a href="/tags/Bitcoin">Bitcoin</a></li>
+                                
+                                    <li><a href="/tags/Bitcoin-mining">Bitcoin mining</a></li>
+                                
+                            </ul>
+                        
+                    
+                </nav>
+
+                <div class="markdown">
+                    <p><em><strong>Note 2015-12-20:</strong></em>  This article is the
+original &ldquo;Bitcoin traffic bulletin&rdquo; but has a minor problem with some
+of the probability statistics.  A revised, authoritative, version with
+significantly updated commentary can be found as &ldquo;<a href="/blog/2015-12-20-0000/">Bitcoin traffic
+bulletin (redux)</a>&quot;.
+Please read that one; this one is retained purely for historical
+information!</p>
+<hr>
+<p>The Bitcoin network is currently running at around 30% of its maximum
+capacity, but what does that actually mean to its users?  Should we care?
+What about when we reach 50%, or 90%?  When roads start to get full of
+cars they start to get congested, when large numbers of visitors enter
+or exit a building everyone slows down and takes longer to set where
+they want, but what happens with Bitcoin?</p>
+<h2 id="bitcoin-transaction-processing">Bitcoin transaction processing</h2>
+<p>Bitcoin mining (and therefore transaction processing) is what&rsquo;s known
+as a Non-Homogenous (or Inhomogeneous) Poisson Process.  In the article,
+&ldquo;<a href="/blog/2014-05-20-0000/">Hash rate headaches</a>&quot;,
+we saw how this actually works and that our nominal 10 minute spacing
+between Bitcoin blocks isn&rsquo;t quite as straightforward as we might hope.
+For transaction processing though things get even more complicated.  Now
+we have transactions that themselves appear somewhat randomly; in fact
+they will typically follow something like a Poisson Process distribution
+too.</p>
+<p>In the case of Bitcoin the transactions do have some other biases.  We
+saw in &ldquo;<a href="/blog/2014-11-02-0000/">7 transactions per second?  Really?</a>&rdquo;
+that Sundays are usually quieter than other days, while Bitcoin
+transactions can also be perturbed by network delays, orphan races and
+mining fees that might incentivize some transactions to be processed
+quicker than others.  None of those effects really come into play though
+when we have a very small number of transactions so we could actually
+model the behaviour and see what happens.</p>
+<p>In &ldquo;<a href="/blog/2014-11-02-0000/">7 transactions per second?  Really?</a>&rdquo;
+we saw that the current Bitcoin network has a peak capacity of a little
+under 3.5 transactions per second (arguably closer to 3.2 at times).  We
+can use that information to build a Monte Carlo simulation that will
+predict how long it takes to get transactions confirmed.</p>
+<h2 id="monte-carlo-simulation">Monte Carlo simulation</h2>
+<p>For the purposes of this article I constructed just such a Monte Carlo
+simulation that assumed a peak of 3.5 TPS and that would simulate a
+mining Poisson Process with a mean block finding time of 10 minutes and
+a transaction arrival Poisson Process with a mean that was given by a
+percentage network load.  For example a 10% load would be 0.35 TPS, or
+30,240 transactions per day.  In order to get good data the simulation
+was set to run 100,000 weeks of mining at 11 different loading levels.
+Each week started from scratch and with zero transactions pending.</p>
+<p>The simulator ignores mining fees and assumed that transactions are
+processed first-come, first-served; this actually turns out to be a
+reasonably accurate prediction for most current transactions.  It also
+ignores network propagation delays (how long it takes for a transaction
+to be seen by all mining nodes) but that will really just add a fairly
+small starting delay of up to a few seconds per transaction and so this
+is probably ok too (see:
+<a href="http://bitcoinstats.com/network/propagation/">http://bitcoinstats.com/network/propagation</a>).
+It does mean that the data is probably a little too optimistic about how
+quickly transactions can be mined.  Finally it assumes that the mining
+network capacity is constant and neither increasing, nor decreasing in
+capacity.  When things are increasing then blocks will be found slightly
+quicker, but the effect has become quite small over the last few months.</p>
+<p>Let&rsquo;s start by looking at what happens when there are almost no
+transactions being announced.  This should represent an almost perfect
+scenario because every transaction can immediately go into the next
+available block.  The network load for this example is 0.1%, or 0.0035
+TPS.</p>
+<p><img src="./first-conf-0-linear.png" alt="probabilities for time to a first block confirmation with the Bitcoin network loaded at 0.1% (linear scale)"></p>
+<p>We have two traces here.  The red trace shows the probability of a
+transaction being confirmed at a given time after it was submitted,
+while the blue trace shows the cumulative probability; i.e.  the
+probability that a transaction will have received its first confirmation
+at or before a given time.</p>
+<p>We can see that 50% of transactions are confirmed within 415 seconds (a
+little under 7 minutes).  Equally though, 10% have not had their first
+confirmation after 1380 second (23 minutes), and 1% are still
+unconfirmed after 2760 minutes (46 minutes).  This may come as a surprise
+to people, but no amount of fee changes, or network improvements will
+change these basic numbers!</p>
+<p>In the past we&rsquo;ve tended to make use of graphs plotted on a logarithmic
+axis and these ones are no exception!  Here&rsquo;s the same graph with a
+logarithmic time (horizontal) axis:</p>
+<p><img src="./first-conf-0-log.png" alt="probabilities for time to a first block confirmation with the Bitcoin network loaded at 0.1% (log scale)"></p>
+<p>The logarithmic scale compresses the &ldquo;tail&rdquo; to the right so we can
+compare things more easily later.  The cumulative probability curve looks
+different too, and is somewhat easier to work with on this sort of
+scale.</p>
+<h2 id="what-happens-with-more-loading">What happens with more loading?</h2>
+<p>Things become much more interesting when we start to consider some
+reasonable loading on the network.  As of early November 2014 the network
+load is around 30%.  If we use the simple Monte Carlo simulation we can
+model this pretty easily.</p>
+<p>Let&rsquo;s look at network loading from 0.1% all the way to 100%:</p>
+<p><img src="./first-conf-0-100.png" alt="probabilities for time to a first block confirmation with the Bitcoin network at various load levels (log scale)"></p>
+<p>Probably the first thing to realize here is that the traces for 0.1%,
+10% and 20% are so similar that the 20% line hides the other two.  The
+30% line is only slightly different.  This tells us that up to now we&rsquo;ve
+not really seen any real effects as a result of transaction rate.  At 30%
+loading we&rsquo;ll still see half of all transactions confirmed within 434
+seconds, as opposed to 415 for 0.1%.  That gap really starts to widen at
+40%, however, where it now takes 466 seconds and at 80% we&rsquo;re up at
+1109 seconds (18.5 minutes)!  At 100% we&rsquo;re up at a huge 7744 seconds
+(more than 2 hours)!  If the network were ever to reach this 100% level,
+though, the problems would be much worse as 10% of all transactions
+would still not have received a confirmation after 22800 seconds (6.3
+hours).</p>
+<h2 id="mining-fees-will-save-us">Mining fees will save us?</h2>
+<p>The simulations are pretty simplistic because they assume all
+transactions are processed in the order they arrive.  There&rsquo;s no attempt
+to simulate the effect of fees, but the first thing to recognize is that
+the 0.1% loading case (and indeed almost everything up to 30%) pretty
+much wouldn&rsquo;t care anyway.  In these situations there&rsquo;s little to no
+congestion so fee-base reordering of transactions won&rsquo;t make any real
+difference.  As the network gets congested though then fees can start to
+have an impact.</p>
+<p>Once we start to see full blocks (and we have been starting to see these
+in the last few weeks) then fees should decide whether a transaction is
+in the next block or may be delayed to one after that.  Statistically
+that will mean that blocks with higher fees, or that for other reasons
+are deemed to have high value to the network, will follow curves closer
+to those for a lightly loaded system as we&rsquo;ve seen so far.  It also
+means that those with low fees will actually see even worse delays than
+the simple model predicts.</p>
+<p>No matter how much the fee structures are changed, however, unless the
+speed of finding blocks is increased then we&rsquo;re pretty-much stuck with
+the characteristics that have been present for the last 5+ years.  For
+example, the &ldquo;floating fees&rdquo; change coming in the new Bitcoin Core
+software won&rsquo;t improve anyone&rsquo;s confirmation times beyond a few
+seconds, but fee-based prioritization will allow anyone willing to pay
+to keep their current confirmation behaviour.  Similarly making the
+blocks larger won&rsquo;t improve confirmation times other than by moving us
+to the curves for a less congested network.</p>
+<h2 id="rewards-for-a-bitcoin-miner">Rewards for a Bitcoin miner?</h2>
+<p>While less than ideal for users of Bitcoin, congestion of the network
+does have a potentially positive impact for one group: Miners.  As block
+space becomes scarce, users of the network will have to attach larger
+fees to continue to see confirmation times of the order they are used
+to.  When fees increase then miners reap the reward.</p>
+<p>When block space is readily available, miners suffer from a &ldquo;tragedy of
+the commons&rdquo; problem in which the only rational behaviour is to accept
+all transactions, no matter how small the fee.  With scarcity, however,
+there&rsquo;s suddenly a competitive market for block space.  Those paying
+fees may not appreciate the extra costs, but a transition to a system
+that allows mining fees to become a larger fraction of mining income is
+actually a good thing for the long term security of the network.
+Increased fees would go some way to offsetting the losses that miners
+will see at the next block reward halving to 12.5 BTC per block in 2016.</p>
+<h2 id="consequences">Consequences</h2>
+<p>If the network becomes more congested and fees increase then this will
+inevitably have an interesting impact on &ldquo;spam&rdquo; or low value
+transactions.  They may well start to find themselves priced out of the
+blockchain.  This may well also be a trigger for the use of something
+like sidechains.</p>
+<p>One thing is clear though!  Anyone looking closely at transactions on the
+network can probably see the signs of those tail lights coming on ahead.
+Unless something happens quickly, it looks like we&rsquo;re going to be
+slowing down pretty soon.</p>
+<hr>
+<h2 id="source-code">Source Code</h2>
+<p>This article was written with the help of data from a C language
+simulation.  The data was rendered into charts using Excel.  The source
+code can be found on
+github: <a href="https://github.com/hashingitcom/bitcoin_traffic_bulletin">https://github.com/hashingitcom/bitcoin_traffic_bulletin</a></p>
+<hr>
+<h2 id="related-articles">Related articles</h2>
+<ul>
+<li><a href="/blog/2014-11-02-0000/">7 transactions per second?  Really? (2014-11-02)</a></li>
+<li><a href="/blog/2014-06-15-0000/">Finding 2016 blocks (2014-06-15)</a></li>
+<li><a href="/blog/2014-05-20-0000/">Hash rate headaches</a></li>
+</ul>
+
+                </div>
+            </div>
+
+            
+                <ul class="prev-next">
+                    <li class="prev">
+                        
+                            <a href="https://hashingit.com/blog/2014-11-02-0000/" class="page-link" aria-label="Previous"><span aria-hidden="true">←&nbsp;</span></a>
+                        
+                    </li>
+                    <li class="prev">
+                        
+                            <a href="https://hashingit.com/blog/2014-11-02-0000/" class="page-link" aria-label="Previous"><span aria-hidden="true">7 transactions per second?  Really? </span></a>
+                        
+                    </li>
+                    <li class="next">
+                        
+                            <a href="https://hashingit.com/blog/2014-11-12-0000/" class="page-link" aria-label="Next"><span aria-hidden="true">The future of Bitcoin transaction fees?</span></a>
+                        
+                    </li>
+                    <li class="next">
+                        
+                            <a href="https://hashingit.com/blog/2014-11-12-0000/" class="page-link" aria-label="Next"><span aria-hidden="true">&nbsp;→</span></a>
+                        
+                    </li>
+                </ul>
+            
+
+            
+            
+                <div class="disqus_thread" id="disqus_thread"></div>
+<script type="text/javascript">
+    (function () {
+        
+        
+        if (window.location.hostname == "localhost")
+            return;
+
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        var disqus_shortname = 'hashingit-com';
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+            
+
+            <div class="footer">
+    <div class="copyright">© 2014-2020 David J. Hudson</div>
+</div>
+
+<script src="https://hashingit.com/js/footer.js"></script>
+
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-49245383-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+    <script>feather.replace()</script>
+
+
+        </div>
+    </body>
+</html>

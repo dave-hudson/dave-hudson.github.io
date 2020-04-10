@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    
+    
+    
+        <title>Lies, damned lies and Bitcoin difficulties - Dave Hudson</title>
+    
+
+    <meta name="description" content="Bitcoin difficulty and hash rate statistics should be considered an illness.  The symptoms include anxiety, depression, sleeplessness and paranoia.  Bitcoin miners follow their every movement, rejoicing at smaller-than-expected difficulty changes and collectively dismaying when things go the other way.  Authoritative-looking charts have people puzzling about why things are so erratic and chasing non-existent mining conspiracies.  The truth is out there...">
+
+    
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+
+    <meta property="og:title" content="Lies, damned lies and Bitcoin difficulties" />
+<meta property="og:description" content="Bitcoin difficulty and hash rate statistics should be considered an illness.  The symptoms include anxiety, depression, sleeplessness and paranoia.  Bitcoin miners follow their every movement, rejoicing at smaller-than-expected difficulty changes and collectively dismaying when things go the other way.  Authoritative-looking charts have people puzzling about why things are so erratic and chasing non-existent mining conspiracies.  The truth is out there..." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://hashingit.com/blog/2014-06-10-0000/" />
+<meta property="article:published_time" content="2014-06-10T00:00:00+00:00" />
+<meta property="article:modified_time" content="2014-06-10T00:00:00+00:00" />
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Lies, damned lies and Bitcoin difficulties"/>
+<meta name="twitter:description" content="Bitcoin difficulty and hash rate statistics should be considered an illness.  The symptoms include anxiety, depression, sleeplessness and paranoia.  Bitcoin miners follow their every movement, rejoicing at smaller-than-expected difficulty changes and collectively dismaying when things go the other way.  Authoritative-looking charts have people puzzling about why things are so erratic and chasing non-existent mining conspiracies.  The truth is out there..."/>
+
+
+    <link href="https://fonts.googleapis.com/css?family=Open Sans:300,400,300italic,400italic,700bold|Lalezar:400,700bold" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="https://hashingit.com/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://hashingit.com/css/main.css" />
+    <link disabled id="dark-mode-theme" rel="stylesheet" type="text/css" href="https://hashingit.com/css/dark.css" />
+
+    
+        <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    
+    
+</head>
+
+    <body>
+        <div class="container">
+            <div class="header">
+    <table class="site-title">
+        <tr>
+            <td>
+                <h1><a href="https://hashingit.com/">Dave Hudson</a></h1>
+                
+                    <h2>hashingit.com</h1>
+                
+            </td>
+            <td>
+                <nav class="social">
+                    
+                        <div class="icon"><a href="/index.xml" title="RSS"><i data-feather="rss"></i></a></div>
+                    
+                        <div class="icon"><a href="https://twitter.com/hashingitcom" title="Twitter"><i data-feather="twitter"></i></a></div>
+                    
+                        <div class="icon"><a href="https://facebook.com/hashingitcom" title="Facebook"><i data-feather="facebook"></i></a></div>
+                    
+                        <div class="icon"><a href="https://linkedin.com/in/davejh" title="LinkedIn"><i data-feather="linkedin"></i></a></div>
+                    
+                        <div class="icon"><a href="https://github.com/dave-hudson" title="Github"><i data-feather="github"></i></a></div>
+                    
+                    <div class="icon" id="dark-mode-moon"><a><i data-feather="moon"></i></a></div>
+                    <div class="icon" id="dark-mode-sun"><a><i data-feather="sun"></i></a></div>
+                </nav>
+            </td>
+        </tr>
+    </table>
+    <nav class="site-menu">
+        <ul>
+            
+                <li>
+                    <a href="/">Home</a>
+                </li>
+            
+                <li>
+                    <a href="/elements">Elements</a>
+                </li>
+            
+                <li>
+                    <a href="/blog">Blog</a>
+                </li>
+            
+                <li>
+                    <a href="/journal">Journal</a>
+                </li>
+            
+                <li>
+                    <a href="/tags">Tags</a>
+                </li>
+            
+                <li>
+                    <a href="/about">About</a>
+                </li>
+            
+        </ul>
+    </nav>
+</div>
+
+
+            <div class="title">
+                <h1>Lies, damned lies and Bitcoin difficulties</h1>
+                <div class="meta">
+                    2014-06-10 00:00 - 5 min read
+                </div>
+            </div>
+
+            <div class="blog-post">
+                <nav class="tags">
+                    
+                        
+                            <ul>
+                                
+                                    <li><a href="/tags/Bitcoin">Bitcoin</a></li>
+                                
+                                    <li><a href="/tags/Bitcoin-mining">Bitcoin mining</a></li>
+                                
+                                    <li><a href="/tags/Bitcoin-difficulty">Bitcoin difficulty</a></li>
+                                
+                            </ul>
+                        
+                    
+                </nav>
+
+                <div class="markdown">
+                    <p>Bitcoin difficulty and hash rate statistics should be considered an
+illness.  The symptoms include anxiety, depression, sleeplessness and
+paranoia.  Bitcoin miners follow their every movement, rejoicing at
+smaller-than-expected difficulty changes and collectively dismaying when
+things go the other way.  Authoritative-looking charts have people
+puzzling about why things are so erratic and chasing non-existent mining
+conspiracies.  The truth is out there...</p>
+<h2 id="difficulty-charts">Difficulty charts</h2>
+<p>When we start to think about mining, difficulty charts are not far away.
+Most of them are presented something like this:</p>
+<p><img src="./6m-hash-rate-linear.png" alt="Bitcoin hash rate for the last 6 months (June 2014) on a linear scale"></p>
+<p>This chart shows the last 6 months of daily hash rates and the rising
+difficulty.  It also shows a baseline trend line but we&rsquo;ll look at that
+a little later.</p>
+<p>Aside from that inexorable increase in difficulty and the cries of woe
+from miners watching it, the most striking characteristic is that way
+it&rsquo;s getting progressively much more &quot;spiky&quot;!  Look at how smooth it
+used to look?  In fact this assessment is actually just plain wrong; if
+you were to look at 6 months of data starting 3 months earlier then that
+nice &quot;smooth&quot; part would end up looking just as bad as the most recent
+data.  The problem is a question of scale; the variations in the hash
+rate become numerically larger as the overall hash rate increases.</p>
+<p>When confronted with this sort of data, many statisticians switch to
+logarithmic graphs instead of linear ones because log charts show the
+magnitude differences rather than absolute differences.  Here&rsquo;s the same
+data on a log chart:</p>
+<p><img src="./6m-hash-rate-log.png" alt="Bitcoin hash rate for the last 6 months (June 2014) on a logarithmic scale"></p>
+<p>Notice how the spikes in the blue hash rate look pretty much the same
+all the way across now?  If you&rsquo;re observant you might argue that the
+ones on the left are slightly less spiky, but that&rsquo;s because the slope
+of the graph is steeper there.  Even there though it&rsquo;s clear that the
+statistical noise on a day-to-day basis is actually much larger than the
+overall trend.  That overall trend shows that hashing rate, and thus the
+difficulty, increases are slowing down for now (and probably for the
+foreseeable future).  The slowdown wasn&rsquo;t evident on the linear scale
+graph and so we can see another advantage of logarithmic scale graphs.</p>
+<h2 id="calculating-a-baseline">Calculating a baseline</h2>
+<p>Most Bitcoin miners tend to think in terms of &quot;difficulty&quot; because
+it&rsquo;s what determines the complexity of any mining.  On both of the
+graphs we&rsquo;ve just looked at, though, the difficulty is clearly lagging
+behind the hash rate.  The problem is that it&rsquo;s set retrospectively, and
+set at a level that would make the preceding 2016 blocks take exactly 14
+days to find.  This means that the difficulty lags around 5.5 to 7 days
+behind the actual hash rate even when it&rsquo;s changed.  If we want a real
+baseline to think about hash rates we need something more up-to-date.</p>
+<p>In both of the charts we&rsquo;ve just seen there is a baseline trace, and
+that trace represents &quot;something more up-to-date&quot;.  The baseline is
+calculated by looking at the days where the difficulty changes and
+taking the square root of the ratio of a new to previous difficulty
+level and then multiplying it by the new difficulty.  In-between these
+fixed points is an interpolation that assumes a steady percentage growth
+rate between them.</p>
+<p>This particular baseline isn&rsquo;t perfect because it has no way to account
+for statistical noise in the hashing rate (see &quot;<a href="/blog/2014-05-20-0000/">Hash rate
+headaches</a>&quot;)
+but it turns out to be a surprisingly effective estimate nonetheless.</p>
+<h2 id="checking-the-baseline">Checking the baseline</h2>
+<p>Visually our baseline looks pretty reasonable.  We know that even if the
+hash rate was constant the difficulty would change as a result of random
+noise (see &quot;<a href="/blog/2014-05-24-0000/">Reach for the ear defenders</a>&quot;).
+The question is what does our noise profile look like if we subtract out
+the baseline hash rate estimate?  This should approximately follow
+Bitcoin&rsquo;s Poisson process&rsquo; noise profile and should oscillate about
+zero.  Here&rsquo;s what it actually looks like for the last 12 months:</p>
+<p><img src="./12m-hash-rate-variation.png" alt="12 month Bitcoin hash rate variations (June 2014)"></p>
+<p>Comparing this with what simulations suggest for 24 hour variations this
+looks remarkably consistent.  This pretty-much suggests that there&rsquo;s
+been very little if anything unusual happening over the last 12 months
+and that hashing capacity has been reasonably steadily added throughout.
+One final check though is to look at the probability histogram for the
+variations about our baseline:</p>
+<p><img src="./12m-hash-rate-variation-probability.png" alt="12 month Bitcoin mining hash rate variation probability histogram (June 2014)"></p>
+<p>While it&rsquo;s not perfect, it has just the sort of probability
+distribution we would expect to see.</p>
+<h2 id="what-have-we-gained">What have we gained?</h2>
+<p>We started out trying to understand how key statistics were presented.
+We&rsquo;ve seen how linear charts can be highly misleading.  By devising a
+way to estimate the hash rate baseline, we&rsquo;ve been able to go one step
+further and see just how much the day to day hash rate estimates will
+oscillate quite wildly.  We can now be confident that even 20% swings
+from the estimate are surprisingly likely, and that day-to-day swings
+can be even larger!</p>
+<p>The gods of statistics didn&rsquo;t want us to worry about what happens in
+the course of hour or even a few days; those numbers, tantalizing as
+they may seem, are largely meaningless.  They are the lies among the
+truth that only becomes apparent over a much longer timescale.</p>
+<p>[Data reference: <a href="http://blockchain.info">blockchain.info</a>]</p>
+<hr>
+<h2 id="related-articles">Related articles</h2>
+<ul>
+<li><a href="/blog/2014-05-24-0000/">Reach for the ear defenders! (2014-05-24)</a></li>
+<li><a href="/blog/2014-05-20-0000/">Hash rate headaches (2014-05-20)</a></li>
+</ul>
+
+                </div>
+            </div>
+
+            
+                <ul class="prev-next">
+                    <li class="prev">
+                        
+                            <a href="https://hashingit.com/blog/2014-06-05-0000/" class="page-link" aria-label="Previous"><span aria-hidden="true">←&nbsp;</span></a>
+                        
+                    </li>
+                    <li class="prev">
+                        
+                            <a href="https://hashingit.com/blog/2014-06-05-0000/" class="page-link" aria-label="Previous"><span aria-hidden="true">Strange spikes revisited! </span></a>
+                        
+                    </li>
+                    <li class="next">
+                        
+                            <a href="https://hashingit.com/blog/2014-06-15-0000/" class="page-link" aria-label="Next"><span aria-hidden="true">Finding 2016 blocks</span></a>
+                        
+                    </li>
+                    <li class="next">
+                        
+                            <a href="https://hashingit.com/blog/2014-06-15-0000/" class="page-link" aria-label="Next"><span aria-hidden="true">&nbsp;→</span></a>
+                        
+                    </li>
+                </ul>
+            
+
+            
+            
+                <div class="disqus_thread" id="disqus_thread"></div>
+<script type="text/javascript">
+    (function () {
+        
+        
+        if (window.location.hostname == "localhost")
+            return;
+
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        var disqus_shortname = 'hashingit-com';
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+            
+
+            <div class="footer">
+    <div class="copyright">© 2014-2020 David J. Hudson</div>
+</div>
+
+<script src="https://hashingit.com/js/footer.js"></script>
+
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-49245383-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+    <script>feather.replace()</script>
+
+
+        </div>
+    </body>
+</html>
