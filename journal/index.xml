@@ -7,10 +7,32 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <copyright>© 2014-2020 David J. Hudson</copyright>
-    <lastBuildDate>Fri, 10 Apr 2020 16:10:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 12 Apr 2020 13:46:00 +0000</lastBuildDate>
     
 	<atom:link href="https://hashingit.com/journal/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Compression and big numbers</title>
+      <link>https://hashingit.com/journal/2020-04-12-1346/</link>
+      <pubDate>Sun, 12 Apr 2020 13:46:00 +0000</pubDate>
+      
+      <guid>https://hashingit.com/journal/2020-04-12-1346/</guid>
+      <description>A few years ago I was thinking about big numbers and the nature of symbols. Reading Alan Turing&amp;rsquo;s 1936 paper on computable numbers got me thinking about the nature of symbols again.
+Conventional computer architectures invariably work in terms of machine words regardless of efficiency, yet compression schemes generally ignore such things in order to pack more into less. Bignums do the same, of course, although they do tend to use machine words for efficiency reasons.</description>
+    </item>
+    
+    <item>
+      <title>Alan Turing&#39;s paper on computable numbers</title>
+      <link>https://hashingit.com/journal/2020-04-12-1034/</link>
+      <pubDate>Sun, 12 Apr 2020 10:34:00 +0000</pubDate>
+      
+      <guid>https://hashingit.com/journal/2020-04-12-1034/</guid>
+      <description>After 40+ years of writing software and a stint designing CPU instruction sets I finally got around to reading Alan Turing&amp;rsquo;s 1936 paper on computable numbers.
+This has led to me a huge amount of research about Universal Turing Machines (UTMs) and that there are so many different designs. Most interesting are the searches for minimal UTMs (smallest numbers of states, symbols and tapes).
+Some interesting pages:
+ Implementation of a Turing Machine in Scheme: https://web.</description>
+    </item>
     
     <item>
       <title>Adding the &#34;Journal&#34; section to hashingit.com</title>
