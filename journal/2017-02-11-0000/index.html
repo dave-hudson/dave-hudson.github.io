@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    
+    
+    
+        <title>c8: Faster digit operations - Dave Hudson</title>
+    
+
+    <meta name="description" content="c8: Faster digit operations.">
+
+    
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+
+    <meta property="og:title" content="c8: Faster digit operations" />
+<meta property="og:description" content="c8: Faster digit operations." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://hashingit.com/journal/2017-02-11-0000/" />
+<meta property="article:published_time" content="2017-02-11T00:00:00+00:00" />
+<meta property="article:modified_time" content="2017-02-11T00:00:00+00:00" />
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="c8: Faster digit operations"/>
+<meta name="twitter:description" content="c8: Faster digit operations."/>
+
+
+    <link href="https://fonts.googleapis.com/css?family=Open Sans:300,400,300italic,400italic,700bold|Lalezar:400,700bold" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="https://hashingit.com/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://hashingit.com/css/main.css" />
+    <link disabled id="dark-mode-theme" rel="stylesheet" type="text/css" href="https://hashingit.com/css/dark.css" />
+
+    
+        <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    
+    
+</head>
+
+    <body>
+        <div class="container">
+            <div class="header">
+    <table class="site-title">
+        <tr>
+            <td>
+                <h1><a href="https://hashingit.com/">Dave Hudson</a></h1>
+                
+                    <h2>hashingit.com</h1>
+                
+            </td>
+            <td>
+                <nav class="social">
+                    
+                        <div class="icon"><a href="/index.xml" title="RSS"><i data-feather="rss"></i></a></div>
+                    
+                        <div class="icon"><a href="https://twitter.com/hashingitcom" title="Twitter"><i data-feather="twitter"></i></a></div>
+                    
+                        <div class="icon"><a href="https://facebook.com/hashingitcom" title="Facebook"><i data-feather="facebook"></i></a></div>
+                    
+                        <div class="icon"><a href="https://linkedin.com/in/davejh" title="LinkedIn"><i data-feather="linkedin"></i></a></div>
+                    
+                        <div class="icon"><a href="https://github.com/dave-hudson" title="Github"><i data-feather="github"></i></a></div>
+                    
+                    <div class="icon" id="dark-mode-moon"><a><i data-feather="moon"></i></a></div>
+                    <div class="icon" id="dark-mode-sun"><a><i data-feather="sun"></i></a></div>
+                </nav>
+            </td>
+        </tr>
+    </table>
+    <nav class="site-menu">
+        <ul>
+            
+                <li>
+                    <a href="/">Home</a>
+                </li>
+            
+                <li>
+                    <a href="/elements">Elements</a>
+                </li>
+            
+                <li>
+                    <a href="/blog">Blog</a>
+                </li>
+            
+                <li>
+                    <a href="/journal">Journal</a>
+                </li>
+            
+                <li>
+                    <a href="/tags">Tags</a>
+                </li>
+            
+                <li>
+                    <a href="/about">About</a>
+                </li>
+            
+        </ul>
+    </nav>
+</div>
+
+
+            <div class="title">
+                <h1>c8: Faster digit operations</h1>
+                <div class="meta">
+                    2017-02-11 00:00 - 1 min read
+                </div>
+            </div>
+
+            <div class="journal-entry">
+                <nav class="tags">
+                    
+                        
+                    
+                </nav>
+
+                <div class="markdown">
+                    <p>Our memory allocation overheads dominate, and we&rsquo;ll deal with them shortly, but a quick scan through our profiler
+data shows that we&rsquo;re spending time in other places too.</p>
+<p>The function-level profiling doesn&rsquo;t reveal anything too interesting, but if we look at the individual functions
+and the profiler annotations (at the assembler level) we can see two areas for immediate improvement in the
+<code>c8::natural</code> class:</p>
+<ul>
+<li>
+<p>The <code>normalize()</code> operations are generic, but the actual operations required to define the size of a function
+output rarely require iterations.</p>
+</li>
+<li>
+<p>There are a lot of uses of the <code>digits_</code> array that can be replaced by using temporary pointers to the
+<code>digits_</code> array directly, rather than indirectly.</p>
+</li>
+</ul>
+<p>This last option is a general performance optimization.  In general, any time we need a duplicate sub-expression
+it&rsquo;s much better to do so explicitly, rather than to expect the compiler to find them for us.  All too often
+compilers are limited in their ability to extract things that we might hope they would.  Even if the compiler
+does do the right thing, though, we will never see worse readability or maintainability by explicitly extracting
+sub-expressions.</p>
+
+                </div>
+            </div>
+
+            
+                <div class="prev-next">
+                    <h2>More journal entries</h2>
+                    <ul>
+                        <li class="prev">
+                            
+                                <a href="https://hashingit.com/journal/2017-02-07-0000/" class="page-link" aria-label="Previous"><span aria-hidden="true">&lt;&lt;&nbsp;</span></a>
+                            
+                        </li>
+                        <li class="prev">
+                            
+                                <a href="https://hashingit.com/journal/2017-02-07-0000/" class="page-link" aria-label="Previous"><span aria-hidden="true">c8: Divide performance (again) </span></a>
+                            
+                        </li>
+                        <li class="next">
+                            
+                                <a href="https://hashingit.com/journal/2017-02-15-0000/" class="page-link" aria-label="Next"><span aria-hidden="true">c8: Yet (again) more performance work</span></a>
+                            
+                        </li>
+                        <li class="next">
+                            
+                                <a href="https://hashingit.com/journal/2017-02-15-0000/" class="page-link" aria-label="Next"><span aria-hidden="true">&nbsp;&gt;&gt;</span></a>
+                            
+                        </li>
+                    </ul>
+                </div>
+            
+
+            <div class="footer">
+    <div class="copyright">© 2014-2020 David J. Hudson</div>
+</div>
+
+<script src="https://hashingit.com/js/footer.js"></script>
+
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-49245383-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+    <script>feather.replace()</script>
+
+
+        </div>
+    </body>
+</html>

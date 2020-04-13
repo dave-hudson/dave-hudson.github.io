@@ -7,10 +7,31 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <copyright>© 2014-2020 David J. Hudson</copyright>
-    <lastBuildDate>Sun, 12 Apr 2020 13:46:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 13 Apr 2020 19:44:00 +0000</lastBuildDate>
     
 	<atom:link href="https://hashingit.com/journal/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Updates to hashingit.com</title>
+      <link>https://hashingit.com/journal/2020-04-13-1944/</link>
+      <pubDate>Mon, 13 Apr 2020 19:44:00 +0000</pubDate>
+      
+      <guid>https://hashingit.com/journal/2020-04-13-1944/</guid>
+      <description>So an hour-long job just took six hours :-(
+I decided to move the developer notes from my c8 library to this site. In the process I discovered that I&amp;rsquo;d not set up the pages to handle rendering &amp;lt;code&amp;gt; tags properly. While fixing that I decided the site colour scheme needed a refresh, and then found a few quirks in the config.toml.
+No good deed goes unpunished!</description>
+    </item>
+    
+    <item>
+      <title>Bringing in some older journal entries</title>
+      <link>https://hashingit.com/journal/2020-04-12-1820/</link>
+      <pubDate>Sun, 12 Apr 2020 18:20:00 +0000</pubDate>
+      
+      <guid>https://hashingit.com/journal/2020-04-12-1820/</guid>
+      <description>Over the course of many years I&amp;rsquo;ve accumulated dozens of paper notebooks. I&amp;rsquo;m not going to try to pull all them into this site, but I do have other stuff I wrote as notes for myself and I will bring them over.
+The starting point for this are the notes I made in 2017 when I built my c8 maths library. Hopefully this will also give me the opportunity to format some of these notes better.</description>
+    </item>
     
     <item>
       <title>Compression and big numbers</title>
@@ -42,6 +63,393 @@ Some interesting pages:
       <guid>https://hashingit.com/journal/2020-04-10-1610/</guid>
       <description>When I created this site I was thinking that it would be a fairly traditional blog site, but had always intended to capture my work in progress too. I could have done that in the blog posts, but that risked diluting their value. The blog posts should really represent carefully curated work.
 To this end I&amp;rsquo;ve now created the &amp;ldquo;Journal&amp;rdquo; area. This is a space to drop notes as I go.</description>
+    </item>
+    
+    <item>
+      <title>c8: May require some assembly</title>
+      <link>https://hashingit.com/journal/2017-05-29-0000/</link>
+      <pubDate>Mon, 29 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://hashingit.com/journal/2017-05-29-0000/</guid>
+      <description>One of the problems with C++ compilers is that sometimes they&amp;rsquo;re not able to do the optimizations we might like. In this instance we have a scenario where we want to divide a c8::natural_double_digit by a c8::natural_digit, knowing that the result can only be another c8::natural_digit, but unfortunately there&amp;rsquo;s no way to express this restriction on the output. As such the compiler inevitably generates a more expansive divide, but this is always slower.</description>
+    </item>
+    
+    <item>
+      <title>c8: Improving performance &amp; fixing bugs</title>
+      <link>https://hashingit.com/journal/2017-05-25-0000/</link>
+      <pubDate>Thu, 25 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://hashingit.com/journal/2017-05-25-0000/</guid>
+      <description>Whenever it&amp;rsquo;s looked like the performance of the code has reached its limit another opportunity arises. In this case reading the assembler output from the compiler showed that there were some opportunities to rearrange the sources to reduce register pressure.
+While looking at the divide code though (m by n digits) it was obvious that there was a potential problem with quotient estimation. It seemed like a good opportunity to resolve some long-standing performance problems at the same time.</description>
+    </item>
+    
+    <item>
+      <title>c8: Speeding string conversions with divide-and-conquer</title>
+      <link>https://hashingit.com/journal/2017-05-09-0000/</link>
+      <pubDate>Tue, 09 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://hashingit.com/journal/2017-05-09-0000/</guid>
+      <description>One of the more telling performance stories in the benchmark data has been that the string constructors and string stream output functions are somewhat slow. The refactoring in the last week made the basic arithmetic operations much more regular, and with that also put a spotlight on performance differences between different sizes of operand values.
+When we convert to, or from, a string, we had previously been using quite a naive approach, but we would invariably end up invoking an m by 1 operation.</description>
+    </item>
+    
+    <item>
+      <title>c8: Refactoring</title>
+      <link>https://hashingit.com/journal/2017-05-08-0000/</link>
+      <pubDate>Mon, 08 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://hashingit.com/journal/2017-05-08-0000/</guid>
+      <description>Sometimes it&amp;rsquo;s good to see what can be done to refactor code as it can lead to some surprises. It turns out that the simplifications from a few days ago made it quite obvious that some refactoring might be in order.
+The first thing that was evident was that the handling of zero-digit values wasn&amp;rsquo;t consistent with the approaches of 1 and n, or m, digit values, as zero digit versions were handled inside the c8::natural class and not the digit array code.</description>
+    </item>
+    
+    <item>
+      <title>c8: Simplifying things</title>
+      <link>https://hashingit.com/journal/2017-05-04-0000/</link>
+      <pubDate>Thu, 04 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://hashingit.com/journal/2017-05-04-0000/</guid>
+      <description>Up to this point the c8::natural class has been a little different to the integer and rational classes. Unlike the other two it has supported c8::natural and c8::natural_digit operands. The thinking was that the c8::natural_digit versions would be significantly quicker than the c8::natural variants.
+While this approach might have been correct early on in the development cycle, it hasn&amp;rsquo;t actually been correct for some time. The generic versions now handle special cases efficiently, and the overheads associated with natural number construction have been dramatically reduced.</description>
+    </item>
+    
+    <item>
+      <title>c8: Improving the documentation</title>
+      <link>https://hashingit.com/journal/2017-05-01-0000/</link>
+      <pubDate>Mon, 01 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://hashingit.com/journal/2017-05-01-0000/</guid>
+      <description>A few weeks ago I set up the first set of (incomplete) documentation pages. The aim was to get something written so that it might be possible to understand how the library was intended to be used, but it was pretty evident to me that this wasn&amp;rsquo;t anywhere near as polished as I&amp;rsquo;d been hoping. Over the bank holiday (long) weekend I&amp;rsquo;ve been trying to fix this!
+This had a number of steps:</description>
+    </item>
+    
+    <item>
+      <title>c8: Finishing the memory changes</title>
+      <link>https://hashingit.com/journal/2017-04-20-0000/</link>
+      <pubDate>Thu, 20 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://hashingit.com/journal/2017-04-20-0000/</guid>
+      <description>Yesterday&amp;rsquo;s changes prepared for replacing the &amp;ldquo;naked&amp;rdquo; memory management operations new and delete, and today they were actually removed. Aside from being better stylistically, the change actually makes it much easier to build the code so that it is always correct. std::unique_ptr&amp;lt;&amp;gt; requires that data be moved, rather than copied, whereas this required more careful analysis to do this with naked pointers.
+Valgrind Headaches Having made a change to the memory management code it&amp;rsquo;s always useful to run valgrind.</description>
+    </item>
+    
+    <item>
+      <title>c8: Improving memory management</title>
+      <link>https://hashingit.com/journal/2017-04-19-0000/</link>
+      <pubDate>Wed, 19 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://hashingit.com/journal/2017-04-19-0000/</guid>
+      <description>One of the things that I don&amp;rsquo;t like about the current implementation is that it uses some &amp;ldquo;naked&amp;rdquo; new and delete operators. The implementation goes to some lengths to hide the use of new and delete so it&amp;rsquo;s not visible to users of the c8 library, but any time we can do things right it will be better.
+While the implementation was designed to be safe, it was actually a little problematic because it had a private pointer that could change meaning.</description>
+    </item>
+    
+    <item>
+      <title>c8: Explaining it all</title>
+      <link>https://hashingit.com/journal/2017-04-01-0000/</link>
+      <pubDate>Sat, 01 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://hashingit.com/journal/2017-04-01-0000/</guid>
+      <description>We really need some documentation; after all, without docs how will we know what the library can do, or how to use it? The problem is that we really want a couple of different types of documentation. We&amp;rsquo;d like both offline and online versions, with the online version hosted here on GitHub.
+The easiest approach is to choose a source format that can serve both needs, and as GitHub uses markdown then that&amp;rsquo;s the obvious one to use.</description>
+    </item>
+    
+    <item>
+      <title>c8: Improving comparisons</title>
+      <link>https://hashingit.com/journal/2017-03-29-0000/</link>
+      <pubDate>Wed, 29 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://hashingit.com/journal/2017-03-29-0000/</guid>
+      <description>The original approach to comparison operators was to have a single compare function and then compare the value returned from it. This has the advantage of being easy to implement, but the disadvantage that we can&amp;rsquo;t easily take early-outs in cases that might help. Our compilers might do that for us, but there&amp;rsquo;s no guarantee.
+Instead, if we make these things explicit we get better performance, but also eliminate some abstractions that aren&amp;rsquo;t obviously useful.</description>
+    </item>
+    
+    <item>
+      <title>c8: Improving integers &amp; rationals</title>
+      <link>https://hashingit.com/journal/2017-03-17-0000/</link>
+      <pubDate>Fri, 17 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://hashingit.com/journal/2017-03-17-0000/</guid>
+      <description>So far most of the work has been on improving the performance of the c8::natural class as integers and rationals are constructed from it, but this means that integers and rationals have been somewhat ignored. In practice, of course, these other two are actually the most common ones to want to use.
+The first problem is that the test coverage for both of these is insufficient, so we need to make sure that we cover all of operators that we support.</description>
+    </item>
+    
+    <item>
+      <title>c8: Refactoring</title>
+      <link>https://hashingit.com/journal/2017-03-13-0000/</link>
+      <pubDate>Mon, 13 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://hashingit.com/journal/2017-03-13-0000/</guid>
+      <description>All good codebases need constant refactoring to ensure that they don&amp;rsquo;t get hard to maintain, and this one is no exception. Many of the arithmetic operations on c8::natural have ended up duplicating common code sequences of digit array code. Refactoring this reduces the number of lines of code and improves the readability and maintainability.
+In this case there&amp;rsquo;s a side benefit too. Allowing the modulus implementation to be expressed in a more compact manner lets us inline a more compact version of the code, and c8::natural::gcd() gets a nice speed-up.</description>
+    </item>
+    
+    <item>
+      <title>c8: Improving consistency and test coverage</title>
+      <link>https://hashingit.com/journal/2017-03-11-0000/</link>
+      <pubDate>Sat, 11 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://hashingit.com/journal/2017-03-11-0000/</guid>
+      <description>Improving consistency One of the things that has become evident over the last few weeks is that it&amp;rsquo;s much easier to make things work well if the code is as consistent as possible.
+Over the last few days I&amp;rsquo;ve reordered lots of things, moved pieces around and generally tried to make similar functions behave in a consistent way.
+As an example, almost every c8::natural function now has early-out cases for zero-sized or zero-value operands.</description>
+    </item>
+    
+    <item>
+      <title>c8: More incremental improvements</title>
+      <link>https://hashingit.com/journal/2017-03-04-0000/</link>
+      <pubDate>Sat, 04 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://hashingit.com/journal/2017-03-04-0000/</guid>
+      <description>The last few days have seen some steady changes:
+  Implementations have become more regular.
+  Divide and modulus operations have been broken into pieces and made more efficient.
+  Comments have been improved.
+  Variable names have ben made more regular.
+  More logic has been moved into the digit-array layer, so the digit-array behaviour is no longer visible in the public headers.
+  None of this is particular radical stuff, but it makes the code easier to understand, and easier to improve in the future.</description>
+    </item>
+    
+    <item>
+      <title>c8: Improving testing</title>
+      <link>https://hashingit.com/journal/2017-02-28-0000/</link>
+      <pubDate>Tue, 28 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://hashingit.com/journal/2017-02-28-0000/</guid>
+      <description>One of the major headaches so far has been that the functional test timings included the overheads of doing the timing measurement. Given that the tests had to change it also seemed like a good opportunity to merge all of the tests into one location so that they&amp;rsquo;re easier to manage and run.
+The timing changes were a little tricky to implement because of the way most modern systems implement power management and performance boosting.</description>
+    </item>
+    
+    <item>
+      <title>c8: Introducing digit arrays</title>
+      <link>https://hashingit.com/journal/2017-02-27-0000/</link>
+      <pubDate>Mon, 27 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://hashingit.com/journal/2017-02-27-0000/</guid>
+      <description>While the C++ code has been written to be pretty fast, there&amp;rsquo;s always an opportunity to make this sort of library code go faster by making use of assembler code. The problem is that building assembler support mixed in with the object class operations is really difficult.
+In order to get around this we really need the core of each numerical operation to be abstracted into a form that&amp;rsquo;s easier to optimize in the future.</description>
+    </item>
+    
+    <item>
+      <title>c8: Compiler frustrations!</title>
+      <link>https://hashingit.com/journal/2017-02-24-0000/</link>
+      <pubDate>Fri, 24 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://hashingit.com/journal/2017-02-24-0000/</guid>
+      <description>One of the nice performance features of C++ is that it should be possible to support return value optimization (RVO). In this the compiler will avoid unnecessary copy and move operations when returning a local object from a called function. This allows us to write code in which our various number objects should be handled very efficiently and should have value semantics (we can return by value).
+There&amp;rsquo;s only one problem: g++ and clang don&amp;rsquo;t always like things that are actually OK.</description>
+    </item>
+    
+    <item>
+      <title>c8: Improving shifts and digit operations</title>
+      <link>https://hashingit.com/journal/2017-02-21-0000/</link>
+      <pubDate>Tue, 21 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://hashingit.com/journal/2017-02-21-0000/</guid>
+      <description>Improving shifts The &amp;lt;&amp;lt; and &amp;gt;&amp;gt; operators are unusual in that we set them up to support in-place mutations of the sort required for &amp;lt;&amp;lt;= and &amp;gt;&amp;gt;= but never implemented that code. The divide logic does a lot of things that would benefit from these, however.
+While the fascination with divide/modulus and gcd performance may seem a little obsessive, they are not without merit. The rational number code makes extensive use of gcd and divide to normalize values.</description>
+    </item>
+    
+    <item>
+      <title>c8: Making the world a little better</title>
+      <link>https://hashingit.com/journal/2017-02-20-0000/</link>
+      <pubDate>Mon, 20 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://hashingit.com/journal/2017-02-20-0000/</guid>
+      <description>Better code layout We&amp;rsquo;re starting to find it much harder to make things faster, but there&amp;rsquo;s still some scope.
+One of the things that we can do is guide the compiler in how best to arrange the code. By default the compiler uses heuristics to work out if particular branches are likely or unlikely. In general the compiler will rearrange the code so that the branch will &amp;ldquo;fall through&amp;rdquo; to the most likely instruction.</description>
+    </item>
+    
+    <item>
+      <title>c8: Reducing memory management overheads</title>
+      <link>https://hashingit.com/journal/2017-02-16-0000/</link>
+      <pubDate>Thu, 16 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://hashingit.com/journal/2017-02-16-0000/</guid>
+      <description>When looking at our profiler data about 50% of the total cost comes from heap (memory management) overheads. The problem is that calling new and delete involve lots of locking overheads, and locking is a very expensive proposition for modern CPUs.
+Most of the large numbers we&amp;rsquo;re likely to deal with aren&amp;rsquo;t actually all that huge, however, so we can mitigate the costs for smaller numbers by including a small digit buffer in each c8::natural object.</description>
+    </item>
+    
+    <item>
+      <title>c8: Yet (again) more performance work</title>
+      <link>https://hashingit.com/journal/2017-02-15-0000/</link>
+      <pubDate>Wed, 15 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://hashingit.com/journal/2017-02-15-0000/</guid>
+      <description>One of the things that the previous changes to normalization highlighted was that we might be touching memory more than we might want. As CPUs get faster, but memories don&amp;rsquo;t, then memory access costs get increasingly more expensive, and so any unnecessary memory touches are to be avoided:
+  The c8::natural::reserve() method was zeroing memory when the new operator was called, but in most cases this wasn&amp;rsquo;t required.
+  Some member variables of the c8::natural class were being accessed in ways that might lead to more registers being required (although in general this didn&amp;rsquo;t happen with clang as a compiler).</description>
+    </item>
+    
+    <item>
+      <title>c8: Faster digit operations</title>
+      <link>https://hashingit.com/journal/2017-02-11-0000/</link>
+      <pubDate>Sat, 11 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://hashingit.com/journal/2017-02-11-0000/</guid>
+      <description>Our memory allocation overheads dominate, and we&amp;rsquo;ll deal with them shortly, but a quick scan through our profiler data shows that we&amp;rsquo;re spending time in other places too.
+The function-level profiling doesn&amp;rsquo;t reveal anything too interesting, but if we look at the individual functions and the profiler annotations (at the assembler level) we can see two areas for immediate improvement in the c8::natural class:
+  The normalize() operations are generic, but the actual operations required to define the size of a function output rarely require iterations.</description>
+    </item>
+    
+    <item>
+      <title>c8: Divide performance (again)</title>
+      <link>https://hashingit.com/journal/2017-02-07-0000/</link>
+      <pubDate>Tue, 07 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://hashingit.com/journal/2017-02-07-0000/</guid>
+      <description>The performance of the divide code continues to irritate me, because it felt like it should be able to run faster. After staring at it for a while I ended up noticing a few opportunities to make small improvements. The performance gains were small, but the code is certainly a lot cleaner now.
+A bigger change was to modify the divide and multiply code to invoke the versions that divide, or multiply, by a single digit in cases where we&amp;rsquo;re only operating with a single digit.</description>
+    </item>
+    
+    <item>
+      <title>c8: Improving performance measurement</title>
+      <link>https://hashingit.com/journal/2017-02-06-0000/</link>
+      <pubDate>Mon, 06 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://hashingit.com/journal/2017-02-06-0000/</guid>
+      <description>Having already broken out each of the individual tests within the &amp;ldquo;check&amp;rdquo; test apps, we really need to be able to get more reliable measurements.
+The easiest way to do this is run each test multiple times, sort the results, and then take a value that&amp;rsquo;s some specific centile. This approach lets us ingore larger numbers that are generated when kernel pre-emptions occur, and also very small numbers that may result form atypical operational states.</description>
+    </item>
+    
+    <item>
+      <title>c8: Overhauling unit tests</title>
+      <link>https://hashingit.com/journal/2017-02-03-0000/</link>
+      <pubDate>Fri, 03 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://hashingit.com/journal/2017-02-03-0000/</guid>
+      <description>As part of the efforts to get timings in unit tests more consistent the tests needed restructuring into a new format. The easiest way to do this was to change each of the tests so that they no longer handled their own output reporting, and instead returned this back to their caller for reporting. This will let the caller invoke each test multiple times and generate better statistics (although the callers don&amp;rsquo;t yet do this).</description>
+    </item>
+    
+    <item>
+      <title>c8: More improvements</title>
+      <link>https://hashingit.com/journal/2017-02-01-0000/</link>
+      <pubDate>Wed, 01 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://hashingit.com/journal/2017-02-01-0000/</guid>
+      <description>Making Things Consistent Some of the operators weren&amp;rsquo;t implemented in a way that was really consistent with C++ norms. For example the += operator had a void return type. This was something of an oversight so I corrected this!
+More Performance Tweaking We&amp;rsquo;ve seen quite a lot of incremental improvements over the last couple of weeks, but it still seems like there&amp;rsquo;s a lot of unnecessary copying happening. One easy way to check for this is to instrument calls to the copy constructors in the various object classes and see if the copy operations are actually necessary or not.</description>
+    </item>
+    
+    <item>
+      <title>c8: More speedups</title>
+      <link>https://hashingit.com/journal/2017-01-31-0000/</link>
+      <pubDate>Tue, 31 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://hashingit.com/journal/2017-01-31-0000/</guid>
+      <description>So far our operations are all based around the c8::natural class, but in many instances we only want to operate on a natural number in combination with a single c8::natural_digit. The advantage is that we don&amp;rsquo;t have to do anything to create a second c8::natural object, and also we only have to consider a single digit rather than iterating over more than one digit.
+The speedups for divide, constructor and printing operations are up to 4x!</description>
+    </item>
+    
+    <item>
+      <title>c8: More performance work</title>
+      <link>https://hashingit.com/journal/2017-01-27-0000/</link>
+      <pubDate>Fri, 27 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://hashingit.com/journal/2017-01-27-0000/</guid>
+      <description>Improving the performance of the code clearly means reducing some of the memory management overheads.
+The use of std::vector has been a great way to start things, and it&amp;rsquo;s always a good idea to avoid explicit uses of new and delete, but in this case any small overheads are a problem because we tend to create a lot of objects. In addition, being able to use a customized approach will allow alternative approaches that will significantly optimize things for smaller numbers.</description>
+    </item>
+    
+    <item>
+      <title>c8: More performance improvements</title>
+      <link>https://hashingit.com/journal/2017-01-26-0000/</link>
+      <pubDate>Thu, 26 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://hashingit.com/journal/2017-01-26-0000/</guid>
+      <description>Looking at the natural number divide logic, I realized that there was some scope to improve performance by avoiding too many computations using other natural number operations. In some instances shifts and multiplies could just be modified to shifts, while in others there was no reason to use adds and shifts when result digits could be written directly.
+It turns out that there was a nasty bug exposed by the attempts to improve performance, and that one of the unit tests should have picked it up, but was set up with the wrong result.</description>
+    </item>
+    
+    <item>
+      <title>c8: Continuing performance investigations</title>
+      <link>https://hashingit.com/journal/2017-01-21-0000/</link>
+      <pubDate>Sat, 21 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://hashingit.com/journal/2017-01-21-0000/</guid>
+      <description>The numbers from yesterday strongly indicated that we were spending a lot of CPU time in memory management. The most obvious place that we could be spending this would be the creation and deletion of temporary natural number objects during our calculations.
+Starting with C++11, one of the major performance improvements came from the ability to use move constructors and move assignment operators. By default our natural number class supported these, but it wasn&amp;rsquo;t clear if we were actually moving, rather than copying, everywhere that we should have been.</description>
+    </item>
+    
+    <item>
+      <title>c8: Starting to understand performance</title>
+      <link>https://hashingit.com/journal/2017-01-20-0000/</link>
+      <pubDate>Fri, 20 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://hashingit.com/journal/2017-01-20-0000/</guid>
+      <description>I realized that the test apps were being built with dynamic linking so switched the builds to use static linking. Dynamically linked libraries use small stubs in a procedure linkage table (PLT) that sit between callers and the actual code in the dynamic library; using static linking avoids this.
+With these changes we can look at the performance characteristics of the natural number unit test:
+cons 0 | 316 | pass | 0 cons 1 | 3608 | pass | 123456789abc cons 2 | 928 | pass | 0 cons 3 | 17384 | pass | 3837439787487386792386728abcd88379dc cons 4 | 44984 | pass | 3897894117580750151618270927682762897697428275427542907478758957487582700682675349287325097 cons 5 | 8184 | pass | 115415157637671751 cons 6 | 5376327 | pass | exception thrown: invalid digit cons 7 | 8976 | pass | 100000000000000000000000 count 0 | 92 | pass | 0 count 1 | 84 | pass | 64 count 2 | 56 | pass | 17 count 3 | 56 | pass | 185 add 0 | 132 | pass | 73 add 1 | 156 | pass | 42 add 2 | 464 | pass | 10000000000000001 add 3 | 239 | pass | 98888880000000000000000000000000000000000000000000000000000001000000789 sub 0 | 324 | pass | 50 sub 1 | 260 | pass | 5872488729698595999749602411500766185722239445613509099777952305512191704320129156897500143 sub 2 | 412 | pass | 897 sub 3 | 20536 | pass | exception thrown: not a number comp 0a | 1054 | pass | 0 comp 0b | 179 | pass | 1 comp 0c | 94 | pass | 1 comp 0d | 97 | pass | 1 comp 0e | 109 | pass | 0 comp 0f | 94 | pass | 0 comp 1a | 106 | pass | 0 comp 1b | 106 | pass | 1 comp 1c | 60 | pass | 1 comp 1d | 79 | pass | 1 comp 1e | 79 | pass | 0 comp 1f | 94 | pass | 0 comp 2a | 121 | pass | 0 comp 2b | 109 | pass | 1 comp 2c | 94 | pass | 0 comp 2d | 67 | pass | 0 comp 2e | 48 | pass | 1 comp 2f | 73 | pass | 1 comp 3a | 166 | pass | 1 comp 3b | 109 | pass | 0 comp 3c | 100 | pass | 0 comp 3d | 81 | pass | 1 comp 3e | 103 | pass | 0 comp 3f | 97 | pass | 1 lsh 0a | 142 | pass | 349f lsh 0b | 551 | pass | 693e lsh 0c | 161 | pass | d27c0000 lsh 0d | 312 | pass | 1a4f80000000000000000000000000000000000000000000000 lsh 1a | 297 | pass | 693e5306ea64730b5f79d306f250f30f13bffdffdd30ecf0d0ecf0ceceacac400000000000000000 rsh 0a | 306 | pass | 23490000000000000000000000000000000000000000000000000000 rsh 0b | 560 | pass | 11a48000000000000000000000000000000000000000000000000000 rsh 0c | 587 | pass | 469200000000000000000000000000000000000000000000000 rsh 0d | 133 | pass | 11a4800 rsh 1a | 206 | pass | d27ca60dd4c8e616bef3a60de4a1e61e277ffbffba61d9e1a mul 0 | 491 | pass | 66 mul 1 | 300 | pass | 9999999999999999999000000000000000000 mul 2 | 285 | pass | 8000000000000000000000000000000 mul 3 | 1165 | pass | 15241578753238836750495351562566681945008382873376009755225118122311263526910001371743100137174310012193273126047859425087639153757049236500533455762536198787501905199875019052100 div 0a | 4955 | pass | 10 div 0b | 4955 | pass | 10 div 1a | 16107 | pass | 78292387927518758972102054472775487212767983201652300846 div 1b | 16107 | pass | 35600667362958008 div 2a | 11127 | pass | ffffffffffffffff000000000000000 div 2b | 11127 | pass | 100000000000000000000000 div 3 | 28621 | pass | exception thrown: divide by zero div 4a | 4777 | pass | 100000 div 4b | 4777 | pass | 0 gcd 0 | 7065 | pass | 8 gcd 1 | 43431 | pass | 1 gcd 2 | 1892 | pass | 8888888 gcd 3 | 7595 | pass | 20181732873032947492728336135378088830674353623374417329043358630878748833567 toull 0 | 233 | pass | 0 toull 1 | 57 | pass | 2000 toull 2 | 13288 | pass | exception thrown: overflow error toull 3 | 91 | pass | 123456789a toull 4 | 9148 | pass | exception thrown: overflow error prn 0 | 47591 | pass | 4701397401952099592073 prn 1 | 38628 | pass | fedcfedc0123456789 prn 2 | 37245 | pass | FEDCFEDC0123456789 prn 3 | 51338 | pass | 775563766700044321263611 prn 4 | 46528 | pass | 4701397401952099592073 prn 5 | 38982 | pass | 0xfedcfedc0123456789 prn 6 | 37405 | pass | 0XFEDCFEDC0123456789 prn 7 | 51012 | pass | 0775563766700044321263611 For now we can ignore the constructor and print functions because both make heavy use of divide functions, and the divide functionality is clearly pretty expensive!</description>
+    </item>
+    
+    <item>
+      <title>c8: Supporting conversions to C&#43;&#43; native types</title>
+      <link>https://hashingit.com/journal/2017-01-19-0000/</link>
+      <pubDate>Thu, 19 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://hashingit.com/journal/2017-01-19-0000/</guid>
+      <description>In my last update I had introduced the function c8::toull() to convert a natural number to an unsigned long long, and c8::toll() to convert an integer to a long long. Today I&amp;rsquo;ve added c8:todouble() to convert a rational to a double. This means that all 3 types now have a means of converting in and out of C++ native types.
+In my previous update I had added c8::isull() and c8::isll() too, but I&amp;rsquo;ve now removed them.</description>
+    </item>
+    
+    <item>
+      <title>c8: Rational numbers and floating point</title>
+      <link>https://hashingit.com/journal/2017-01-16-0000/</link>
+      <pubDate>Mon, 16 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://hashingit.com/journal/2017-01-16-0000/</guid>
+      <description>Rational numbers and floating point Rational numbers can represent any of the floating point numbers that we can represent in C++ (single, or double), although they may be a little large. The advantage is that rationals don&amp;rsquo;t have to lose precision in subsequent calculations, but there are a couple of problems.
+The first problem is that rational numbers will typically be larger than floating point, but this isn&amp;rsquo;t a major concern right now.</description>
+    </item>
+    
+    <item>
+      <title>c8: Dropping the idea for real numbers</title>
+      <link>https://hashingit.com/journal/2017-01-15-0000/</link>
+      <pubDate>Sun, 15 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://hashingit.com/journal/2017-01-15-0000/</guid>
+      <description>Up until today I&amp;rsquo;d been planning to add some support for real numbers, or at least scalable floating-point-like numbers that approximate real numbers. That&amp;rsquo;s no longer on the to-do list.
+Real numbers aren&amp;rsquo;t actually representable with the discrete mathematics available within a digital system. The numbers that are representable are all equally representable as rational numbers. In terms of what can actually be represented, rationals are, in fact, a bigger set.</description>
+    </item>
+    
+    <item>
+      <title>c8: Extending capabilities</title>
+      <link>https://hashingit.com/journal/2017-01-14-0000/</link>
+      <pubDate>Sat, 14 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://hashingit.com/journal/2017-01-14-0000/</guid>
+      <description>One of the more interesting problems for this library is to try to work out what features are required in order to build out each successive layer. Adding rational numbers turns out to require a few extra features from the integers and the natural numbers.
+Part of the thinking behind each type of number was to use the simplest representation possible for each, and in the case of natural numbers that means that the numerators need to be integers, but the denominators need only be natural numbers.</description>
+    </item>
+    
+    <item>
+      <title>c8: Adding placeholders for rational and real numbers</title>
+      <link>https://hashingit.com/journal/2017-01-11-0000/</link>
+      <pubDate>Wed, 11 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://hashingit.com/journal/2017-01-11-0000/</guid>
+      <description>With the natural and integer number support being ready it&amp;rsquo;s time to think about the other types that we&amp;rsquo;ll want for a first version of the library. Added placeholder files for rational, real2 and real10 numbers.
+Real2 will be power-of-2 floating point numbers (as with C++ float and double), whereas real10 will be power-of-10 versions (useful for handling finance problems).</description>
+    </item>
+    
+    <item>
+      <title>c8: Implementing integers</title>
+      <link>https://hashingit.com/journal/2017-01-09-0000/</link>
+      <pubDate>Mon, 09 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://hashingit.com/journal/2017-01-09-0000/</guid>
+      <description>The first few commits started with handling natural numbers. Today brings in integers.
+Integers are built on top of the natural numbers, but have a &amp;ldquo;negative&amp;rdquo; flag that allows them to express negative quantities too. The code is actually very simple as a consequence of delegating all of the numeric operations to an embedded natural number. This same approach will also be used to introduce rational and real numbers later.</description>
+    </item>
+    
+    <item>
+      <title>c8: Initial thoughts for an arbitrary precision maths library</title>
+      <link>https://hashingit.com/journal/2017-01-08-0000/</link>
+      <pubDate>Sun, 08 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://hashingit.com/journal/2017-01-08-0000/</guid>
+      <description>The first version of the library only supports natural numbers (zero and positive integers), although these are intended to be used as the basis of building quite a few more types later.
+The code is intended to have a straightforward implementation, rather than being designed for the highest levels of performance. It supports an initial set of C++ operators: +, -, *, /, %, &amp;laquo;, &amp;raquo;, and bit counting. The &amp;laquo; stream operator is also available.</description>
     </item>
     
   </channel>

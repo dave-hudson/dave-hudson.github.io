@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    
+    
+    
+        <title>c8: Supporting conversions to C&#43;&#43; native types - Dave Hudson</title>
+    
+
+    <meta name="description" content="c8: Supporting conversions to C&#43;&#43; native types.">
+
+    
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+
+    <meta property="og:title" content="c8: Supporting conversions to C&#43;&#43; native types" />
+<meta property="og:description" content="c8: Supporting conversions to C&#43;&#43; native types." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://hashingit.com/journal/2017-01-19-0000/" />
+<meta property="article:published_time" content="2017-01-19T00:00:00+00:00" />
+<meta property="article:modified_time" content="2017-01-19T00:00:00+00:00" />
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="c8: Supporting conversions to C&#43;&#43; native types"/>
+<meta name="twitter:description" content="c8: Supporting conversions to C&#43;&#43; native types."/>
+
+
+    <link href="https://fonts.googleapis.com/css?family=Open Sans:300,400,300italic,400italic,700bold|Lalezar:400,700bold" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="https://hashingit.com/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://hashingit.com/css/main.css" />
+    <link disabled id="dark-mode-theme" rel="stylesheet" type="text/css" href="https://hashingit.com/css/dark.css" />
+
+    
+        <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    
+    
+</head>
+
+    <body>
+        <div class="container">
+            <div class="header">
+    <table class="site-title">
+        <tr>
+            <td>
+                <h1><a href="https://hashingit.com/">Dave Hudson</a></h1>
+                
+                    <h2>hashingit.com</h1>
+                
+            </td>
+            <td>
+                <nav class="social">
+                    
+                        <div class="icon"><a href="/index.xml" title="RSS"><i data-feather="rss"></i></a></div>
+                    
+                        <div class="icon"><a href="https://twitter.com/hashingitcom" title="Twitter"><i data-feather="twitter"></i></a></div>
+                    
+                        <div class="icon"><a href="https://facebook.com/hashingitcom" title="Facebook"><i data-feather="facebook"></i></a></div>
+                    
+                        <div class="icon"><a href="https://linkedin.com/in/davejh" title="LinkedIn"><i data-feather="linkedin"></i></a></div>
+                    
+                        <div class="icon"><a href="https://github.com/dave-hudson" title="Github"><i data-feather="github"></i></a></div>
+                    
+                    <div class="icon" id="dark-mode-moon"><a><i data-feather="moon"></i></a></div>
+                    <div class="icon" id="dark-mode-sun"><a><i data-feather="sun"></i></a></div>
+                </nav>
+            </td>
+        </tr>
+    </table>
+    <nav class="site-menu">
+        <ul>
+            
+                <li>
+                    <a href="/">Home</a>
+                </li>
+            
+                <li>
+                    <a href="/elements">Elements</a>
+                </li>
+            
+                <li>
+                    <a href="/blog">Blog</a>
+                </li>
+            
+                <li>
+                    <a href="/journal">Journal</a>
+                </li>
+            
+                <li>
+                    <a href="/tags">Tags</a>
+                </li>
+            
+                <li>
+                    <a href="/about">About</a>
+                </li>
+            
+        </ul>
+    </nav>
+</div>
+
+
+            <div class="title">
+                <h1>c8: Supporting conversions to C&#43;&#43; native types</h1>
+                <div class="meta">
+                    2017-01-19 00:00 - 2 min read
+                </div>
+            </div>
+
+            <div class="journal-entry">
+                <nav class="tags">
+                    
+                        
+                    
+                </nav>
+
+                <div class="markdown">
+                    <p>In my last update I had introduced the function <code>c8::toull()</code> to convert a natural number to an unsigned long
+long, and <code>c8::toll()</code> to convert an integer to a long long.  Today I&rsquo;ve added <code>c8:todouble()</code> to convert a
+rational to a double.  This means that all 3 types now have a means of converting in and out of C++ native types.</p>
+<p>In my previous update I had added <code>c8::isull()</code> and <code>c8::isll()</code> too, but I&rsquo;ve now removed them.  Implementing
+the matching <code>c8::isdouble()</code> would have been almost impossible as it would have had to do all of the same work
+as <code>c8::todouble()</code>, but the more I&rsquo;ve thought about it, the more I&rsquo;ve realized that they merely encouraged an
+imperative approach, and one of my aims was to design the c8 library to support functional-style programming as
+much as possible.  I also realized that it was pretty trivial to implement their functionality in user code
+anyway (just compare against a pre-defined constant).</p>
+<h2 id="whats-in-a-name">What&rsquo;s in a name?</h2>
+<p>Having started at the <code>todouble()</code>, <code>toll()</code> and <code>toull()</code> style of names for a while I&rsquo;ve also decided that
+the C++ standard naming is better.  These have become <code>to_double()</code>, <code>to_long_long()</code>, <code>to_unsigned_long_long()</code>.
+Yes these are longer, and yes they take a little more space, but they&rsquo;re also much more obvious, and yes I don&rsquo;t
+like <code>CamelCaseNames</code> in C++ :-)</p>
+
+                </div>
+            </div>
+
+            
+                <div class="prev-next">
+                    <h2>More journal entries</h2>
+                    <ul>
+                        <li class="prev">
+                            
+                                <a href="https://hashingit.com/journal/2017-01-16-0000/" class="page-link" aria-label="Previous"><span aria-hidden="true">&lt;&lt;&nbsp;</span></a>
+                            
+                        </li>
+                        <li class="prev">
+                            
+                                <a href="https://hashingit.com/journal/2017-01-16-0000/" class="page-link" aria-label="Previous"><span aria-hidden="true">c8: Rational numbers and floating point </span></a>
+                            
+                        </li>
+                        <li class="next">
+                            
+                                <a href="https://hashingit.com/journal/2017-01-20-0000/" class="page-link" aria-label="Next"><span aria-hidden="true">c8: Starting to understand performance</span></a>
+                            
+                        </li>
+                        <li class="next">
+                            
+                                <a href="https://hashingit.com/journal/2017-01-20-0000/" class="page-link" aria-label="Next"><span aria-hidden="true">&nbsp;&gt;&gt;</span></a>
+                            
+                        </li>
+                    </ul>
+                </div>
+            
+
+            <div class="footer">
+    <div class="copyright">© 2014-2020 David J. Hudson</div>
+</div>
+
+<script src="https://hashingit.com/js/footer.js"></script>
+
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-49245383-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+    <script>feather.replace()</script>
+
+
+        </div>
+    </body>
+</html>

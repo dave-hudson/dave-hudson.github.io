@@ -13,10 +13,14 @@ html {
     margin-right: 0;
 }
 
+body {
+    background: #f4f4f4
+}
+
 .container {
     font-family: Open Sans, sans-serif;
     font-weight: 400;
-    color: #333;
+    color: #181818;
     line-height: 1.5;
     font-size: 15px;
     padding: 20px;
@@ -25,12 +29,12 @@ html {
 }
 
 .container a {
-    color: #16b;
+    color: #1840a8;
     text-decoration: none;
 }
 
 .container a:hover {
-    color: #16b;
+    color: #1840a8;
     text-decoration: underline;
     opacity: 0.8;
 }
@@ -45,7 +49,7 @@ html {
     font-size: 1.4rem;
     font-family: Georgia, bitstream charter, serif;
     border-left: 3px solid;
-    border-color: #16b;
+    border-color: #1840a8;
     padding-left: 20px;
 }
 
@@ -70,7 +74,7 @@ html {
     display: block;
     height: 1px;
     border: 0;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #bbb;
     margin: 1.5rem 0 1rem 0;
     padding: 0;
 }
@@ -121,20 +125,29 @@ html {
     font-size: .9rem;
 }
 
+.container code {
+    font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+    font-size: .95em;
+}
+
+.container p code {
+    color: #a80018;
+}
+
 .container table {
     margin: 25px auto 25px auto;
 }
 
 .container table th {
-    background-color: #ccc;
+    background-color: #bbb;
     padding: 5px 10px;
-    border: 1px solid #999;
+    border: 1px solid #777;
     font-weight: bold;
 }
 
 .container table td {
     padding: 5px 10px;
-    border: 1px solid #999;
+    border: 1px solid #777;
 }
 
 .container .header {
@@ -180,8 +193,8 @@ html {
 .container .header nav.site-menu {
     margin-top: 15px;
     padding: 0.6rem 0 0.6rem 0;
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #bbb;
+    border-bottom: 1px solid #bbb;
 }
 
 .container .header nav.site-menu ul {
@@ -205,12 +218,12 @@ html {
 
 .container .title .meta {
     font-size: 0.725rem;
-    color: #999;
+    color: #777;
 }
 
 .container .prev-next {
     margin: 30px 0 0 0;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #bbb;
 }
 
 .container .prev-next ul {
@@ -238,7 +251,7 @@ html {
 
 .container .disqus {
     margin: 30px 0 0 0;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #bbb;
 }
 
 .container .disqus_thread {
@@ -272,8 +285,8 @@ html {
 .container .footer {
     text-align: right;
     font-size: 0.75rem;
-    color: #999;
-    border-top: 1px solid #ccc;
+    color: #777;
+    border-top: 1px solid #bbb;
     padding: 0;
     margin-top: 40px;
 }
@@ -292,16 +305,16 @@ html {
 
 .container .recent-blog-posts .recent-blog-post .meta {
     font-size: 0.725rem;
-    color: #999;
+    color: #777;
     margin-bottom: 15px;
 }
 
 .container .recent-blog-posts .recent-blog-post nav.tags a {
     display: inline-block;
-    border: 1px solid #16b;
+    border: 1px solid #1840a8;
     border-radius: 4px;
     padding: 0px 6px;
-    color: #16b;
+    color: #1840a8;
     font-size: 12px;
     text-decoration: none;
     margin: 0 1px;
@@ -329,12 +342,12 @@ html {
     display: table-cell;
     text-align: right;
     font-size: 0.725rem;
-    color: #999;
+    color: #777;
     margin-left: 5px;
 }
 
 .container .blog-post .draft-label {
-    color: #16b;
+    color: #1840a8;
     text-decoration: none;
     padding: 2px 4px;
     border-radius: 4px;
@@ -344,10 +357,10 @@ html {
 
 .container .blog-post nav.tags a {
     display: inline-block;
-    border: 1px solid #16b;
+    border: 1px solid #1840a8;
     border-radius: 4px;
     padding: 0px 6px;
-    color: #16b;
+    color: #1840a8;
     font-size: 12px;
     text-decoration: none;
     margin: 0 1px;
@@ -375,12 +388,12 @@ html {
     display: table-cell;
     text-align: right;
     font-size: 0.725rem;
-    color: #999;
+    color: #777;
     margin-left: 5px;
 }
 
 .container .journal-entry .draft-label {
-    color: #16b;
+    color: #1840a8;
     text-decoration: none;
     padding: 2px 4px;
     border-radius: 4px;
@@ -390,10 +403,10 @@ html {
 
 .container .journal-entry nav.tags a {
     display: inline-block;
-    border: 1px solid #16b;
+    border: 1px solid #1840a8;
     border-radius: 4px;
     padding: 0px 6px;
-    color: #16b;
+    color: #1840a8;
     font-size: 12px;
     text-decoration: none;
     margin: 0 1px;
@@ -421,7 +434,7 @@ html {
     display: table-cell;
     text-align: right;
     font-size: 0.725rem;
-    color: #999;
+    color: #777;
     margin-left: 5px;
 }
 
@@ -434,3 +447,80 @@ html {
     white-space: nowrap;
 }
 
+/* Background */ .chroma { color: #586e75; background-color: #e8e8e8 }
+/* LineTableTD */ .chroma .lntd { vertical-align: top; padding: 0; margin: 0; border: 0; }
+/* LineTable */ .chroma .lntable { border-spacing: 0; padding: 0; margin: 0; border: 0; width: auto; overflow: auto; display: block; }
+/* LineHighlight */ .chroma .hl { display: block; width: 100%; background-color: #ffffcc }
+/* LineNumbersTable */ .chroma .lnt { margin-right: 0.4em; padding: 0 0.4em 0 0.4em; color: #7f7f7f }
+/* LineNumbers */ .chroma .ln { margin-right: 0.4em; padding: 0 0.4em 0 0.4em; color: #7f7f7f }
+/* Keyword */ .chroma .k { color: #859900 }
+/* KeywordConstant */ .chroma .kc { color: #859900; font-weight: bold }
+/* KeywordDeclaration */ .chroma .kd { color: #859900 }
+/* KeywordNamespace */ .chroma .kn { color: #dc322f; font-weight: bold }
+/* KeywordPseudo */ .chroma .kp { color: #859900 }
+/* KeywordReserved */ .chroma .kr { color: #859900 }
+/* KeywordType */ .chroma .kt { color: #859900; font-weight: bold }
+/* Name */ .chroma .n { color: #268bd2 }
+/* NameAttribute */ .chroma .na { color: #268bd2 }
+/* NameBuiltin */ .chroma .nb { color: #cb4b16 }
+/* NameBuiltinPseudo */ .chroma .bp { color: #268bd2 }
+/* NameClass */ .chroma .nc { color: #cb4b16 }
+/* NameConstant */ .chroma .no { color: #268bd2 }
+/* NameDecorator */ .chroma .nd { color: #268bd2 }
+/* NameEntity */ .chroma .ni { color: #268bd2 }
+/* NameException */ .chroma .ne { color: #268bd2 }
+/* NameFunction */ .chroma .nf { color: #268bd2 }
+/* NameFunctionMagic */ .chroma .fm { color: #268bd2 }
+/* NameLabel */ .chroma .nl { color: #268bd2 }
+/* NameNamespace */ .chroma .nn { color: #268bd2 }
+/* NameOther */ .chroma .nx { color: #268bd2 }
+/* NameProperty */ .chroma .py { color: #268bd2 }
+/* NameTag */ .chroma .nt { color: #268bd2; font-weight: bold }
+/* NameVariable */ .chroma .nv { color: #268bd2 }
+/* NameVariableClass */ .chroma .vc { color: #268bd2 }
+/* NameVariableGlobal */ .chroma .vg { color: #268bd2 }
+/* NameVariableInstance */ .chroma .vi { color: #268bd2 }
+/* NameVariableMagic */ .chroma .vm { color: #268bd2 }
+/* Literal */ .chroma .l { color: #2aa198 }
+/* LiteralDate */ .chroma .ld { color: #2aa198 }
+/* LiteralString */ .chroma .s { color: #2aa198 }
+/* LiteralStringAffix */ .chroma .sa { color: #2aa198 }
+/* LiteralStringBacktick */ .chroma .sb { color: #2aa198 }
+/* LiteralStringChar */ .chroma .sc { color: #2aa198 }
+/* LiteralStringDelimiter */ .chroma .dl { color: #2aa198 }
+/* LiteralStringDoc */ .chroma .sd { color: #2aa198 }
+/* LiteralStringDouble */ .chroma .s2 { color: #2aa198 }
+/* LiteralStringEscape */ .chroma .se { color: #2aa198 }
+/* LiteralStringHeredoc */ .chroma .sh { color: #2aa198 }
+/* LiteralStringInterpol */ .chroma .si { color: #2aa198 }
+/* LiteralStringOther */ .chroma .sx { color: #2aa198 }
+/* LiteralStringRegex */ .chroma .sr { color: #2aa198 }
+/* LiteralStringSingle */ .chroma .s1 { color: #2aa198 }
+/* LiteralStringSymbol */ .chroma .ss { color: #2aa198 }
+/* LiteralNumber */ .chroma .m { color: #2aa198; font-weight: bold }
+/* LiteralNumberBin */ .chroma .mb { color: #2aa198; font-weight: bold }
+/* LiteralNumberFloat */ .chroma .mf { color: #2aa198; font-weight: bold }
+/* LiteralNumberHex */ .chroma .mh { color: #2aa198; font-weight: bold }
+/* LiteralNumberInteger */ .chroma .mi { color: #2aa198; font-weight: bold }
+/* LiteralNumberIntegerLong */ .chroma .il { color: #2aa198; font-weight: bold }
+/* LiteralNumberOct */ .chroma .mo { color: #2aa198; font-weight: bold }
+/* OperatorWord */ .chroma .ow { color: #859900 }
+/* Comment */ .chroma .c { color: #93a1a1; font-style: italic }
+/* CommentHashbang */ .chroma .ch { color: #93a1a1; font-style: italic }
+/* CommentMultiline */ .chroma .cm { color: #93a1a1; font-style: italic }
+/* CommentSingle */ .chroma .c1 { color: #93a1a1; font-style: italic }
+/* CommentSpecial */ .chroma .cs { color: #93a1a1; font-style: italic }
+/* CommentPreproc */ .chroma .cp { color: #93a1a1; font-style: italic }
+/* CommentPreprocFile */ .chroma .cpf { color: #93a1a1; font-style: italic }
+/* Generic */ .chroma .g { color: #d33682 }
+/* GenericDeleted */ .chroma .gd { color: #d33682 }
+/* GenericEmph */ .chroma .ge { color: #d33682 }
+/* GenericError */ .chroma .gr { color: #d33682 }
+/* GenericHeading */ .chroma .gh { color: #d33682 }
+/* GenericInserted */ .chroma .gi { color: #d33682 }
+/* GenericOutput */ .chroma .go { color: #d33682 }
+/* GenericPrompt */ .chroma .gp { color: #d33682 }
+/* GenericStrong */ .chroma .gs { color: #d33682 }
+/* GenericSubheading */ .chroma .gu { color: #d33682 }
+/* GenericTraceback */ .chroma .gt { color: #d33682 }
+/* GenericUnderline */ .chroma .gl { color: #d33682 }
