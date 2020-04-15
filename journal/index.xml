@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <copyright>© 2014-2020 David J. Hudson</copyright>
-    <lastBuildDate>Mon, 13 Apr 2020 19:44:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 15 Apr 2020 20:06:00 +0000</lastBuildDate>
     
 	<atom:link href="https://hashingit.com/journal/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>More updates to hashingit.com</title>
+      <link>https://hashingit.com/journal/2020-04-15-2006/</link>
+      <pubDate>Wed, 15 Apr 2020 20:06:00 +0000</pubDate>
+      
+      <guid>https://hashingit.com/journal/2020-04-15-2006/</guid>
+      <description>The pagination code for this site had been annoying for a while so finally revised that to use icons rather than text. At the same time changed from a slightly odd list to a table layout.
+Another consideration was to make the markdown links a little more obvious. These now have a weight of 600 rather than 400.
+As always, found a few weird problems and fixed them.</description>
+    </item>
     
     <item>
       <title>Updates to hashingit.com</title>
