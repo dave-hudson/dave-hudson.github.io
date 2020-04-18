@@ -13,6 +13,16 @@
     
     
     <item>
+      <title>Software design complexity</title>
+      <link>https://hashingit.com/journal/2020-04-18-1203/</link>
+      <pubDate>Sat, 18 Apr 2020 12:03:00 +0000</pubDate>
+      
+      <guid>https://hashingit.com/journal/2020-04-18-1203/</guid>
+      <description>A couple of days ago I saw a tweet from Carlo Pescio in which he links to a draft article called &amp;ldquo;Design, Coceptual Integrity, and Algorithmic Information Theory&amp;rdquo;.
+While compression is something I think about quite a lot, I&amp;rsquo;d not thought about the implications for the compression of conceptual design. Regularity, as expressed in terms of standard design patterns (such as the gang-of-four book), lets us express more complex things with less information.</description>
+    </item>
+    
+    <item>
       <title>Visual improvements all over the place</title>
       <link>https://hashingit.com/journal/2020-04-17-1643/</link>
       <pubDate>Fri, 17 Apr 2020 16:43:00 +0000</pubDate>
