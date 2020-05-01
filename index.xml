@@ -13,6 +13,16 @@
     
     
     <item>
+      <title>Improving the performance of this site</title>
+      <link>https://hashingit.com/journal/2020-05-01-1230/</link>
+      <pubDate>Sat, 18 Apr 2020 12:03:00 +0000</pubDate>
+      
+      <guid>https://hashingit.com/journal/2020-05-01-1230/</guid>
+      <description>Disqus really isn&amp;rsquo;t friendly to site performance When I set up this site I added disqus support for the blog pages. This morning I discovered just how much page bloat these added, so I&amp;rsquo;m now removing them. They were only on the blog pages anyway, and I&amp;rsquo;m reachable on Twitter or LinkedIn if anyone really wants to have a conversation about something.
+Images are the wrong size I&amp;rsquo;ve not fixed this yet, but I need to generate images athat match the page width better.</description>
+    </item>
+    
+    <item>
       <title>Software design complexity</title>
       <link>https://hashingit.com/journal/2020-04-18-1203/</link>
       <pubDate>Sat, 18 Apr 2020 12:03:00 +0000</pubDate>
