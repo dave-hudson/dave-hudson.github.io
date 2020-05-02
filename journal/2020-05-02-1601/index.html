@@ -6,20 +6,20 @@
     
     
     
-        <title>Improving the performance of this site - Dave Hudson</title>
+        <title>Database design reading - Dave Hudson</title>
     
 
-    <meta name="description" content="I want this site to be fast, so time to improve a few things!">
+    <meta name="description" content="Some reading on the subject of databases">
 
     
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     
 
-    <meta property="og:title" content="Improving the performance of this site" />
-<meta property="og:description" content="I want this site to be fast, so time to improve a few things!" />
+    <meta property="og:title" content="Database design reading" />
+<meta property="og:description" content="Some reading on the subject of databases" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://hashingit.com/journal/2020-05-01-1230/" />
+<meta property="og:url" content="https://hashingit.com/journal/2020-05-02-1601/" />
 <meta property="og:image" content="https://hashingit.com/about/dave.jpg"/>
 <meta property="article:published_time" content="2020-04-18T12:03:00+00:00" />
 <meta property="article:modified_time" content="2020-04-18T12:03:00+00:00" />
@@ -27,8 +27,8 @@
     <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://hashingit.com/about/dave.jpg"/>
 
-<meta name="twitter:title" content="Improving the performance of this site"/>
-<meta name="twitter:description" content="I want this site to be fast, so time to improve a few things!"/>
+<meta name="twitter:title" content="Database design reading"/>
+<meta name="twitter:description" content="Some reading on the subject of databases"/>
 
 
     <link href="https://fonts.googleapis.com/css?family=Open Sans:300,400,600,300italic,400italic,600italic,700bold|Lalezar:400" rel="stylesheet" />
@@ -100,7 +100,7 @@
 
 
             <div class="title">
-                <h1>Improving the performance of this site</h1>
+                <h1>Database design reading</h1>
                 <div class="meta">
                     2020-04-18 12:03 - 1 min read
                 </div>
@@ -114,16 +114,16 @@
                 </nav>
 
                 <div class="markdown">
-                    <h2 id="disqus-really-isnt-friendly-to-site-performance">Disqus really isn&rsquo;t friendly to site performance</h2>
-<p>When I set up this site I added disqus support for the blog pages.  This morning I discovered just how much page bloat
-these added, so I&rsquo;m now removing them.  They were only on the blog pages anyway, and I&rsquo;m reachable on Twitter or
-LinkedIn if anyone really wants to have a conversation about something.</p>
-<h2 id="images-are-the-wrong-size">Images are the wrong size</h2>
-<p>I&rsquo;ve not fixed this yet, but I need to generate images athat match the page width better.  I should be able to do this
-with hugo.</p>
-<h2 id="not-a-performance-issue-but-the-twitter-cards-werent-right">Not a performance issue, but the Twitter cards weren&rsquo;t right</h2>
-<p>I did discover that I&rsquo;d not got the Twitter card setup right, however, as there were no images associated with the
-site, so I&rsquo;ve fixed that too.</p>
+                    <p>I ran across a researcher called Daniel Lemire who has a really interesting blog about performance at
+<a href="http://lemire.me">lemire.me</a>.  The blog is great and also has some really good advice about writing good papers.</p>
+<p>This led me to reading his paper <a href="../../../elements/research-resources/2011-11-call-to-arms.pdf">A Call to Arms: Revisiting Database Design</a>
+in which he and Antonio Badia argue that we need to think about database design in a very different way.  Rather
+than using normalised RDBMS principles we need something that meets the needs of people who are not trained to
+handle this formal model.</p>
+<p>This feels like an important concept.  Programmers design schemas because we&rsquo;re used to thinking about how we
+organise things, but even we&rsquo;re not very good at dealing with the implications of versioning.</p>
+<p>This is also leading me to a bunch of Pat Helland&rsquo;s papers.  Some of these I&rsquo;ve read before but had lost track of,
+especially <a href="../../../elements/research-resources/2015-01-immutability-changes-everything.pdf">Immutability Changes Everything</a>.</p>
 
                 </div>
             </div>
@@ -135,22 +135,18 @@ site, so I&rsquo;ve fixed that too.</p>
                         <tr>
                             <td class="prev">
                                 
-                                    <a href="https://hashingit.com/journal/2020-04-18-1203/" class="page-link" aria-label="Previous"><span aria-hidden="true"><i data-feather="chevron-left"></i>&nbsp;</span></a>
+                                    <a href="https://hashingit.com/journal/2020-05-01-1230/" class="page-link" aria-label="Previous"><span aria-hidden="true"><i data-feather="chevron-left"></i>&nbsp;</span></a>
                                 
                             </td>
                             <td class="prev-text">
                                 
-                                    <a href="https://hashingit.com/journal/2020-04-18-1203/" class="page-link" aria-label="Previous"><span aria-hidden="true">Software design complexity </span></a>
+                                    <a href="https://hashingit.com/journal/2020-05-01-1230/" class="page-link" aria-label="Previous"><span aria-hidden="true">Improving the performance of this site </span></a>
                                 
                             </td>
                             <td class="next-text">
                                 
-                                    <a href="https://hashingit.com/journal/2020-05-02-1601/" class="page-link" aria-label="Next"><span aria-hidden="true">Database design reading</span></a>
-                                
                             </td>
                             <td class="next">
-                                
-                                    <a href="https://hashingit.com/journal/2020-05-02-1601/" class="page-link" aria-label="Next"><span aria-hidden="true">&nbsp;<i data-feather="chevron-right"></i></span></a>
                                 
                             </td>
                         </tr>

@@ -13,6 +13,16 @@
     
     
     <item>
+      <title>Database design reading</title>
+      <link>https://hashingit.com/journal/2020-05-02-1601/</link>
+      <pubDate>Sat, 18 Apr 2020 12:03:00 +0000</pubDate>
+      
+      <guid>https://hashingit.com/journal/2020-05-02-1601/</guid>
+      <description>I ran across a researcher called Daniel Lemire who has a really interesting blog about performance at lemire.me. The blog is great and also has some really good advice about writing good papers.
+This led me to reading his paper A Call to Arms: Revisiting Database Design in which he and Antonio Badia argue that we need to think about database design in a very different way. Rather than using normalised RDBMS principles we need something that meets the needs of people who are not trained to handle this formal model.</description>
+    </item>
+    
+    <item>
       <title>Improving the performance of this site</title>
       <link>https://hashingit.com/journal/2020-05-01-1230/</link>
       <pubDate>Sat, 18 Apr 2020 12:03:00 +0000</pubDate>
