@@ -13,21 +13,31 @@
     
     
     <item>
-      <title>Database design reading</title>
-      <link>https://hashingit.com/journal/2020-05-02-1601/</link>
-      <pubDate>Sat, 18 Apr 2020 12:03:00 +0000</pubDate>
+      <title>Thoughts after reading Pat Helland&#39;s &#34;If You Have Too Much Data&#34; paper</title>
+      <link>https://hashingit.com/journal/2020-05-03-1114/</link>
+      <pubDate>Sun, 03 May 2020 11:14:00 +0000</pubDate>
       
-      <guid>https://hashingit.com/journal/2020-05-02-1601/</guid>
+      <guid>https://hashingit.com/journal/2020-05-03-1114/</guid>
+      <description>Just read If You Have Too Much Data, then &amp;lsquo;Good Enough&amp;rsquo; Is Good Enough by Pat Helland. His argument is that strong schemas were something we could afford in an era of single node computers and the ability to formally normalise data, but that this is doomed to failure with large scale data sets and distributed systems.
+Somehow this feels quite intuitive. We have small islands of coherent things within the world and then vast amounts of unstructured &amp;ldquo;stuff&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Database design reading</title>
+      <link>https://hashingit.com/journal/2020-05-02-1501/</link>
+      <pubDate>Sat, 02 May 2020 15:01:00 +0000</pubDate>
+      
+      <guid>https://hashingit.com/journal/2020-05-02-1501/</guid>
       <description>I ran across a researcher called Daniel Lemire who has a really interesting blog about performance at lemire.me. The blog is great and also has some really good advice about writing good papers.
 This led me to reading his paper A Call to Arms: Revisiting Database Design in which he and Antonio Badia argue that we need to think about database design in a very different way. Rather than using normalised RDBMS principles we need something that meets the needs of people who are not trained to handle this formal model.</description>
     </item>
     
     <item>
       <title>Improving the performance of this site</title>
-      <link>https://hashingit.com/journal/2020-05-01-1230/</link>
-      <pubDate>Sat, 18 Apr 2020 12:03:00 +0000</pubDate>
+      <link>https://hashingit.com/journal/2020-05-01-1130/</link>
+      <pubDate>Fri, 01 May 2020 11:30:00 +0000</pubDate>
       
-      <guid>https://hashingit.com/journal/2020-05-01-1230/</guid>
+      <guid>https://hashingit.com/journal/2020-05-01-1130/</guid>
       <description>Disqus really isn&amp;rsquo;t friendly to site performance When I set up this site I added disqus support for the blog pages. This morning I discovered just how much page bloat these added, so I&amp;rsquo;m now removing them. They were only on the blog pages anyway, and I&amp;rsquo;m reachable on Twitter or LinkedIn if anyone really wants to have a conversation about something.
 Images are the wrong size I&amp;rsquo;ve not fixed this yet, but I need to generate images athat match the page width better.</description>
     </item>

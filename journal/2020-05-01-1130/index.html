@@ -6,29 +6,29 @@
     
     
     
-        <title>Software design complexity - Dave Hudson</title>
+        <title>Improving the performance of this site - Dave Hudson</title>
     
 
-    <meta name="description" content="What makes software complex?">
+    <meta name="description" content="I want this site to be fast, so time to improve a few things!">
 
     
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     
 
-    <meta property="og:title" content="Software design complexity" />
-<meta property="og:description" content="What makes software complex?" />
+    <meta property="og:title" content="Improving the performance of this site" />
+<meta property="og:description" content="I want this site to be fast, so time to improve a few things!" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://hashingit.com/journal/2020-04-18-1203/" />
+<meta property="og:url" content="https://hashingit.com/journal/2020-05-01-1130/" />
 <meta property="og:image" content="https://hashingit.com/about/dave.jpg"/>
-<meta property="article:published_time" content="2020-04-18T12:03:00+00:00" />
-<meta property="article:modified_time" content="2020-04-18T12:03:00+00:00" />
+<meta property="article:published_time" content="2020-05-01T11:30:00+00:00" />
+<meta property="article:modified_time" content="2020-05-01T11:30:00+00:00" />
 
     <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://hashingit.com/about/dave.jpg"/>
 
-<meta name="twitter:title" content="Software design complexity"/>
-<meta name="twitter:description" content="What makes software complex?"/>
+<meta name="twitter:title" content="Improving the performance of this site"/>
+<meta name="twitter:description" content="I want this site to be fast, so time to improve a few things!"/>
 
 
     <link href="https://fonts.googleapis.com/css?family=Open Sans:300,400,600,300italic,400italic,600italic,700bold|Lalezar:400" rel="stylesheet" />
@@ -100,9 +100,9 @@
 
 
             <div class="title">
-                <h1>Software design complexity</h1>
+                <h1>Improving the performance of this site</h1>
                 <div class="meta">
-                    2020-04-18 12:03 - 1 min read
+                    2020-05-01 11:30 - 1 min read
                 </div>
             </div>
 
@@ -114,20 +114,16 @@
                 </nav>
 
                 <div class="markdown">
-                    <p>A couple of days ago I saw a <a href="https://twitter.com/CarloPescio/status/1249985759127404546">tweet</a> from Carlo Pescio in
-which he links to a draft article called <a href="http://www.physicsofsoftware.com/uploads/9/8/5/4/9854624/design_conceptual_integrity_algorithmic_information_theory.pdf">&ldquo;Design, Coceptual Integrity, and Algorithmic Information Theory&rdquo;</a>.</p>
-<p>While compression is something I think about quite a lot, I&rsquo;d not thought about the implications for the compression of
-conceptual design.  Regularity, as expressed in terms of standard design patterns (such as the gang-of-four book),
-lets us express more complex things with less information.</p>
-<p>This has got me thinking about complexity when we reach the level of very large software stacks in which no one person
-can ever hold the whole design in their head.  The implications are that we will almost inevitably see unecessary
-complexity in the overall design as different parts are implemented by different teams and with different guiding
-principles.</p>
-<p>The move to microservices, and before that, microkernel operating systems, seems to be an implicit recognition of this
-and attempts to hide implementation complexity in order to facilitate system comprehensibility.  Somehow, though,
-this is really disappointing because it leaves us with poor implementations.  There&rsquo;s something inherently wrong here.</p>
-<p>Are we on the wrong path with our current computational abstractions, or are we simply missing some important
-tooling?</p>
+                    <h2 id="disqus-really-isnt-friendly-to-site-performance">Disqus really isn&rsquo;t friendly to site performance</h2>
+<p>When I set up this site I added disqus support for the blog pages.  This morning I discovered just how much page bloat
+these added, so I&rsquo;m now removing them.  They were only on the blog pages anyway, and I&rsquo;m reachable on Twitter or
+LinkedIn if anyone really wants to have a conversation about something.</p>
+<h2 id="images-are-the-wrong-size">Images are the wrong size</h2>
+<p>I&rsquo;ve not fixed this yet, but I need to generate images athat match the page width better.  I should be able to do this
+with hugo.</p>
+<h2 id="not-a-performance-issue-but-the-twitter-cards-werent-right">Not a performance issue, but the Twitter cards weren&rsquo;t right</h2>
+<p>I did discover that I&rsquo;d not got the Twitter card setup right, however, as there were no images associated with the
+site, so I&rsquo;ve fixed that too.</p>
 
                 </div>
             </div>
@@ -139,22 +135,22 @@ tooling?</p>
                         <tr>
                             <td class="prev">
                                 
-                                    <a href="https://hashingit.com/journal/2020-04-17-1643/" class="page-link" aria-label="Previous"><span aria-hidden="true"><i data-feather="chevron-left"></i>&nbsp;</span></a>
+                                    <a href="https://hashingit.com/journal/2020-04-18-1203/" class="page-link" aria-label="Previous"><span aria-hidden="true"><i data-feather="chevron-left"></i>&nbsp;</span></a>
                                 
                             </td>
                             <td class="prev-text">
                                 
-                                    <a href="https://hashingit.com/journal/2020-04-17-1643/" class="page-link" aria-label="Previous"><span aria-hidden="true">Visual improvements all over the place </span></a>
+                                    <a href="https://hashingit.com/journal/2020-04-18-1203/" class="page-link" aria-label="Previous"><span aria-hidden="true">Software design complexity </span></a>
                                 
                             </td>
                             <td class="next-text">
                                 
-                                    <a href="https://hashingit.com/journal/2020-05-01-1130/" class="page-link" aria-label="Next"><span aria-hidden="true">Improving the performance of this site</span></a>
+                                    <a href="https://hashingit.com/journal/2020-05-02-1501/" class="page-link" aria-label="Next"><span aria-hidden="true">Database design reading</span></a>
                                 
                             </td>
                             <td class="next">
                                 
-                                    <a href="https://hashingit.com/journal/2020-05-01-1130/" class="page-link" aria-label="Next"><span aria-hidden="true">&nbsp;<i data-feather="chevron-right"></i></span></a>
+                                    <a href="https://hashingit.com/journal/2020-05-02-1501/" class="page-link" aria-label="Next"><span aria-hidden="true">&nbsp;<i data-feather="chevron-right"></i></span></a>
                                 
                             </td>
                         </tr>
