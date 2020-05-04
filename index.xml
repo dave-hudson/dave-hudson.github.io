@@ -13,12 +13,22 @@
     
     
     <item>
+      <title>Pat Helland&#39;s &#34;Idempotence is Not a Medical Condition&#34; article</title>
+      <link>https://hashingit.com/journal/2020-05-04-1152/</link>
+      <pubDate>Mon, 04 May 2020 11:52:00 +0000</pubDate>
+      
+      <guid>https://hashingit.com/journal/2020-05-04-1152/</guid>
+      <description>Another day, another Pat Helland article read. This time Idempotence is Not a Medical Condition.
+Didn&amp;rsquo;t learn anything new from this, but it&amp;rsquo;s a nice summary of the problems involved in distributed systems messaging. It&amp;rsquo;s a good reference to hold onto for anyone who asks.</description>
+    </item>
+    
+    <item>
       <title>Thoughts after reading Pat Helland&#39;s &#34;If You Have Too Much Data&#34; paper</title>
       <link>https://hashingit.com/journal/2020-05-03-1114/</link>
       <pubDate>Sun, 03 May 2020 11:14:00 +0000</pubDate>
       
       <guid>https://hashingit.com/journal/2020-05-03-1114/</guid>
-      <description>Just read If You Have Too Much Data, then &amp;lsquo;Good Enough&amp;rsquo; Is Good Enough by Pat Helland. His argument is that strong schemas were something we could afford in an era of single node computers and the ability to formally normalise data, but that this is doomed to failure with large scale data sets and distributed systems.
+      <description>I just read If You Have Too Much Data, then &amp;lsquo;Good Enough&amp;rsquo; Is Good Enough by Pat Helland. He argues that strong schemas were something we could afford in an era of single-node computers and the ability to formally normalise data, but that this is doomed to failure with large scale data sets and distributed systems.
 Somehow this feels quite intuitive. We have small islands of coherent things within the world and then vast amounts of unstructured &amp;ldquo;stuff&amp;rdquo;.</description>
     </item>
     
@@ -29,7 +39,7 @@ Somehow this feels quite intuitive. We have small islands of coherent things wit
       
       <guid>https://hashingit.com/journal/2020-05-02-1501/</guid>
       <description>I ran across a researcher called Daniel Lemire who has a really interesting blog about performance at lemire.me. The blog is great and also has some really good advice about writing good papers.
-This led me to reading his paper A Call to Arms: Revisiting Database Design in which he and Antonio Badia argue that we need to think about database design in a very different way. Rather than using normalised RDBMS principles we need something that meets the needs of people who are not trained to handle this formal model.</description>
+This led me to read his paper A Call to Arms: Revisiting Database Design in which he and Antonio Badia argue that we need to think about database design in a very different way. Rather than using normalised RDBMS principles, we need something that meets the needs of people who are not trained to handle this formal model.</description>
     </item>
     
     <item>
