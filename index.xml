@@ -13,6 +13,17 @@
     
     
     <item>
+      <title>Catching up on old operating systems papers</title>
+      <link>https://hashingit.com/journal/2020-06-13-0905/</link>
+      <pubDate>Sat, 13 Jun 2020 09:05:00 +0000</pubDate>
+      
+      <guid>https://hashingit.com/journal/2020-06-13-0905/</guid>
+      <description>Read a couple more papers over breakfast!
+The Nucleus of a Multiprogramming System is an interesting insight into how to design an early operating system, especially as relates to building a hierarichal set of processes.
+Policy/Mechanism Separation in Hydra describes what must have been one of the first microkernel concepts I&amp;rsquo;ve seen so far. While the paper is very outdated in terms of the implementation, the approach of only providing mechanisms in the OS kernel and leaving everything else to a hierarchy of processes still resonates strongly.</description>
+    </item>
+    
+    <item>
       <title>More musings from Pat Helland</title>
       <link>https://hashingit.com/journal/2020-05-06-0906/</link>
       <pubDate>Wed, 06 May 2020 09:06:00 +0000</pubDate>
