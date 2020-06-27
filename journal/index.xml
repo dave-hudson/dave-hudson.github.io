@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <copyright>© 2014-2020 David J. Hudson</copyright>
-    <lastBuildDate>Sat, 13 Jun 2020 09:05:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 27 Jun 2020 14:24:00 +0000</lastBuildDate>
     
 	<atom:link href="https://hashingit.com/journal/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>The problem with federated identities</title>
+      <link>https://hashingit.com/journal/2020-06-27-1424/</link>
+      <pubDate>Sat, 27 Jun 2020 14:24:00 +0000</pubDate>
+      
+      <guid>https://hashingit.com/journal/2020-06-27-1424/</guid>
+      <description>Federated systems are something that lots of people seem to want, yet they&amp;rsquo;re really difficult to build in practice. One problem is that it&amp;rsquo;s likely that participants have a misaligned set of incentives
+Identities Evolve - Why federated identity is easier said than done nicely articulates some of the problems, and highlights where things have gone awry before.
+This paper is 9 years old, so I suspect there are more up-to-date write-ups.</description>
+    </item>
     
     <item>
       <title>Catching up on old operating systems papers</title>
