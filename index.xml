@@ -6,11 +6,21 @@
     <description>Recent content in Home on Dave Hudson</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <copyright>© 2014-2020 David J. Hudson</copyright>
+    <copyright>© 2014-2021 David J. Hudson</copyright>
     <lastBuildDate>Fri, 10 Apr 2020 15:49:58 +0000</lastBuildDate>
     
 	<atom:link href="https://hashingit.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Finding ways to make better use of research papers</title>
+      <link>https://hashingit.com/journal/2021-01-04-2238/</link>
+      <pubDate>Mon, 04 Jan 2021 22:38:00 +0000</pubDate>
+      
+      <guid>https://hashingit.com/journal/2021-01-04-2238/</guid>
+      <description>This evening I&amp;rsquo;ve been going through several years of accumulated &amp;ldquo;reading list&amp;rdquo; content. Much of it is far less interesting than I thought it would be at the time I saved it!
+I did stumble across one interesting link though. Alastair Reid&amp;rsquo;s notes on interesting papers suggests an interesting approach to cataloguing research information. I think I&amp;rsquo;ll try this approach out here.</description>
+    </item>
     
     <item>
       <title>The problem with federated identities</title>
