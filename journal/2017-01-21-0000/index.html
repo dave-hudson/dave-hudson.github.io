@@ -19,10 +19,10 @@
     <meta property="og:title" content="c8: Continuing performance investigations" />
 <meta property="og:description" content="c8: Continuing performance investigations." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://hashingit.com/journal/2017-01-21-0000/" />
-<meta property="og:image" content="https://hashingit.com/about/dave.jpg"/>
-<meta property="article:published_time" content="2017-01-21T00:00:00+00:00" />
-<meta property="article:modified_time" content="2017-01-21T00:00:00+00:00" />
+<meta property="og:url" content="https://hashingit.com/journal/2017-01-21-0000/" /><meta property="og:image" content="https://hashingit.com/about/dave.jpg"/><meta property="article:section" content="journal" />
+<meta property="article:published_time" content="2017-01-21T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2017-01-21T00:00:00&#43;00:00" />
+
 
     <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://hashingit.com/about/dave.jpg"/>
@@ -124,7 +124,7 @@ were actually moving, rather than copying, everywhere that we should have been.<
 a pretty simple approach is simply to add non-default versions and then trace their use.</p>
 <p>Doing this showed up some specific problems related to the use of <code>std::pair</code>.  By using <code>std::move()</code> quite a
 number of copy operations could be replaced with more efficient moves.  The relevant commit is
-<a href="https://github.com/hashingitcom/c8/commit/b04347b037f17af66ef8a397248288508bff7024">b04347b037f17af66ef8a397248288508bff7024</a>.</p>
+<a href="https://github.com/dave-hudson/c8/commit/b04347b037f17af66ef8a397248288508bff7024">b04347b037f17af66ef8a397248288508bff7024</a>.</p>
 <p>The performance doesn&rsquo;t change by a huge margin, but it&rsquo;s notably quicker:</p>
 <div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">cons 0     |        316 | pass | 0
 cons 1     |       2660 | pass | 123456789abc

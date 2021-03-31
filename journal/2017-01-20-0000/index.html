@@ -19,10 +19,10 @@
     <meta property="og:title" content="c8: Starting to understand performance" />
 <meta property="og:description" content="c8: Starting to understand performance." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://hashingit.com/journal/2017-01-20-0000/" />
-<meta property="og:image" content="https://hashingit.com/about/dave.jpg"/>
-<meta property="article:published_time" content="2017-01-20T00:00:00+00:00" />
-<meta property="article:modified_time" content="2017-01-20T00:00:00+00:00" />
+<meta property="og:url" content="https://hashingit.com/journal/2017-01-20-0000/" /><meta property="og:image" content="https://hashingit.com/about/dave.jpg"/><meta property="article:section" content="journal" />
+<meta property="article:published_time" content="2017-01-20T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2017-01-20T00:00:00&#43;00:00" />
+
 
     <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://hashingit.com/about/dave.jpg"/>
@@ -295,7 +295,7 @@ faster then our starting point needs to be to understand why we&rsquo;re doing s
 <p>Having found that we&rsquo;re spending too much time on allocations it&rsquo;s time to look at the
 <code>c8::natural::divide_modulus()</code> method and see what&rsquo;s going on.</p>
 <p>The first problem was an unused temporary.  Fixed in commit
-<a href="https://github.com/hashingitcom/c8/commit/5fd6c6d3c7bb584e9e2038b7eaf0667af7de69a7">5fd6c6d3c7bb584e9e2038b7eaf0667af7de69a7</a>.
+<a href="https://github.com/dave-hudson/c8/commit/5fd6c6d3c7bb584e9e2038b7eaf0667af7de69a7">5fd6c6d3c7bb584e9e2038b7eaf0667af7de69a7</a>.
 This wasn&rsquo;t a huge performance loss, but a small one, nonetheless.</p>
 
                 </div>
