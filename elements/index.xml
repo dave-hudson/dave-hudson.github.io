@@ -7,7 +7,11 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <copyright>© 2014-2021 David J. Hudson</copyright>
-    <lastBuildDate>Wed, 22 Jan 2020 22:20:58 +0000</lastBuildDate><atom:link href="https://hashingit.com/elements/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 22 Jan 2020 22:20:58 +0000</lastBuildDate>
+    
+	<atom:link href="https://hashingit.com/elements/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>Research resources</title>
       <link>https://hashingit.com/elements/research-resources/</link>

@@ -19,10 +19,10 @@
     <meta property="og:title" content="The myth of the megabyte Bitcoin block" />
 <meta property="og:description" content="It&#39;s well described how Bitcoin has a one Megabyte block limit; it&#39;s defined in the Bitcoin Core source code.  The knowledge of that 1 Mbyte limit has even served in some of my analysis such as &#34;The future of Bitcoin transaction fees?&#34;, &#34;Bitcoin traffic bulletin&#34; and &#34;7 transactions per second?  Really?&#34;.  Turns out that I was wrong; in practice this limit is actually quite a lot smaller!" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://hashingit.com/blog/2015-01-18-0000/" /><meta property="og:image" content="https://hashingit.com/about/dave.jpg"/><meta property="article:section" content="blog" />
-<meta property="article:published_time" content="2015-01-18T00:00:00&#43;00:00" />
-<meta property="article:modified_time" content="2015-01-18T00:00:00&#43;00:00" />
-
+<meta property="og:url" content="https://hashingit.com/blog/2015-01-18-0000/" />
+<meta property="og:image" content="https://hashingit.com/about/dave.jpg"/>
+<meta property="article:published_time" content="2015-01-18T00:00:00+00:00" />
+<meta property="article:modified_time" content="2015-01-18T00:00:00+00:00" />
 
     <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://hashingit.com/about/dave.jpg"/>
@@ -33,8 +33,8 @@
 
     <link href="https://fonts.googleapis.com/css?family=Open Sans:300,400,600,300italic,400italic,600italic,700bold|Lalezar:400" rel="stylesheet" />
 
-    <link rel="stylesheet" type="text/css" media="screen" href="https://hashingit.com/css/normalize.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="https://hashingit.com/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="https://hashingit.com/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="https://hashingit.com/css/main.css" />
     <link disabled id="dark-mode-theme" rel="stylesheet" type="text/css" href="https://hashingit.com/css/dark.css" />
 
     
@@ -125,9 +125,9 @@
                     <p>It&rsquo;s well described how Bitcoin has a one Megabyte block limit; it&rsquo;s
 defined in the Bitcoin Core source code.  The knowledge of that 1 Mbyte
 limit has even served in some of my analysis such as
-&ldquo;<a href="/blog/2014-11-12-0000/">The future of Bitcoin transaction fees?</a>&rdquo;,
+&ldquo;<a href="/blog/2014-11-12-0000/">The future of Bitcoin transaction fees?</a>&quot;,
 &ldquo;<a href="/blog/2014-11-11-0000/">Bitcoin traffic bulletin</a>&rdquo;
-and &ldquo;<a href="/blog/2014-11-02-0000/">7 transactions per second?  Really?</a>&rdquo;.
+and &ldquo;<a href="/blog/2014-11-02-0000/">7 transactions per second?  Really?</a>&quot;.
 Turns out that I was wrong; in practice this limit is actually quite a
 lot smaller!</p>
 <h2 id="a-puzzle">A puzzle</h2>
@@ -199,7 +199,7 @@ a smaller maximum block size is that if the network is heavily loaded
 then our miner is effectively leaving transactions waiting when they
 declare a block &ldquo;full&rdquo; at some level below 1M bytes.  Far from the 3.2
 transactions per second that we thought the network could sustain in
-&ldquo;<a href="/blog/2014-11-02-0000/">7 transactions per second?  Really?</a>&rdquo;,
+&ldquo;<a href="/blog/2014-11-02-0000/">7 transactions per second?  Really?</a>&quot;,
 every miner imposing a 750k bytes limit would mean the network capacity
 was actually only 2.4 TPS!</p>
 <h2 id="what-is-the-effective-block-size-limit">What is the effective block size limit?</h2>

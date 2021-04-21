@@ -7,7 +7,11 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <copyright>© 2014-2021 David J. Hudson</copyright>
-    <lastBuildDate>Fri, 10 Apr 2020 15:49:58 +0000</lastBuildDate><atom:link href="https://hashingit.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 10 Apr 2020 15:49:58 +0000</lastBuildDate>
+    
+	<atom:link href="https://hashingit.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>Compression and how I want to keep track of information and ideas</title>
       <link>https://hashingit.com/journal/2021-03-13-1020/</link>
@@ -721,7 +725,7 @@ So what should we expect? What happens during hashing growth phases, and what wo
       <pubDate>Fri, 06 Feb 2015 00:00:00 +0000</pubDate>
       
       <guid>https://hashingit.com/blog/2015-02-06-0000/</guid>
-      <description>Note 2015-12-19: This article is the original &amp;quot;Waiting for blocks&amp;quot; but had a problem with some of the probability statistics. A revised, authoritative, version can be found as &amp;ldquo;Waiting for blocks (revised)&amp;rdquo;. Please read that one; this one is retained purely for historical information!
+      <description>Note 2015-12-19: This article is the original &amp;quot;Waiting for blocks&amp;quot; but had a problem with some of the probability statistics. A revised, authoritative, version can be found as &amp;ldquo;Waiting for blocks (revised)&amp;quot;. Please read that one; this one is retained purely for historical information!
  Bitcoin blocks take 10 minutes to find don&amp;rsquo;t they? Well, actually no they don&amp;rsquo;t. Sometimes they can be found really quickly, but other times they can take a very long time.</description>
     </item>
     
@@ -731,7 +735,7 @@ So what should we expect? What happens during hashing growth phases, and what wo
       <pubDate>Sun, 18 Jan 2015 00:00:00 +0000</pubDate>
       
       <guid>https://hashingit.com/blog/2015-01-18-0000/</guid>
-      <description>It&amp;rsquo;s well described how Bitcoin has a one Megabyte block limit; it&amp;rsquo;s defined in the Bitcoin Core source code. The knowledge of that 1 Mbyte limit has even served in some of my analysis such as &amp;ldquo;The future of Bitcoin transaction fees?&amp;rdquo;, &amp;ldquo;Bitcoin traffic bulletin&amp;rdquo; and &amp;ldquo;7 transactions per second? Really?&amp;rdquo;. Turns out that I was wrong; in practice this limit is actually quite a lot smaller!
+      <description>It&amp;rsquo;s well described how Bitcoin has a one Megabyte block limit; it&amp;rsquo;s defined in the Bitcoin Core source code. The knowledge of that 1 Mbyte limit has even served in some of my analysis such as &amp;ldquo;The future of Bitcoin transaction fees?&amp;quot;, &amp;ldquo;Bitcoin traffic bulletin&amp;rdquo; and &amp;ldquo;7 transactions per second? Really?&amp;quot;. Turns out that I was wrong; in practice this limit is actually quite a lot smaller!
 A puzzle Back in &amp;ldquo;Bitcoin traffic bulletin&amp;rdquo; we saw how first transaction confirmation times were highly dependent on how full mined blocks were.</description>
     </item>
     
@@ -741,7 +745,7 @@ A puzzle Back in &amp;ldquo;Bitcoin traffic bulletin&amp;rdquo; we saw how first
       <pubDate>Fri, 05 Dec 2014 00:00:00 +0000</pubDate>
       
       <guid>https://hashingit.com/blog/2014-12-05-0000/</guid>
-      <description>A few days ago, Ittay Eyal published an intriguing paper, &amp;ldquo;The Miner&amp;rsquo;s Dilemma&amp;rdquo;. It describes an attack where an open mining pool may be attacked using block withholding. Given that most Bitcoin mining is managed by open mining pools then it seems like it ought to raise a few eyebrows (perhaps more than it has already). Just how does this attack work though, who wins, who loses and by how much?</description>
+      <description>A few days ago, Ittay Eyal published an intriguing paper, &amp;ldquo;The Miner&amp;rsquo;s Dilemma&amp;quot;. It describes an attack where an open mining pool may be attacked using block withholding. Given that most Bitcoin mining is managed by open mining pools then it seems like it ought to raise a few eyebrows (perhaps more than it has already). Just how does this attack work though, who wins, who loses and by how much?</description>
     </item>
     
     <item>
@@ -760,7 +764,7 @@ Transaction fees Probably the biggest challenge in looking at the costs of trans
       <pubDate>Tue, 11 Nov 2014 00:00:00 +0000</pubDate>
       
       <guid>https://hashingit.com/blog/2014-11-11-0000/</guid>
-      <description>Note 2015-12-20: This article is the original &amp;ldquo;Bitcoin traffic bulletin&amp;rdquo; but has a minor problem with some of the probability statistics. A revised, authoritative, version with significantly updated commentary can be found as &amp;ldquo;Bitcoin traffic bulletin (redux)&amp;rdquo;. Please read that one; this one is retained purely for historical information!
+      <description>Note 2015-12-20: This article is the original &amp;ldquo;Bitcoin traffic bulletin&amp;rdquo; but has a minor problem with some of the probability statistics. A revised, authoritative, version with significantly updated commentary can be found as &amp;ldquo;Bitcoin traffic bulletin (redux)&amp;quot;. Please read that one; this one is retained purely for historical information!
  The Bitcoin network is currently running at around 30% of its maximum capacity, but what does that actually mean to its users?</description>
     </item>
     
@@ -832,7 +836,7 @@ The trend of high points in the graph (red line) shows another theme park ride: 
       
       <guid>https://hashingit.com/blog/2014-05-24-0000/</guid>
       <description>Everyone knows that mining is a noisy task. Did you realize just how noisy Bitcoin mining is though? These aren&amp;rsquo;t the noises you were looking for&amp;hellip;
- A Simple Question An earlier article, &amp;ldquo;Hash Rate Headaches&amp;rdquo;, looked at the statistics associated with Bitcoin mining and how it is a random Poisson Process. It was pretty clear that the global hashing rate, and thus the Bitcoin mining difficulty, are subject to quite a lot of noise, but it wasn&amp;rsquo;t completely obvious how much.</description>
+ A Simple Question An earlier article, &amp;ldquo;Hash Rate Headaches&amp;quot;, looked at the statistics associated with Bitcoin mining and how it is a random Poisson Process. It was pretty clear that the global hashing rate, and thus the Bitcoin mining difficulty, are subject to quite a lot of noise, but it wasn&amp;rsquo;t completely obvious how much.</description>
     </item>
     
     <item>
